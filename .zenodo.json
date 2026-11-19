@@ -1,0 +1,8 @@
+{
+  "title": "perturbation-coverage-audit: code, frozen protocols and results",
+  "upload_type": "software",
+  "creators": [{"name": "Zhou, Xu", "affiliation": "Independent Researcher"}],
+  "description": "Code, frozen analysis protocols, SHA-256 freeze manifests, splits and result files for the manuscript 'A diagnostic for when effect-stratified coverage of single-cell perturbation predictions is informative'.",
+  "license": "MIT",
+  "keywords": ["conformal prediction", "perturbation response prediction", "Perturb-seq", "uncertainty quantification"]
+}
