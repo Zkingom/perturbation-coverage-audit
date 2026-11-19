@@ -1,0 +1,62 @@
+{
+ "protocol_version": "0.6",
+ "frozen_utc": "2026-10-06T10:38:40Z",
+ "protocol_file": {
+  "path": "reports/protocol/audit_protocol_v0.6.md",
+  "sha256": "77a8bafe64536ad288e266d6375972fb91a62b1b3ea060aea3c6a8e2229c2f44"
+ },
+ "scope": "Design-level freeze: questions, data roles, isolation rule, methods M0-M3 + oracle + M_perm, split design, gene-level analysis, pre-registered criteria B0/P/W incl. M_perm rule, stop points. v0.6-specific code (proxy, M1-M3, pseudobulk for confirmation sets) is written in D0 and frozen in v0.7 after user review.",
+ "reused_code_sha256": {
+  "models_v04.py": "5fa95b4d94864d2bdd899d4f70c79d2e4863abb8a5a42b3246d54b7439141dc1",
+  "pipeline_v05.py": "e5b6f290b0ea01ae1f80d7e7c2356864035d44f7b07aa9c213f32f2eb78b5af6",
+  "audit_lib.py": "dad2208c051fb5a50af3ff9166b0c1e2cada7b12e315ae9fdb0f52a87b9491ab",
+  "splits_v04.py": "22c8bbf8f9e703095dfafb32e0049056c464653a810d385a1b46ac050da26e6e",
+  "paths.py": "5f153e53d8a500fb6d53977e9e1980fa264487c3a0e883172480b373908b1128",
+  "pseudobulk_v04.py": "82ddfbadae3a93d091a254944bea8e202e2eee723f98147383c23c285c960d40",
+  "download_resumable.py": "315dbe2ee6aa6b8f5c84e1039f0669fa47b399e3ff91410fd29d074f586e8cf9"
+ },
+ "reused_code_unchanged_since_v0.5.1": {
+  "models_v04.py": true,
+  "pipeline_v05.py": true,
+  "audit_lib.py": true,
+  "splits_v04.py": true,
+  "paths.py": true
+ },
+ "dev_inputs_sha256": {
+  "data/processed/v0.3_figshare_k562ess/p0v3_units_all_targets.csv": "a1fe5b88bb8753bdda7886675f94ed978e67316111f987e883c8cc021cc897ea",
+  "data/processed/v0.4/pseudobulk_logmean.npy": "d381611783a97142fa864c62d421e6158128ee2db648d8a37d42b0cbc02cab91",
+  "data/processed/v0.4/pseudobulk_rows.csv": "421e3be30447c705774dde75916bc5522afdb7ea72031344cb2851ea09836b33",
+  "data/processed/v0.4/pseudobulk_genes.csv": "2d95b3c995cb13c682123da0295421c354e70e14f0a463fdcc95eb75fc39559e",
+  "data/processed/priors/go_ase100.npz": "1bd09731639327cc4ac0c5e8103e875684e59b2feae2d5cc329a3d9ea7eaacbd",
+  "data/processed/priors/string_expdb_v0.4_universe.parquet": "4b3fdd7f239b65f5aed0f6dee673ce00d25c9cb3e0d3ba74b55b908acea3d9c1",
+  "data/raw/raw_manifest.json": "db27e9c45dc892264dcffcfadd51f0243a5eef544b9f6ed61cdc443f67415a3d"
+ },
+ "confirmation_files": {
+  "K562_gwps_raw_singlecell_01.h5ad": {
+   "size_bytes": 65830941948,
+   "md5": "887e3e6a8c8df6eadf7a3030a53c9546",
+   "sha256": "b697ef7fedcec2972ec334608f86f2a29cb25e70c81b6725195f4cda60a9de2c"
+  },
+  "rpe1_raw_bulk_01.h5ad": {
+   "size_bytes": 95350546,
+   "md5": "74765fa87635467a869ea972356ae0e7",
+   "sha256": "603c655f1cfa41d649baf3ae63fca224cc11f297e40d4ed59d390b1e8d2e2db2"
+  },
+  "K562_gwps_raw_bulk_01.h5ad": {
+   "size_bytes": 374587922,
+   "md5": "4570b53c9d62ff6df281e622f0350060",
+   "sha256": "7cec96b3b76169abbf6b6ab9d10bf00d71d942d89e63292351f745e130b154db"
+  },
+  "rpe1_raw_singlecell_01.h5ad": {
+   "size_bytes": 8700873216,
+   "md5": "6a2a9d0d2bf4ec147f4d1104043b268c",
+   "sha256": "9b05ef1f81526216fa008d677e9e0d03dce9a2f7a95499a4fb81e505e9d88ef1"
+  }
+ },
+ "raw_manifest_additions_sha256": "55e4ba9ac7538e613f36281675d6f69896a3013d22fa7fbab90f6c427f5b7420",
+ "confirmation_data_accessed_before_freeze": "file size, MD5/SHA256 (download verification) and HDF5 shape/dtype/chunks/compression of X only; no values",
+ "environments": {
+  "python": "pert-audit (Python 3.11.16; manifests/env_pert-audit.yml)",
+  "r": "pert-audit-r (R 4.5, lme4, arrow, jsonlite; conda-forge)"
+ }
+}

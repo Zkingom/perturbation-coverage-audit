@@ -1,0 +1,23 @@
+{
+ "cells": 310385,
+ "genes": 8563,
+ "rows": 2273,
+ "library_size": "obs.UMI_count",
+ "mean_fraction_of_UMI_in_retained_genes": 0.9857483946452463,
+ "obs_keys": [
+  "UMI_count",
+  "__categories",
+  "cell_barcode",
+  "core_adjusted_UMI_count",
+  "core_scale_factor",
+  "gem_group",
+  "gene",
+  "gene_id",
+  "gene_transcript",
+  "mitopercent",
+  "sgID_AB",
+  "transcript",
+  "z_gemgroup_UMI"
+ ],
+ "seconds": 69
+}

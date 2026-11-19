@@ -1,0 +1,7 @@
+2026-10-12T06:10:52Z available memory at start 3.77 GB; process memory cap 4.0 GB
+2026-10-12T06:31:10Z K562_gwps_raw_singlecell_01.h5ad: size and sha256 match the freeze manifest
+2026-10-12T06:31:10Z K562_gwps_raw_bulk_01.h5ad: size and sha256 match the freeze manifest
+2026-10-12T06:31:14Z H:\cs+bio_file\K562_gwps_raw_singlecell_01.h5ad: 1989578 cells x 8248 genes, 11187 rows, passes=2, free=4.68 GB
+2026-10-12T07:25:26Z {"cells": 1989578, "genes": 8248, "rows": 11187, "passes": 2, "seconds": 3255, "qc_vs_bulk": {"rows_single_cell": 11187, "rows_bulk": 11258, "rows_compared": 11187, "genes_identical": true, "max_abs_diff": 2.4414062522737368e-05, "max_rel_diff": 5.9493438543758805e-08, "n_entries_outside_tol": 0, "tolerance": "0.001 + 0.0001 x |bulk|", "cell_counts_match_bulk": true, "pass": true}}
+2026-10-12T07:37:55Z Ensembl: 7800 ids, by id 7792, by symbol 7, missing 1, release {'releases': [116]}, assembly GRCh38.p14
+2026-10-12T07:38:14Z C0 done: E=5683 TSS groups=5449 QC pass=True step-2 power at dev estimate=1.00 stop_low_power=False

@@ -1,0 +1,23 @@
+{
+ "n_units": 237,
+ "n_singles": 105,
+ "n_doubles": 131,
+ "n_E": 129,
+ "n_always_train": 107,
+ "n_ctrl_cells": 11855,
+ "n_readout_threshold": 8188,
+ "n_readout": 8234,
+ "targets": 105,
+ "targets_missing_from_file": [
+  "C19orf26",
+  "C3orf72",
+  "KIAA1804"
+ ],
+ "doubles_excluded_missing_target": [
+  "C19orf26_TGFBR2",
+  "C3orf72_FOXL2"
+ ],
+ "E_cells_median": 301.0,
+ "E_cells_min": 54,
+ "underpowered_flag": false
+}

@@ -1,0 +1,20 @@
+{
+ "mode": "v07dev",
+ "seconds_stages234": 2.085569143295288,
+ "seconds_sens": 0.07891154289245605,
+ "coverage_rows": 1,
+ "memory": {
+  "peak_rss_sampled_gb": 1.4809379577636719,
+  "peak_working_set_gb": 2.542163848876953,
+  "min_system_available_gb": 4.255889892578125,
+  "available_now_gb": 4.743690490722656
+ },
+ "threads": {
+  "OMP_NUM_THREADS": "8",
+  "MKL_NUM_THREADS": "8",
+  "OPENBLAS_NUM_THREADS": "8"
+ },
+ "selection": {
+  "stub": 1
+ }
+}

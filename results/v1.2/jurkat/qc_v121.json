@@ -1,0 +1,40 @@
+{
+ "Q1_integer_counts": {
+  "nonzero_values": 919517294,
+  "non_integer": 0,
+  "negative": 0,
+  "pass": true
+ },
+ "Q2_cells": {
+  "n": 262956,
+  "geo": 262956,
+  "ratio": 1.0,
+  "pass": true
+ },
+ "Q3_genes": {
+  "n": 8882,
+  "geo": 8882,
+  "ratio": 1.0,
+  "pass": true
+ },
+ "Q4_targets": {
+  "n": 2393,
+  "design": 2393,
+  "ratio": 1.0,
+  "pass": true
+ },
+ "Q5_control_cells": {
+  "label": "control",
+  "n": 12013,
+  "pass": true
+ },
+ "all_pass": true,
+ "library_size_record": {
+  "ncounts_minus_rowsum_max_abs": 0.0,
+  "ncounts_over_rowsum_median": 1.0,
+  "corr_UMI_count_rowsum": 0.9999706981655474,
+  "UMI_count_minus_rowsum_max_abs": 4178.0,
+  "rule": "v1.2.1 section 5: library size = ncounts if present"
+ },
+ "seconds": 83.5
+}

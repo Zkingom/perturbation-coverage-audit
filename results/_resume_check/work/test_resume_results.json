@@ -1,0 +1,45 @@
+{
+ "T1a stage1 killed mid-split leaves no completed split": {
+  "pass": true,
+  "detail": "killed"
+ },
+ "T1b resumed stage1 split 00 byte-identical to one-shot pipeline_v06.stage1": {
+  "pass": true,
+  "detail": 0
+ },
+ "T1c truncated file with stale marker is detected as incomplete": {
+  "pass": true,
+  "detail": null
+ },
+ "T1d recomputed split 00 byte-identical again": {
+  "pass": true,
+  "detail": 0
+ },
+ "T2a ext killed mid-split leaves no completed file": {
+  "pass": true,
+  "detail": "killed"
+ },
+ "T2b resumed ext arrays bitwise identical to one-shot ext": {
+  "pass": true,
+  "detail": 0
+ },
+ "T3a stage2 killed during split 01 after split 00 completed": {
+  "pass": true,
+  "detail": "killed"
+ },
+ "T3b resumed stage-2 rows (splits 00, 01) identical to the one-shot run_dataset rows": {
+  "pass": true,
+  "detail": {
+   "rows": 276451,
+   "ref_rows": 276451
+  }
+ },
+ "T3c proxy rows identical": {
+  "pass": true,
+  "detail": 42924
+ },
+ "T3d covariate rows identical": {
+  "pass": true,
+  "detail": null
+ }
+}

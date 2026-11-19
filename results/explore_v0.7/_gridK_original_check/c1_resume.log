@@ -1,0 +1,8 @@
+2026-10-15T13:19:48Z available memory at start 3.31 GB; process memory cap 4.0 GB; 130 min to the power cut
+2026-10-15T13:19:53Z time check for stage1 split 00: 115 min usable before the power cut, need 15 min -> start
+2026-10-15T13:21:46Z stage1 split 00 round 0 fold 0 K=50 d=100 n_test=251 112.9s
+2026-10-15T13:21:46Z time check for ext split 00: 113 min usable before the power cut, need 8 min -> start
+2026-10-15T13:22:53Z ext split 00: K=50 unc_calt median 0.4736 oof median 0.4600 n_oob min 8 (<3: 0)
+2026-10-15T13:22:53Z time check for stage2 split 00: 112 min usable before the power cut, need 30 min -> start
+2026-10-15T13:25:12Z stage2 split 00: 135791 rows 140s
+2026-10-15T13:25:12Z run done rc=0 seconds={"stage1": 113, "ext": 67, "stage2": 140} peak RSS 1.32 GB

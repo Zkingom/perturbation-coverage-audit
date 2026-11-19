@@ -1,0 +1,2 @@
+2026-10-15T13:25:34Z available memory at start 2.39 GB; process memory cap 4.0 GB; 124 min to the power cut
+2026-10-15T13:25:34Z STOP: available memory 2.39 GB < 2.5 GB

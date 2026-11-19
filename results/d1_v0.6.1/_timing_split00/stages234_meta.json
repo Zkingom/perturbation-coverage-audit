@@ -1,0 +1,143 @@
+{
+ "mode": "time_one",
+ "seconds_stages234": 324.96618914604187,
+ "seconds_sens": 104.26901125907898,
+ "coverage_rows": 121125,
+ "coverage_rows_mem_gb": 0.05599894281476736,
+ "memory": {
+  "peak_rss_sampled_gb": 0.8205146789550781,
+  "peak_working_set_gb": 0.8660430908203125,
+  "min_system_available_gb": 3.218700408935547,
+  "available_now_gb": 4.781768798828125
+ },
+ "threads": {
+  "OMP_NUM_THREADS": "8",
+  "MKL_NUM_THREADS": "8",
+  "OPENBLAS_NUM_THREADS": "8"
+ },
+ "selection": {
+  "h": "sim_prior|ridge",
+  "rho_h": {
+   "sim+nbq|gbm": 0.20711049675775822,
+   "sim+nbq|ridge": 0.2982420970356647,
+   "sim_prior+nbq|gbm": 0.40340001157943495,
+   "sim_prior+nbq|ridge": 0.4367053612783696,
+   "sim_prior_base+nbq|gbm": 0.40299690250115794,
+   "sim_prior_base+nbq|ridge": 0.4350400937934229,
+   "sim_prior_base_model+nbq|gbm": 0.4011224814729042,
+   "sim_prior_base_model+nbq|ridge": 0.4321256947660954,
+   "sim_prior_base_model|gbm": 0.3812087482630848,
+   "sim_prior_base_model|ridge": 0.43801456113941645,
+   "sim_prior_base|gbm": 0.38128546201945346,
+   "sim_prior_base|ridge": 0.43960745715609084,
+   "sim_prior|gbm": 0.39767904701250584,
+   "sim_prior|ridge": 0.4396219314497453,
+   "sim|gbm": 0.1874507874015748,
+   "sim|ridge": 0.23121091940713295
+  },
+  "d": "ridge",
+  "rho_d": {
+   "gbm": 0.15013099235757296,
+   "ridge": 0.25566813339509037
+  },
+  "s": "ridge",
+  "rho_s": {
+   "gbm": 0.3668726841130153,
+   "ridge": 0.36913935849930524
+  },
+  "hypers": {
+   "M1": "0.25",
+   "M2": "3",
+   "M3": "quad",
+   "Mdist-N": "1.0",
+   "Mdist-M": "3",
+   "Mscore-N": "0.0",
+   "Mcomb-N": "0.0",
+   "Mcomb-3": "lin2",
+   "oracle": "1.0"
+  },
+  "hyper_detail": {
+   "M1": {
+    "chosen": "0.25",
+    "T5_matched": {
+     "0.0": 0.6444444444444445,
+     "0.25": 0.6444444444444445,
+     "0.5": 0.6222222222222222,
+     "1.0": 0.6222222222222222
+    }
+   },
+   "M2": {
+    "chosen": "3",
+    "T5_matched": {
+     "3": 0.6888888888888889,
+     "5": 0.6888888888888889
+    }
+   },
+   "M3": {
+    "chosen": "quad",
+    "T5_matched": {
+     "ns3": 0.6222222222222222,
+     "ns5": 0.6222222222222222,
+     "quad": 0.6666666666666666
+    }
+   },
+   "Mdist-N": {
+    "chosen": "1.0",
+    "T5_matched": {
+     "0.0": 0.5777777777777777,
+     "0.25": 0.5777777777777777,
+     "0.5": 0.6,
+     "1.0": 0.6
+    }
+   },
+   "Mdist-M": {
+    "chosen": "3",
+    "T5_matched": {
+     "3": 0.6,
+     "5": 0.6
+    }
+   },
+   "Mscore-N": {
+    "chosen": "0.0",
+    "T5_matched": {
+     "0.0": 0.6666666666666666,
+     "0.25": 0.6444444444444445,
+     "0.5": 0.6444444444444445,
+     "1.0": 0.6
+    }
+   },
+   "Mcomb-N": {
+    "chosen": "0.0",
+    "T5_matched": {
+     "0.0": 0.6444444444444445,
+     "0.25": 0.6222222222222222,
+     "0.5": 0.6222222222222222,
+     "1.0": 0.6
+    }
+   },
+   "Mcomb-3": {
+    "chosen": "lin2",
+    "T5_matched": {
+     "lin2": 0.6222222222222222
+    }
+   },
+   "oracle": {
+    "chosen": "1.0",
+    "T5_matched": {
+     "0.0": 1.0,
+     "0.25": 1.0,
+     "0.5": 1.0,
+     "1.0": 1.0
+    }
+   }
+  },
+  "primary": [
+   "M2",
+   "3"
+  ],
+  "best_dist": [
+   "Mdist-N",
+   "1.0"
+  ]
+ }
+}

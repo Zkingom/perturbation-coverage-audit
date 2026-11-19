@@ -1,0 +1,7 @@
+21:16:24 dev: effect strengths
+21:16:46 dev: bootstrap
+21:17:06 rpe1: effect strengths
+21:17:28 rpe1: bootstrap
+21:17:51 gwps: effect strengths
+21:18:55 gwps: bootstrap
+21:19:32 done

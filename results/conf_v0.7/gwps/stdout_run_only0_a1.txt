@@ -1,0 +1,5 @@
+2026-10-13T00:06:08Z available memory at start 4.67 GB; process memory cap 4.0 GB; 924 min to the power cut
+2026-10-13T00:06:21Z time check for stage1 split 00: 909 min usable before the power cut, need 15 min -> start
+2026-10-13T00:11:28Z stage1 split 00 round 0 fold 0 K=50 d=100 n_test=812 307.6s
+2026-10-13T00:11:28Z time check for ext split 00: 904 min usable before the power cut, need 8 min -> start
+2026-10-13T00:12:17Z STOP: process RSS 4.07 GB > cap 4.0 GB (memory watchdog); partial output discarded

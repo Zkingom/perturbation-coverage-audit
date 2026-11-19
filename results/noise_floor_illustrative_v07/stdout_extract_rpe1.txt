@@ -1,0 +1,6 @@
+G:\biology\figshare_20029387_v1\rpe1_raw_singlecell_01.h5ad: 247914 cells, 11485 non-targeting, keeping 11485
+08:18:05 rows 4000/247914 kept 170
+08:18:09 rows 84000/247914 kept 3932
+08:18:12 rows 164000/247914 kept 7569
+08:18:16 rows 244000/247914 kept 11303
+{"dataset": "rpe1", "input": "G:\\biology\\figshare_20029387_v1\\rpe1_raw_singlecell_01.h5ad", "n_cells_file": 247914, "n_ctrl_total": 11485, "n_ctrl_kept": 11485, "seed": 20270501, "genes": 8749, "per_cell_transform": "log1p(1e4*counts/UMI_count), float64 -> stored float32", "control_guides": 113, "seconds": 12}

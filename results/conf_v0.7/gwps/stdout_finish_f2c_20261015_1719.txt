@@ -1,0 +1,12 @@
+2026-10-15T09:19:17Z available memory at start 4.86 GB; process memory cap 4.8 GB; 371 min to the power cut
+2026-10-15T09:19:30Z time check for finish F2c (summarise + confirmatory analysis): 355 min usable before the power cut, need 90 min -> start
+2026-10-15T09:19:32Z selected proxies: h=sim_prior|ridge d=ridge s=ridge
+2026-10-15T09:19:47Z F2: 315 main + 840 perm frames, 8541549 main rows, 23 columns
+2026-10-15T09:20:30Z F2c: code store built, 9223509 rows
+2026-10-15T09:20:30Z primary M1 0.0; best M_dist Mdist-M 3
+2026-10-15T09:23:16Z F2c: summary.json written
+2026-10-15T09:58:59Z confirm_v07: randomised matching rows 238686
+F:\codex_in_this\claude_science\code\eval_v06.py:251: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+2026-10-15T09:59:55Z classification: step 1 not passed: repair not confirmed
+2026-10-15T09:59:55Z run done rc=0 seconds={"stage1": 1, "ext": 0, "stage2": 2, "finish": 2424} peak RSS 2.75 GB

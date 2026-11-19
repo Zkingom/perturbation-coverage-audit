@@ -1,0 +1,1 @@
+{"input": "H:\\cs+bio_file\\K562_gwps_raw_singlecell_01.h5ad", "outdir": "F:\\codex_in_this\\claude_science\\data\\processed\\v0.7\\gwps", "passes": 2, "started_utc": "2026-10-12T06:31:10Z", "pid": 25424, "cells": 1989578, "genes": 8248, "rows": 11187, "phase": "done", "qc_pass": true, "updated_utc": "2026-10-12T07:25:26Z"}

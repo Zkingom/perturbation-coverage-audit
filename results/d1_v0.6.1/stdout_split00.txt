@@ -1,0 +1,18 @@
+2026-10-08T11:35:41Z loaded dev data: units=2043 E=1786 AT=257 genes=8563 in 3s; memory {"peak_rss_sampled_gb": 0.7564773559570312, "peak_working_set_gb": 0.8655967712402344, "min_system_available_gb": 4.055355072021484, "available_now_gb": 4.071361541748047}; threads {'OMP_NUM_THREADS': '8', 'MKL_NUM_THREADS': '8', 'OPENBLAS_NUM_THREADS': '8'}
+Traceback (most recent call last):
+  File "F:\codex_in_this\claude_science\code\d1_run_v061.py", line 197, in <module>
+    raise SystemExit(do_pseudobulk() if a.mode == "pseudobulk" else do_stage1(a.only))
+                                                                    ^^^^^^^^^^^^^^^^^
+  File "F:\codex_in_this\claude_science\code\d1_run_v061.py", line 172, in do_stage1
+    c = ev.compute_split(i, splits[i], D)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\codex_in_this\claude_science\code\eval_v06.py", line 94, in compute_split
+    Yo[te] = refit_predict(U, Y, y_ctrl, pri, pool[~te], pool[te], kind, par)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\codex_in_this\claude_science\code\eval_v06.py", line 45, in refit_predict
+    return f(np.vstack([GK[U.tcols.values[i][0]] for i in query]))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\codex_in_this\claude_science\code\eval_v06.py", line 45, in <listcomp>
+    return f(np.vstack([GK[U.tcols.values[i][0]] for i in query]))
+                           ~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0

@@ -1,0 +1,41 @@
+{
+ "rows_bulk": 2679,
+ "control_rows": 130,
+ "excluded_rows": 0,
+ "secondary_rows": 156,
+ "targets": 2393,
+ "readout_genes": 9624,
+ "in_R": 2168,
+ "in_GO": 2373,
+ "cells_ge30": 1804,
+ "E": 1632,
+ "E_noGO": 6,
+ "E_tss_groups": 1569,
+ "always_train": 726,
+ "dropped_tss_conflict": 35,
+ "coord_source": {
+  "archive_ensembl116": 2055,
+  "id": 335,
+  "symbol": 3
+ },
+ "ncells_E": {
+  "min": 30,
+  "median": 54.0,
+  "max": 1213
+ },
+ "cells": 145473,
+ "genes": 9624,
+ "rows": 2679,
+ "library_size": "obs ncounts (v1.2.1 section 5)",
+ "half_seed": 20276002,
+ "half_reconstruction_max_abs_diff": 4.440892098500626e-15,
+ "split_seed_base": 20277002,
+ "n_splits": 21,
+ "test_size_range": [
+  233,
+  234
+ ],
+ "cal_size": 244,
+ "val_size": 163,
+ "seconds": 298.4
+}

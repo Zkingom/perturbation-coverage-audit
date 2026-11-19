@@ -1,0 +1,48 @@
+{
+ "identity": {
+  "n_cells": 30707,
+  "paper_cells": 31308,
+  "ratio": 0.9808036284655679,
+  "pass": true,
+  "guide_classes": {
+   "Dual": 28095,
+   "Single": 2188,
+   "NT": 424
+  }
+ },
+ "G1_evaluable_pairs": {
+  "n": 136,
+  "threshold": 60,
+  "pass": true
+ },
+ "G2_single_coverage": {
+  "pairs_ge30": 157,
+  "with_both_singles_ge30": 136,
+  "frac": 0.8662420382165605,
+  "pass": false
+ },
+ "G3_control_cells": {
+  "label": "nperts == 0 (Guide.Class NT)",
+  "n": 424,
+  "threshold": 500,
+  "pass": false
+ },
+ "G4_integer_counts": {
+  "dtype": "int64",
+  "negative": 0,
+  "non_integer": 0,
+  "pass": true
+ },
+ "G5_genes": {
+  "n": 24,
+  "threshold": 10,
+  "pass": true
+ },
+ "n_singles": 28,
+ "singles_ge30": 26,
+ "n_doubles": 158,
+ "doubles_ge30": 157,
+ "doubles_cells_median": 149.5,
+ "max_pairs_per_gene": 19,
+ "all_pass": false
+}

@@ -1,0 +1,71 @@
+GEARS v0.7 run summary — generated 2026-10-28 02:10:01
+
+split 00: DONE  epochs=20 hidden=64 unc=False bs=32 seed=1 finite=True n_pred=688 peak_rss=12.26GB total=84min
+split 01: DONE  epochs=20 hidden=64 unc=False bs=32 seed=1 finite=True n_pred=687 peak_rss=11.64GB total=82min
+split 02: DONE  epochs=20 hidden=64 unc=False bs=32 seed=1 finite=True n_pred=687 peak_rss=12.81GB total=82min
+split 03: DONE  epochs=20 hidden=64 unc=False bs=32 seed=1 finite=True n_pred=687 peak_rss=11.79GB total=82min
+split 04: DONE  epochs=20 hidden=64 unc=False bs=32 seed=1 finite=True n_pred=686 peak_rss=11.63GB total=83min
+split 05: DONE  epochs=20 hidden=64 unc=False bs=32 seed=1 finite=True n_pred=687 peak_rss=11.86GB total=82min
+split 06: DONE  epochs=20 hidden=64 unc=False bs=32 seed=1 finite=True n_pred=687 peak_rss=12.19GB total=82min
+split 07: DONE  epochs=20 hidden=64 unc=False bs=32 seed=1 finite=True n_pred=688 peak_rss=12.05GB total=82min
+split 08: DONE  epochs=20 hidden=64 unc=False bs=32 seed=1 finite=True n_pred=687 peak_rss=11.59GB total=84min
+split 09: DONE  epochs=20 hidden=64 unc=False bs=32 seed=1 finite=True n_pred=687 peak_rss=11.58GB total=82min
+split 10: DONE  epochs=20 hidden=64 unc=False bs=32 seed=1 finite=True n_pred=687 peak_rss=11.61GB total=83min
+split 11: DONE  epochs=20 hidden=64 unc=False bs=32 seed=1 finite=True n_pred=687 peak_rss=11.81GB total=83min
+split 12: DONE  epochs=20 hidden=64 unc=False bs=32 seed=1 finite=True n_pred=687 peak_rss=11.57GB total=82min
+split 13: DONE  epochs=20 hidden=64 unc=False bs=32 seed=1 finite=True n_pred=687 peak_rss=11.83GB total=82min
+split 14: DONE  epochs=20 hidden=64 unc=False bs=32 seed=1 finite=True n_pred=688 peak_rss=12.12GB total=81min
+split 15: DONE  epochs=20 hidden=64 unc=False bs=32 seed=1 finite=True n_pred=687 peak_rss=12.2GB total=81min
+split 16: DONE  epochs=20 hidden=64 unc=False bs=32 seed=1 finite=True n_pred=687 peak_rss=12.72GB total=82min
+split 17: DONE  epochs=20 hidden=64 unc=False bs=32 seed=1 finite=True n_pred=687 peak_rss=11.68GB total=82min
+split 18: DONE  epochs=20 hidden=64 unc=False bs=32 seed=1 finite=True n_pred=687 peak_rss=11.85GB total=82min
+split 19: DONE  epochs=20 hidden=64 unc=False bs=32 seed=1 finite=True n_pred=687 peak_rss=12.02GB total=80min
+split 20: DONE  epochs=20 hidden=64 unc=False bs=32 seed=1 finite=True n_pred=687 peak_rss=11.76GB total=82min
+
+DONE 21/21; missing: none
+
+--- run_all_timing.txt ---
+2026-10-26 22:00:33 split 00 结束 rc=0 用时 84 分钟
+2026-10-26 23:23:02 split 01 结束 rc=0 用时 82 分钟
+2026-10-27 00:46:17 split 02 结束 rc=0 用时 82 分钟
+2026-10-27 02:08:54 split 03 结束 rc=0 用时 82 分钟
+2026-10-27 03:32:20 split 04 结束 rc=0 用时 82 分钟
+2026-10-27 04:55:51 split 05 结束 rc=0 用时 81 分钟
+2026-10-27 06:20:10 split 06 结束 rc=0 用时 82 分钟
+2026-10-27 07:44:26 split 07 结束 rc=0 用时 82 分钟
+2026-10-27 09:10:17 split 08 结束 rc=0 用时 84 分钟
+2026-10-27 10:34:52 split 09 结束 rc=0 用时 82 分钟
+2026-10-27 11:59:43 split 10 结束 rc=0 用时 83 分钟
+2026-10-27 13:24:38 split 11 结束 rc=0 用时 83 分钟
+2026-10-27 14:49:04 split 12 结束 rc=0 用时 82 分钟
+2026-10-27 16:13:25 split 13 结束 rc=0 用时 82 分钟
+2026-10-27 17:37:12 split 14 结束 rc=0 用时 81 分钟
+2026-10-27 19:00:46 split 15 结束 rc=0 用时 81 分钟
+2026-10-27 20:25:18 split 16 结束 rc=0 用时 82 分钟
+2026-10-27 21:49:58 split 17 结束 rc=0 用时 82 分钟
+2026-10-27 23:14:17 split 18 结束 rc=0 用时 82 分钟
+2026-10-28 00:36:53 split 19 结束 rc=0 用时 80 分钟
+2026-10-28 02:01:00 split 20 结束 rc=0 用时 81 分钟
+
+--- verify (code/gears_server_run.py verify) ---
+2026-10-28 02:01:54 verify: 21/21 splits done and hash-verified
+
+--- bundle check ---
+rc=0
+BUNDLE OK (code/, data/, priors/, splits/ unchanged)
+
+--- postchecks ---
+(A) fast_predict inputs identical to original for 8 real test perturbations: True
+(B) split00 float64 edges=13728 cached(float32 on this machine) edges=13728 identical_edge_set=True only_in_f64=0 only_in_cache=0
+(B) min gap between rank k+1 and k+2 over genes = 4.361e-08; genes with gap<1e-5: 198; min |selected-|r| - 0.4| = 2.851e-05
+
+--- coexp manifest (last line) ---
+# distinct coexp files: 21 / 21 ; files shared by >1 split: none
+
+--- files to download ---
+/root/autodl-tmp/gears/gears_bundle_v07/gears_results_v07.tar.gz  743.5 MB  sha256=05a957c4e384330153b9aabe7c8cb4b1cd56b5000196c10370515f5307d1300d
+/root/autodl-tmp/gears/gears_bundle_v07/gears_results_v07.tar.gz.sha256  0.0 MB
+/root/autodl-tmp/gears/gears_audit_v07.tar.gz  3.2 MB  sha256=e92e9bb9c3f76fc2c537d9040725bffa0dab2af871cefc41fa121defe4254b95
+/root/autodl-tmp/gears/gears_audit_v07.tar.gz.sha256  0.0 MB
+
+READY TO DOWNLOAD

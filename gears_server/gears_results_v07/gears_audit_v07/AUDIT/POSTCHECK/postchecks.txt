@@ -1,0 +1,3 @@
+(A) fast_predict inputs identical to original for 8 real test perturbations: True
+(B) split00 float64 edges=13728 cached(float32 on this machine) edges=13728 identical_edge_set=True only_in_f64=0 only_in_cache=0
+(B) min gap between rank k+1 and k+2 over genes = 4.361e-08; genes with gap<1e-5: 198; min |selected-|r| - 0.4| = 2.851e-05

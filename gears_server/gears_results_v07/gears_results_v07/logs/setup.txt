@@ -1,0 +1,36 @@
+
+[notice] A new release of pip is available: 24.3.1 -> 26.2.2
+[notice] To update, run: pip install --upgrade pip
+
+[notice] A new release of pip is available: 24.3.1 -> 26.2.2
+[notice] To update, run: pip install --upgrade pip
+/root/autodl-tmp/gears/gears_bundle_v07/venv_gears/lib/python3.10/site-packages/numba/np/ufunc/parallel.py:371: NumbaWarning: The TBB threading layer requires TBB version 2021 update 6 or later i.e., TBB_INTERFACE_VERSION >= 12060. Found TBB_INTERFACE_VERSION = 12050. The TBB threading layer is disabled.
+  warnings.warn(problem)
+{
+ "python": "3.10.8",
+ "torch": "2.3.0+cu121",
+ "cuda": "12.1",
+ "cuda_available": true,
+ "gpu": "NVIDIA GeForce RTX 3060",
+ "gpu_mem_gb": 11.8,
+ "packages": {
+  "cell-gears": "0.1.2",
+  "torch-geometric": "2.5.3",
+  "numpy": "1.26.4",
+  "pandas": "2.2.2",
+  "scanpy": "1.10.1",
+  "anndata": "0.10.7",
+  "scipy": "1.13.1",
+  "scikit-learn": "1.5.0",
+  "networkx": "3.3",
+  "dcor": "0.6"
+ },
+ "gpu_matmul_ok": true,
+ "host_mem_gb": 125.8,
+ "cpu": "Model name:                      Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz",
+ "nproc": 7,
+ "pins_ok": true,
+ "pass": true
+}
+bundle SHA256 OK
+SETUP PASS

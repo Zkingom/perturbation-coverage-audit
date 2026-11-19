@@ -1,0 +1,4 @@
+2026-10-10T12:57:40Z confirm_v07: randomised matching rows 73542
+F:\codex_in_this\claude_science\code\eval_v06.py:251: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+2026-10-10T12:58:12Z classification: steps 1 and 2 passed: the deployable prior-neighbour proxy repairs part of the failure and adds to the strongest distance / difficulty baseline

@@ -1,0 +1,8 @@
+# Project-level configuration for the perturbation conformal audit.
+# This file is NOT the Claude Science application config.
+# project_root: "." means the directory containing this file.
+# download_root: the only absolute path in the project; override with env var PERTAUDIT_DL.
+project_root = "."
+download_root = "G:/biology"
+master_seed = 20261001
+protocol_version = "0.4"

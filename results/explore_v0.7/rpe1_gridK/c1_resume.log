@@ -1,0 +1,138 @@
+2026-10-15T13:25:34Z available memory at start 2.39 GB; process memory cap 4.0 GB; 124 min to the power cut
+2026-10-15T13:25:34Z STOP: available memory 2.39 GB < 2.5 GB
+2026-10-16T00:26:09Z available memory at start 4.80 GB; process memory cap 4.0 GB; 904 min to the power cut
+2026-10-16T00:26:11Z time check for stage1 split 00: 889 min usable before the power cut, need 15 min -> start
+2026-10-16T00:28:16Z stage1 split 00 round 0 fold 0 K=200 d=200 n_test=251 125.2s
+2026-10-16T00:28:16Z time check for stage1 split 01: 887 min usable before the power cut, need 3 min -> start
+2026-10-16T00:30:21Z stage1 split 01 round 0 fold 1 K=50 d=200 n_test=250 124.9s
+2026-10-16T00:30:21Z time check for stage1 split 02: 885 min usable before the power cut, need 3 min -> start
+2026-10-16T00:32:27Z stage1 split 02 round 0 fold 2 K=100 d=200 n_test=250 125.7s
+2026-10-16T00:32:27Z time check for stage1 split 03: 883 min usable before the power cut, need 3 min -> start
+2026-10-16T00:34:31Z stage1 split 03 round 0 fold 3 K=100 d=200 n_test=250 124.2s
+2026-10-16T00:34:31Z time check for stage1 split 04: 880 min usable before the power cut, need 3 min -> start
+2026-10-16T00:36:35Z stage1 split 04 round 0 fold 4 K=50 d=200 n_test=250 123.9s
+2026-10-16T00:36:35Z time check for stage1 split 05: 878 min usable before the power cut, need 3 min -> start
+2026-10-16T00:38:39Z stage1 split 05 round 0 fold 5 K=100 d=200 n_test=250 124.6s
+2026-10-16T00:38:39Z time check for stage1 split 06: 876 min usable before the power cut, need 3 min -> start
+2026-10-16T00:40:43Z stage1 split 06 round 0 fold 6 K=200 d=200 n_test=250 124.0s
+2026-10-16T00:40:43Z time check for stage1 split 07: 874 min usable before the power cut, need 3 min -> start
+2026-10-16T00:42:48Z stage1 split 07 round 1 fold 0 K=50 d=200 n_test=251 124.2s
+2026-10-16T00:42:48Z time check for stage1 split 08: 872 min usable before the power cut, need 3 min -> start
+2026-10-16T00:44:52Z stage1 split 08 round 1 fold 1 K=50 d=200 n_test=250 124.4s
+2026-10-16T00:44:52Z time check for stage1 split 09: 870 min usable before the power cut, need 3 min -> start
+2026-10-16T00:46:56Z stage1 split 09 round 1 fold 2 K=200 d=200 n_test=250 123.9s
+2026-10-16T00:46:56Z time check for stage1 split 10: 868 min usable before the power cut, need 3 min -> start
+2026-10-16T00:49:00Z stage1 split 10 round 1 fold 3 K=100 d=200 n_test=250 124.7s
+2026-10-16T00:49:00Z time check for stage1 split 11: 866 min usable before the power cut, need 3 min -> start
+2026-10-16T00:51:05Z stage1 split 11 round 1 fold 4 K=100 d=200 n_test=250 124.3s
+2026-10-16T00:51:05Z time check for stage1 split 12: 864 min usable before the power cut, need 3 min -> start
+2026-10-16T00:53:08Z stage1 split 12 round 1 fold 5 K=100 d=200 n_test=250 123.7s
+2026-10-16T00:53:08Z time check for stage1 split 13: 862 min usable before the power cut, need 3 min -> start
+2026-10-16T00:55:13Z stage1 split 13 round 1 fold 6 K=50 d=200 n_test=250 124.7s
+2026-10-16T00:55:13Z time check for stage1 split 14: 860 min usable before the power cut, need 3 min -> start
+2026-10-16T00:57:17Z stage1 split 14 round 2 fold 0 K=100 d=200 n_test=251 124.2s
+2026-10-16T00:57:17Z time check for stage1 split 15: 858 min usable before the power cut, need 3 min -> start
+2026-10-16T00:59:22Z stage1 split 15 round 2 fold 1 K=200 d=200 n_test=250 124.3s
+2026-10-16T00:59:22Z time check for stage1 split 16: 856 min usable before the power cut, need 3 min -> start
+2026-10-16T01:01:25Z stage1 split 16 round 2 fold 2 K=50 d=200 n_test=250 123.5s
+2026-10-16T01:01:25Z time check for stage1 split 17: 854 min usable before the power cut, need 3 min -> start
+2026-10-16T01:03:29Z stage1 split 17 round 2 fold 3 K=50 d=200 n_test=250 123.9s
+2026-10-16T01:03:29Z time check for stage1 split 18: 852 min usable before the power cut, need 3 min -> start
+2026-10-16T01:05:33Z stage1 split 18 round 2 fold 4 K=50 d=200 n_test=250 124.0s
+2026-10-16T01:05:33Z time check for stage1 split 19: 849 min usable before the power cut, need 3 min -> start
+2026-10-16T01:07:38Z stage1 split 19 round 2 fold 5 K=200 d=200 n_test=250 124.6s
+2026-10-16T01:07:38Z time check for stage1 split 20: 847 min usable before the power cut, need 3 min -> start
+2026-10-16T01:09:41Z stage1 split 20 round 2 fold 6 K=100 d=200 n_test=250 123.5s
+2026-10-16T01:09:41Z time check for ext split 00: 845 min usable before the power cut, need 8 min -> start
+2026-10-16T01:10:54Z ext split 00: K=200 unc_calt median 1.0175 oof median 1.0461 n_oob min 8 (<3: 0)
+2026-10-16T01:10:54Z time check for ext split 01: 844 min usable before the power cut, need 2 min -> start
+2026-10-16T01:12:02Z ext split 01: K=50 unc_calt median 0.4665 oof median 0.4648 n_oob min 6 (<3: 0)
+2026-10-16T01:12:02Z time check for ext split 02: 843 min usable before the power cut, need 2 min -> start
+2026-10-16T01:13:13Z ext split 02: K=100 unc_calt median 0.7390 oof median 0.6892 n_oob min 9 (<3: 0)
+2026-10-16T01:13:13Z time check for ext split 03: 842 min usable before the power cut, need 2 min -> start
+2026-10-16T01:14:23Z ext split 03: K=100 unc_calt median 0.6856 oof median 0.6917 n_oob min 9 (<3: 0)
+2026-10-16T01:14:23Z time check for ext split 04: 841 min usable before the power cut, need 2 min -> start
+2026-10-16T01:15:31Z ext split 04: K=50 unc_calt median 0.5012 oof median 0.4643 n_oob min 8 (<3: 0)
+2026-10-16T01:15:31Z time check for ext split 05: 839 min usable before the power cut, need 2 min -> start
+2026-10-16T01:16:41Z ext split 05: K=100 unc_calt median 0.6711 oof median 0.6714 n_oob min 8 (<3: 0)
+2026-10-16T01:16:41Z time check for ext split 06: 838 min usable before the power cut, need 2 min -> start
+2026-10-16T01:17:54Z ext split 06: K=200 unc_calt median 1.0426 oof median 1.0200 n_oob min 9 (<3: 0)
+2026-10-16T01:17:54Z time check for ext split 07: 837 min usable before the power cut, need 2 min -> start
+2026-10-16T01:19:02Z ext split 07: K=50 unc_calt median 0.5194 oof median 0.4651 n_oob min 9 (<3: 0)
+2026-10-16T01:19:02Z time check for ext split 08: 836 min usable before the power cut, need 2 min -> start
+2026-10-16T01:20:10Z ext split 08: K=50 unc_calt median 0.4542 oof median 0.4483 n_oob min 10 (<3: 0)
+2026-10-16T01:20:10Z time check for ext split 09: 835 min usable before the power cut, need 2 min -> start
+2026-10-16T01:21:24Z ext split 09: K=200 unc_calt median 0.9739 oof median 0.9877 n_oob min 8 (<3: 0)
+2026-10-16T01:21:24Z time check for ext split 10: 834 min usable before the power cut, need 2 min -> start
+2026-10-16T01:22:34Z ext split 10: K=100 unc_calt median 0.7131 oof median 0.6853 n_oob min 8 (<3: 0)
+2026-10-16T01:22:34Z time check for ext split 11: 832 min usable before the power cut, need 2 min -> start
+2026-10-16T01:23:44Z ext split 11: K=100 unc_calt median 0.7103 oof median 0.7050 n_oob min 6 (<3: 0)
+2026-10-16T01:23:44Z time check for ext split 12: 831 min usable before the power cut, need 2 min -> start
+2026-10-16T01:24:55Z ext split 12: K=100 unc_calt median 0.6960 oof median 0.6983 n_oob min 8 (<3: 0)
+2026-10-16T01:24:55Z time check for ext split 13: 830 min usable before the power cut, need 2 min -> start
+2026-10-16T01:26:03Z ext split 13: K=50 unc_calt median 0.4355 oof median 0.4712 n_oob min 7 (<3: 0)
+2026-10-16T01:26:03Z time check for ext split 14: 829 min usable before the power cut, need 2 min -> start
+2026-10-16T01:27:12Z ext split 14: K=100 unc_calt median 0.6831 oof median 0.6699 n_oob min 7 (<3: 0)
+2026-10-16T01:27:12Z time check for ext split 15: 828 min usable before the power cut, need 2 min -> start
+2026-10-16T01:28:26Z ext split 15: K=200 unc_calt median 0.9949 oof median 1.0349 n_oob min 9 (<3: 0)
+2026-10-16T01:28:26Z time check for ext split 16: 827 min usable before the power cut, need 2 min -> start
+2026-10-16T01:29:35Z ext split 16: K=50 unc_calt median 0.4746 oof median 0.4521 n_oob min 9 (<3: 0)
+2026-10-16T01:29:35Z time check for ext split 17: 825 min usable before the power cut, need 2 min -> start
+2026-10-16T01:30:43Z ext split 17: K=50 unc_calt median 0.4635 oof median 0.4682 n_oob min 8 (<3: 0)
+2026-10-16T01:30:43Z time check for ext split 18: 824 min usable before the power cut, need 2 min -> start
+2026-10-16T01:31:52Z ext split 18: K=50 unc_calt median 0.5067 oof median 0.4793 n_oob min 9 (<3: 0)
+2026-10-16T01:31:52Z time check for ext split 19: 823 min usable before the power cut, need 2 min -> start
+2026-10-16T01:33:05Z ext split 19: K=200 unc_calt median 1.0518 oof median 1.0231 n_oob min 9 (<3: 0)
+2026-10-16T01:33:05Z time check for ext split 20: 822 min usable before the power cut, need 2 min -> start
+2026-10-16T01:34:16Z ext split 20: K=100 unc_calt median 0.6698 oof median 0.6674 n_oob min 9 (<3: 0)
+2026-10-16T01:34:16Z time check for stage2 split 00: 821 min usable before the power cut, need 30 min -> start
+2026-10-16T01:36:53Z stage2 split 00: 135791 rows 157s
+2026-10-16T01:36:53Z time check for stage2 split 01: 818 min usable before the power cut, need 4 min -> start
+2026-10-16T01:39:27Z stage2 split 01: 135250 rows 154s
+2026-10-16T01:39:27Z time check for stage2 split 02: 816 min usable before the power cut, need 4 min -> start
+2026-10-16T01:42:00Z stage2 split 02: 135250 rows 153s
+2026-10-16T01:42:00Z time check for stage2 split 03: 813 min usable before the power cut, need 4 min -> start
+2026-10-16T01:44:31Z stage2 split 03: 135250 rows 150s
+2026-10-16T01:44:31Z time check for stage2 split 04: 810 min usable before the power cut, need 4 min -> start
+2026-10-16T01:47:04Z stage2 split 04: 135250 rows 154s
+2026-10-16T01:47:04Z time check for stage2 split 05: 808 min usable before the power cut, need 4 min -> start
+2026-10-16T01:49:38Z stage2 split 05: 135250 rows 154s
+2026-10-16T01:49:38Z time check for stage2 split 06: 805 min usable before the power cut, need 4 min -> start
+2026-10-16T01:52:13Z stage2 split 06: 135250 rows 155s
+2026-10-16T01:52:13Z time check for stage2 split 07: 803 min usable before the power cut, need 4 min -> start
+2026-10-16T01:54:44Z stage2 split 07: 135791 rows 151s
+2026-10-16T01:54:44Z time check for stage2 split 08: 800 min usable before the power cut, need 4 min -> start
+2026-10-16T01:57:18Z stage2 split 08: 135250 rows 153s
+2026-10-16T01:57:18Z time check for stage2 split 09: 798 min usable before the power cut, need 4 min -> start
+2026-10-16T01:59:50Z stage2 split 09: 135250 rows 153s
+2026-10-16T01:59:50Z time check for stage2 split 10: 795 min usable before the power cut, need 4 min -> start
+2026-10-16T02:02:27Z stage2 split 10: 135250 rows 157s
+2026-10-16T02:02:27Z time check for stage2 split 11: 793 min usable before the power cut, need 4 min -> start
+2026-10-16T02:04:59Z stage2 split 11: 135250 rows 152s
+2026-10-16T02:04:59Z time check for stage2 split 12: 790 min usable before the power cut, need 4 min -> start
+2026-10-16T02:07:34Z stage2 split 12: 135250 rows 155s
+2026-10-16T02:07:34Z time check for stage2 split 13: 787 min usable before the power cut, need 4 min -> start
+2026-10-16T02:10:08Z stage2 split 13: 135250 rows 154s
+2026-10-16T02:10:08Z time check for stage2 split 14: 785 min usable before the power cut, need 4 min -> start
+2026-10-16T02:12:39Z stage2 split 14: 135791 rows 150s
+2026-10-16T02:12:39Z time check for stage2 split 15: 782 min usable before the power cut, need 4 min -> start
+2026-10-16T02:15:12Z stage2 split 15: 135250 rows 153s
+2026-10-16T02:15:12Z time check for stage2 split 16: 780 min usable before the power cut, need 4 min -> start
+2026-10-16T02:17:48Z stage2 split 16: 135250 rows 157s
+2026-10-16T02:17:48Z time check for stage2 split 17: 777 min usable before the power cut, need 4 min -> start
+2026-10-16T02:20:22Z stage2 split 17: 135250 rows 153s
+2026-10-16T02:20:22Z time check for stage2 split 18: 775 min usable before the power cut, need 4 min -> start
+2026-10-16T02:22:54Z stage2 split 18: 135250 rows 152s
+2026-10-16T02:22:54Z time check for stage2 split 19: 772 min usable before the power cut, need 4 min -> start
+2026-10-16T02:25:26Z stage2 split 19: 135250 rows 153s
+2026-10-16T02:25:26Z time check for stage2 split 20: 770 min usable before the power cut, need 4 min -> start
+2026-10-16T02:28:01Z stage2 split 20: 135250 rows 155s
+2026-10-16T02:28:01Z time check for finish F2c (summarise + confirmatory analysis): 767 min usable before the power cut, need 90 min -> start
+2026-10-16T02:28:02Z selected proxies: h=sim_prior|ridge d=ridge s=ridge
+2026-10-16T02:28:08Z F2: 315 main + 840 perm frames, 2631753 main rows, 23 columns
+2026-10-16T02:28:29Z F2c: code store built, 2841873 rows
+2026-10-16T02:28:29Z primary M1 0.0; best M_dist Mdist-M 3
+2026-10-16T02:30:05Z F2c: summary.json written
+2026-10-16T02:35:27Z confirm_v07: randomised matching rows 73542
+2026-10-16T02:35:59Z classification: steps 1 and 2 passed: the deployable prior-neighbour proxy repairs part of the failure and adds to the strongest distance / difficulty baseline
+2026-10-16T02:35:59Z run done rc=0 seconds={"stage1": 2610, "ext": 1475, "stage2": 3225, "finish": 478} peak RSS 1.39 GB

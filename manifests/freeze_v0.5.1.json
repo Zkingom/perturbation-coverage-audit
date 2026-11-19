@@ -1,0 +1,37 @@
+{
+ "protocol_version": "0.5.1",
+ "frozen_utc": "2026-10-04T07:55:54Z",
+ "supersedes": "manifests/freeze_v0.5.json (unchanged)",
+ "protocol_file": {
+  "path": "reports/protocol/audit_protocol_v0.5.1.md",
+  "sha256": "e0b868ecf71fe50132c01c439fe637ba98be43d2c77db71b8276e71231bfcad2"
+ },
+ "code": {
+  "pipeline_v05.py": "e5b6f290b0ea01ae1f80d7e7c2356864035d44f7b07aa9c213f32f2eb78b5af6",
+  "models_v04.py": "5fa95b4d94864d2bdd899d4f70c79d2e4863abb8a5a42b3246d54b7439141dc1",
+  "audit_lib.py": "dad2208c051fb5a50af3ff9166b0c1e2cada7b12e315ae9fdb0f52a87b9491ab",
+  "splits_v04.py": "22c8bbf8f9e703095dfafb32e0049056c464653a810d385a1b46ac050da26e6e",
+  "auditB_clusters_v05.py": "a99fd8b90286dfafa98ca9f286de787d13e1b59bd1d738eda7523e6965344c33",
+  "g1_analysis_v05.py": "ebded71b0613b78ab376c42dd65581ebd2877606421b50c10c3a1ea313f0ed54",
+  "g1_glmm_v05.R": "455547087e14793d72bb6c7b5b8ec45f4b74055c46fbfd77c083232c0a2d7c5e",
+  "paths.py": "5f153e53d8a500fb6d53977e9e1980fa264487c3a0e883172480b373908b1128",
+  "g1_analysis_v051.py": "09f5cb28599d378cf981575f0b48a3f51e022db27a830bb82605a833a2137ece"
+ },
+ "inputs": {
+  "data/processed/v0.3_figshare_k562ess/p0v3_units_all_targets.csv": "a1fe5b88bb8753bdda7886675f94ed978e67316111f987e883c8cc021cc897ea",
+  "data/processed/v0.4/pseudobulk_logmean.npy": "d381611783a97142fa864c62d421e6158128ee2db648d8a37d42b0cbc02cab91",
+  "data/processed/v0.4/pseudobulk_rows.csv": "421e3be30447c705774dde75916bc5522afdb7ea72031344cb2851ea09836b33",
+  "data/processed/v0.4/pseudobulk_genes.csv": "2d95b3c995cb13c682123da0295421c354e70e14f0a463fdcc95eb75fc39559e",
+  "data/processed/priors/go_ase100.npz": "1bd09731639327cc4ac0c5e8103e875684e59b2feae2d5cc329a3d9ea7eaacbd",
+  "data/processed/priors/string_expdb_v0.4_universe.parquet": "4b3fdd7f239b65f5aed0f6dee673ce00d25c9cb3e0d3ba74b55b908acea3d9c1",
+  "data/processed/v0.5/auditB_clusters_original_r8.csv": "6a9cc93d318085b2a3a460204675b2a2225e2c1d12c0966a1a3ea25ac4fe14d2",
+  "data/raw/raw_manifest.json": "db27e9c45dc892264dcffcfadd51f0243a5eef544b9f6ed61cdc443f67415a3d",
+  "config.toml": "0d8221b746e6cad563d17a481bed2775a646eff96f35844e4f00b5dfe47b28fb"
+ },
+ "v0.5_files_rechecked_unchanged": true,
+ "change": "C5 secondary; support = some linear model with C1&C2&C3, and C4. Made during G1 computation, before any coverage result was viewed by the lead analyst.",
+ "environments": {
+  "python": "pert-audit (Python 3.11.16; manifests/env_pert-audit.yml)",
+  "r": "pert-audit-r (R 4.5, lme4, arrow, jsonlite; conda-forge)"
+ }
+}

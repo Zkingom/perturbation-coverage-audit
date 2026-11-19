@@ -1,0 +1,14 @@
+/root/autodl-tmp/gears/gears_bundle_v07/venv_gears/lib/python3.10/site-packages/numba/np/ufunc/parallel.py:371: NumbaWarning: The TBB threading layer requires TBB version 2021 update 6 or later i.e., TBB_INTERFACE_VERSION >= 12060. Found TBB_INTERFACE_VERSION = 12050. The TBB threading layer is disabled.
+  warnings.warn(problem)
+[fast_predict_patch] GEARS predict 加速补丁已启用
+[mem_patch] GEARS similarity-network cache enabled
+[mem_patch] lean evaluate enabled
+[mem_patch] deeper_analysis / non_dropout_analysis without full densify
+[mem_patch] malloc_trim after evaluate/metrics/analyses/predict enabled
+Found local copy...
+Found local copy...
+These perturbations are not in the GO graph and their perturbation can thus not be predicted
+[]
+Local copy of pyg dataset is detected. Loading...
+Done!
+[precompute] split 05 co-express -> coexp_032a3233a2295688_custom_1_0.75_0.4_20.csv

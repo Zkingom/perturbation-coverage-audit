@@ -1,0 +1,6 @@
+2026-10-14T12:03:11Z available memory at start 4.15 GB; process memory cap 4.8 GB; 207 min to the power cut
+2026-10-14T12:03:24Z time check for finish (summarise + confirmatory analysis): 192 min usable before the power cut, need 90 min -> start
+2026-10-14T12:03:42Z selected proxies: h=sim_prior|ridge d=ridge s=ridge
+2026-10-14T12:03:44Z stage 2 rows 8541549 (from 21 per-split parts)
+2026-10-14T12:03:44Z primary M1 0.0; best M_dist Mdist-M 3
+2026-10-14T12:03:58Z STOP: process RSS 4.90 GB > cap 4.8 GB (memory watchdog); partial output discarded

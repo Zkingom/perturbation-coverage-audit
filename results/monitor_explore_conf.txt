@@ -1,0 +1,12 @@
+20:24:37	step1	29096	alive=True	avail=4.34GB	rss=0.77GB	rows read: 21012
+20:25:47	step1	29096	alive=False	avail=6.04GB	rss=0.00GB	exit=0	confounding done
+20:25:54	step2	29156	alive=True	avail=5.10GB	rss=0.92GB	rows read: 68196
+20:27:54	step2	29156	alive=True	avail=5.24GB	rss=0.91GB	  return _nanquantile_unchecked(
+20:29:54	step2	29156	alive=True	avail=5.29GB	rss=0.91GB	  return _nanquantile_unchecked(
+20:30:04	step2	29156	alive=False	avail=5.97GB	rss=0.00GB	exit=0	confounding done
+20:30:08	step3	5044	alive=True	avail=5.87GB	rss=0.01GB	
+20:32:08	step3	5044	alive=True	avail=5.60GB	rss=0.43GB	20:32:01 dev: bootstrap (2000 draws, 9 groups)
+20:34:08	step3	5044	alive=True	avail=5.61GB	rss=0.43GB	20:34:04 rpe1: bootstrap (2000 draws, 9 groups)
+20:36:08	step3	5044	alive=True	avail=5.59GB	rss=0.46GB	20:36:05 gwps: bootstrap (2000 draws, 9 groups)
+20:38:08	step3	5044	alive=True	avail=5.80GB	rss=0.46GB	20:36:05 gwps: bootstrap (2000 draws, 9 groups)
+20:38:58	step3	5044	alive=False	avail=5.14GB	rss=0.00GB	exit=0	20:38:54 done

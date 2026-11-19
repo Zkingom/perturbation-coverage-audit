@@ -1,0 +1,9 @@
+=== STDOUT ===
+{"split": 0, "fold_sizes": {"train": 1074, "val": 178, "cal": 267, "test": 267}, "chosen": {"K": 50, "d": 100}, "pca_check": {"svd_method": "svd", "G_rel_maxdiff": 8.77698099785568e-14, "pred_maxabsdiff": 1.3384848784880887e-12, "chosen_gram": {"K": 50, "d": 100}, "chosen_svd": {"K": 50, "d": 100}, "pass": true, "used": "gram"}}
+{"split": 1, "fold_sizes": {"train": 1075, "val": 177, "cal": 267, "test": 267}, "chosen": {"K": 50, "d": 100}, "pca_check": {"svd_method": "svd", "G_rel_maxdiff": 4.312425047652224e-13, "pred_maxabsdiff": 5.472511332982322e-12, "chosen_gram": {"K": 50, "d": 100}, "chosen_svd": {"K": 50, "d": 100}, "pass": true, "used": "gram"}}
+{"split": 2, "fold_sizes": {"train": 1074, "val": 178, "cal": 267, "test": 267}, "chosen": {"K": 50, "d": 100}, "pca_check": {"svd_method": "svd", "G_rel_maxdiff": 3.048473444140428e-14, "pred_maxabsdiff": 5.055955654142963e-13, "chosen_gram": {"K": 50, "d": 100}, "chosen_svd": {"K": 50, "d": 100}, "pass": true, "used": "gram"}}
+{"selfcheck": [true, true, true], "planted": [2.608997737362007, 4.065275561123112e-11], "permuted_p": {"mean": 0.7057380483811853, "linear_pca": 0.6457163917639792, "linear_pca_K10_repro": 0.7789055708991486, "linear_go": 0.6171813357108966, "linear_go_d2_repro": 0.6851524176022044}, "n_out_of_band": 1, "n_combos": 180}
+
+=== STDERR ===
+
+=== EXIT 0 ===

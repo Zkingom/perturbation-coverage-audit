@@ -1,0 +1,10 @@
+2026-10-10T04:48:11Z attached ext arrays from F:\codex_in_this\claude_science\results\d1_v0.7dev\ext_cache
+2026-10-10T04:48:13Z selected proxies: h=sim_prior|ridge d=ridge s=ridge
+2026-10-10T06:50:44Z stage 2 rows 2684358 in 7350s
+2026-10-10T06:50:44Z primary M1 0.0; best M_dist Mdist-M 3
+2026-10-10T06:53:01Z stages 2-4 done in 7491s; coverage rows 2898678; {"peak_rss_sampled_gb": 2.6979827880859375, "peak_working_set_gb": 2.7001876831054688, "min_system_available_gb": 2.5291366577148438, "available_now_gb": 4.666500091552734}
+2026-10-10T06:58:48Z sens: randomised matching done for linear_pca
+2026-10-10T07:04:36Z sens: randomised matching done for linear_go
+2026-10-10T07:05:58Z sens: confounding bootstrap done
+2026-10-10T07:06:14Z sens: distance strata done
+2026-10-10T07:06:14Z done: {"peak_rss_sampled_gb": 2.6979827880859375, "peak_working_set_gb": 2.7001876831054688, "min_system_available_gb": 2.5291366577148438, "available_now_gb": 5.247825622558594}

@@ -1,0 +1,4 @@
+2026-10-10T12:42:24Z attached ext arrays from F:\codex_in_this\claude_science\results\conf_v0.7\rpe1\ext_cache
+F:\codex_in_this\claude_science\code\eval_v06.py:251: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+2026-10-10T12:42:26Z selected proxies: h=sim_prior|ridge d=ridge s=ridge

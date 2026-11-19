@@ -1,0 +1,5 @@
+graph,resolution,ARI_vs_seed0_min,ARI_mean,max_frac_E_range
+original,5,0.7625063421040016,0.8027282342838985,"(np.float64(0.046), np.float64(0.05))"
+original,8,0.8072673400341652,0.820403626231624,"(np.float64(0.032), np.float64(0.04))"
+filtered,5,0.7389460935447223,0.7654813546732554,"(np.float64(0.044), np.float64(0.054))"
+filtered,8,0.7977083362686348,0.8403020867672051,"(np.float64(0.031), np.float64(0.037))"

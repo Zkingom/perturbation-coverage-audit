@@ -1,0 +1,79 @@
+2026-10-25 23:36:33 split 00: start
+2026-10-25 23:37:52 split 01: start
+2026-10-25 23:39:23 split 02: start
+2026-10-25 23:40:50 split 03: start
+2026-10-25 23:42:15 split 04: start
+2026-10-25 23:43:44 split 05: start
+2026-10-25 23:45:13 split 06: start
+2026-10-25 23:46:42 split 07: start
+2026-10-25 23:48:13 split 08: start
+2026-10-25 23:49:42 split 09: start
+2026-10-25 23:51:14 split 10: start
+2026-10-25 23:52:42 split 11: start
+2026-10-25 23:54:08 split 12: start
+2026-10-25 23:55:40 split 13: start
+2026-10-25 23:57:10 split 14: start
+2026-10-25 23:58:42 split 15: start
+2026-10-26 00:00:17 split 16: start
+2026-10-26 00:01:59 split 17: start
+2026-10-26 00:03:27 split 18: start
+2026-10-26 00:04:55 split 19: start
+2026-10-26 00:06:25 split 20: start
+2026-10-26 11:03:23 split 00: start
+2026-10-26 11:04:52 split 00: start
+2026-10-26 11:12:44 split 00: start
+2026-10-26 11:18:59 split 01: start
+2026-10-26 11:22:37 split 00: start
+2026-10-26 11:27:48 split 01: start
+2026-10-26 11:34:48 split 00: start
+2026-10-26 11:40:06 split 01: start
+2026-10-26 11:42:10 split 00: start
+2026-10-26 11:50:08 split 00: start
+2026-10-26 13:10:01 split 01: start
+2026-10-26 15:11:35 split 02: start
+2026-10-26 17:14:01 split 03: start
+2026-10-26 18:34:35 split 04: start
+2026-10-26 18:52:48 split 00: start
+2026-10-26 20:11:38 split 01: start
+2026-10-26 20:36:47 split 00: start
+2026-10-26 22:00:30 split 00 done {"split": 0, "seed_mode": "benchmark", "seed": 1, "hp": {"hidden_size": 64, "epochs": 20, "uncertainty": false, "batch_size": 32, "test_batch_size": 128}, "timing_s": {"load_s": 58, "train_s": 4779, "predict_s": 180}, "total_s": 5023, "peak_rss_gb": 12.26, "peak_gpu_alloc_gb": 5.49, "peak_gpu_reserved_gb": 10.74, "gpu": "NVIDIA GeForce RTX 3060", "n_pred": 688, "n_genes": 8749, "finite": true}
+2026-10-26 22:01:10 split 01: start
+2026-10-26 23:22:57 split 01 done {"split": 1, "seed_mode": "benchmark", "seed": 1, "hp": {"hidden_size": 64, "epochs": 20, "uncertainty": false, "batch_size": 32, "test_batch_size": 128}, "timing_s": {"load_s": 51, "train_s": 4667, "predict_s": 183}, "total_s": 4906, "peak_rss_gb": 11.64, "peak_gpu_alloc_gb": 5.5, "peak_gpu_reserved_gb": 10.74, "gpu": "NVIDIA GeForce RTX 3060", "n_pred": 687, "n_genes": 8749, "finite": true}
+2026-10-26 23:23:43 split 02: start
+2026-10-27 00:46:13 split 02 done {"split": 2, "seed_mode": "benchmark", "seed": 1, "hp": {"hidden_size": 64, "epochs": 20, "uncertainty": false, "batch_size": 32, "test_batch_size": 128}, "timing_s": {"load_s": 52, "train_s": 4709, "predict_s": 182}, "total_s": 4950, "peak_rss_gb": 12.81, "peak_gpu_alloc_gb": 5.5, "peak_gpu_reserved_gb": 10.74, "gpu": "NVIDIA GeForce RTX 3060", "n_pred": 687, "n_genes": 8749, "finite": true}
+2026-10-27 00:47:02 split 03: start
+2026-10-27 02:08:50 split 03 done {"split": 3, "seed_mode": "benchmark", "seed": 1, "hp": {"hidden_size": 64, "epochs": 20, "uncertainty": false, "batch_size": 32, "test_batch_size": 128}, "timing_s": {"load_s": 54, "train_s": 4669, "predict_s": 179}, "total_s": 4908, "peak_rss_gb": 11.79, "peak_gpu_alloc_gb": 5.5, "peak_gpu_reserved_gb": 10.74, "gpu": "NVIDIA GeForce RTX 3060", "n_pred": 687, "n_genes": 8749, "finite": true}
+2026-10-27 02:09:38 split 04: start
+2026-10-27 03:32:15 split 04 done {"split": 4, "seed_mode": "benchmark", "seed": 1, "hp": {"hidden_size": 64, "epochs": 20, "uncertainty": false, "batch_size": 32, "test_batch_size": 128}, "timing_s": {"load_s": 52, "train_s": 4714, "predict_s": 184}, "total_s": 4956, "peak_rss_gb": 11.63, "peak_gpu_alloc_gb": 5.5, "peak_gpu_reserved_gb": 10.74, "gpu": "NVIDIA GeForce RTX 3060", "n_pred": 686, "n_genes": 8749, "finite": true}
+2026-10-27 03:34:09 split 05: start
+2026-10-27 04:55:47 split 05 done {"split": 5, "seed_mode": "benchmark", "seed": 1, "hp": {"hidden_size": 64, "epochs": 20, "uncertainty": false, "batch_size": 32, "test_batch_size": 128}, "timing_s": {"load_s": 47, "train_s": 4662, "predict_s": 183}, "total_s": 4898, "peak_rss_gb": 11.86, "peak_gpu_alloc_gb": 5.5, "peak_gpu_reserved_gb": 10.74, "gpu": "NVIDIA GeForce RTX 3060", "n_pred": 687, "n_genes": 8749, "finite": true}
+2026-10-27 04:57:43 split 06: start
+2026-10-27 06:20:07 split 06 done {"split": 6, "seed_mode": "benchmark", "seed": 1, "hp": {"hidden_size": 64, "epochs": 20, "uncertainty": false, "batch_size": 32, "test_batch_size": 128}, "timing_s": {"load_s": 48, "train_s": 4710, "predict_s": 179}, "total_s": 4943, "peak_rss_gb": 12.19, "peak_gpu_alloc_gb": 5.5, "peak_gpu_reserved_gb": 10.74, "gpu": "NVIDIA GeForce RTX 3060", "n_pred": 687, "n_genes": 8749, "finite": true}
+2026-10-27 06:22:08 split 07: start
+2026-10-27 07:44:22 split 07 done {"split": 7, "seed_mode": "benchmark", "seed": 1, "hp": {"hidden_size": 64, "epochs": 20, "uncertainty": false, "batch_size": 32, "test_batch_size": 128}, "timing_s": {"load_s": 47, "train_s": 4701, "predict_s": 179}, "total_s": 4933, "peak_rss_gb": 12.05, "peak_gpu_alloc_gb": 5.49, "peak_gpu_reserved_gb": 10.74, "gpu": "NVIDIA GeForce RTX 3060", "n_pred": 688, "n_genes": 8749, "finite": true}
+2026-10-27 07:46:24 split 08: start
+2026-10-27 09:10:13 split 08 done {"split": 8, "seed_mode": "benchmark", "seed": 1, "hp": {"hidden_size": 64, "epochs": 20, "uncertainty": false, "batch_size": 32, "test_batch_size": 128}, "timing_s": {"load_s": 49, "train_s": 4795, "predict_s": 179}, "total_s": 5029, "peak_rss_gb": 11.59, "peak_gpu_alloc_gb": 5.5, "peak_gpu_reserved_gb": 10.74, "gpu": "NVIDIA GeForce RTX 3060", "n_pred": 687, "n_genes": 8749, "finite": true}
+2026-10-27 09:12:18 split 09: start
+2026-10-27 10:34:47 split 09 done {"split": 9, "seed_mode": "benchmark", "seed": 1, "hp": {"hidden_size": 64, "epochs": 20, "uncertainty": false, "batch_size": 32, "test_batch_size": 128}, "timing_s": {"load_s": 48, "train_s": 4716, "predict_s": 178}, "total_s": 4949, "peak_rss_gb": 11.58, "peak_gpu_alloc_gb": 5.5, "peak_gpu_reserved_gb": 10.74, "gpu": "NVIDIA GeForce RTX 3060", "n_pred": 687, "n_genes": 8749, "finite": true}
+2026-10-27 10:36:54 split 10: start
+2026-10-27 11:59:38 split 10 done {"split": 10, "seed_mode": "benchmark", "seed": 1, "hp": {"hidden_size": 64, "epochs": 20, "uncertainty": false, "batch_size": 32, "test_batch_size": 128}, "timing_s": {"load_s": 47, "train_s": 4734, "predict_s": 178}, "total_s": 4964, "peak_rss_gb": 11.61, "peak_gpu_alloc_gb": 5.5, "peak_gpu_reserved_gb": 10.74, "gpu": "NVIDIA GeForce RTX 3060", "n_pred": 687, "n_genes": 8749, "finite": true}
+2026-10-27 12:01:52 split 11: start
+2026-10-27 13:24:32 split 11 done {"split": 11, "seed_mode": "benchmark", "seed": 1, "hp": {"hidden_size": 64, "epochs": 20, "uncertainty": false, "batch_size": 32, "test_batch_size": 128}, "timing_s": {"load_s": 50, "train_s": 4724, "predict_s": 179}, "total_s": 4960, "peak_rss_gb": 11.81, "peak_gpu_alloc_gb": 5.5, "peak_gpu_reserved_gb": 10.74, "gpu": "NVIDIA GeForce RTX 3060", "n_pred": 687, "n_genes": 8749, "finite": true}
+2026-10-27 13:26:47 split 12: start
+2026-10-27 14:48:58 split 12 done {"split": 12, "seed_mode": "benchmark", "seed": 1, "hp": {"hidden_size": 64, "epochs": 20, "uncertainty": false, "batch_size": 32, "test_batch_size": 128}, "timing_s": {"load_s": 48, "train_s": 4694, "predict_s": 183}, "total_s": 4931, "peak_rss_gb": 11.57, "peak_gpu_alloc_gb": 5.5, "peak_gpu_reserved_gb": 10.74, "gpu": "NVIDIA GeForce RTX 3060", "n_pred": 687, "n_genes": 8749, "finite": true}
+2026-10-27 14:51:19 split 13: start
+2026-10-27 16:13:17 split 13 done {"split": 13, "seed_mode": "benchmark", "seed": 1, "hp": {"hidden_size": 64, "epochs": 20, "uncertainty": false, "batch_size": 32, "test_batch_size": 128}, "timing_s": {"load_s": 50, "train_s": 4684, "predict_s": 178}, "total_s": 4918, "peak_rss_gb": 11.83, "peak_gpu_alloc_gb": 5.5, "peak_gpu_reserved_gb": 10.74, "gpu": "NVIDIA GeForce RTX 3060", "n_pred": 687, "n_genes": 8749, "finite": true}
+2026-10-27 16:15:41 split 14: start
+2026-10-27 17:37:04 split 14 done {"split": 14, "seed_mode": "benchmark", "seed": 1, "hp": {"hidden_size": 64, "epochs": 20, "uncertainty": false, "batch_size": 32, "test_batch_size": 128}, "timing_s": {"load_s": 50, "train_s": 4646, "predict_s": 180}, "total_s": 4883, "peak_rss_gb": 12.12, "peak_gpu_alloc_gb": 5.49, "peak_gpu_reserved_gb": 10.74, "gpu": "NVIDIA GeForce RTX 3060", "n_pred": 688, "n_genes": 8749, "finite": true}
+2026-10-27 17:39:35 split 15: start
+2026-10-27 19:00:39 split 15 done {"split": 15, "seed_mode": "benchmark", "seed": 1, "hp": {"hidden_size": 64, "epochs": 20, "uncertainty": false, "batch_size": 32, "test_batch_size": 128}, "timing_s": {"load_s": 47, "train_s": 4628, "predict_s": 181}, "total_s": 4863, "peak_rss_gb": 12.2, "peak_gpu_alloc_gb": 5.5, "peak_gpu_reserved_gb": 10.74, "gpu": "NVIDIA GeForce RTX 3060", "n_pred": 687, "n_genes": 8749, "finite": true}
+2026-10-27 19:03:21 split 16: start
+2026-10-27 20:25:10 split 16 done {"split": 16, "seed_mode": "benchmark", "seed": 1, "hp": {"hidden_size": 64, "epochs": 20, "uncertainty": false, "batch_size": 32, "test_batch_size": 128}, "timing_s": {"load_s": 54, "train_s": 4663, "predict_s": 182}, "total_s": 4909, "peak_rss_gb": 12.72, "peak_gpu_alloc_gb": 5.5, "peak_gpu_reserved_gb": 10.74, "gpu": "NVIDIA GeForce RTX 3060", "n_pred": 687, "n_genes": 8749, "finite": true}
+2026-10-27 20:27:43 split 17: start
+2026-10-27 21:49:50 split 17 done {"split": 17, "seed_mode": "benchmark", "seed": 1, "hp": {"hidden_size": 64, "epochs": 20, "uncertainty": false, "batch_size": 32, "test_batch_size": 128}, "timing_s": {"load_s": 55, "train_s": 4681, "predict_s": 182}, "total_s": 4927, "peak_rss_gb": 11.68, "peak_gpu_alloc_gb": 5.5, "peak_gpu_reserved_gb": 10.74, "gpu": "NVIDIA GeForce RTX 3060", "n_pred": 687, "n_genes": 8749, "finite": true}
+2026-10-27 21:52:30 split 18: start
+2026-10-27 23:14:08 split 18 done {"split": 18, "seed_mode": "benchmark", "seed": 1, "hp": {"hidden_size": 64, "epochs": 20, "uncertainty": false, "batch_size": 32, "test_batch_size": 128}, "timing_s": {"load_s": 51, "train_s": 4660, "predict_s": 179}, "total_s": 4897, "peak_rss_gb": 11.85, "peak_gpu_alloc_gb": 5.5, "peak_gpu_reserved_gb": 10.74, "gpu": "NVIDIA GeForce RTX 3060", "n_pred": 687, "n_genes": 8749, "finite": true}
+2026-10-27 23:16:41 split 19: start
+2026-10-28 00:36:47 split 19 done {"split": 19, "seed_mode": "benchmark", "seed": 1, "hp": {"hidden_size": 64, "epochs": 20, "uncertainty": false, "batch_size": 32, "test_batch_size": 128}, "timing_s": {"load_s": 49, "train_s": 4575, "predict_s": 175}, "total_s": 4806, "peak_rss_gb": 12.02, "peak_gpu_alloc_gb": 5.5, "peak_gpu_reserved_gb": 10.74, "gpu": "NVIDIA GeForce RTX 3060", "n_pred": 687, "n_genes": 8749, "finite": true}
+2026-10-28 00:39:21 split 20: start
+2026-10-28 02:00:53 split 20 done {"split": 20, "seed_mode": "benchmark", "seed": 1, "hp": {"hidden_size": 64, "epochs": 20, "uncertainty": false, "batch_size": 32, "test_batch_size": 128}, "timing_s": {"load_s": 50, "train_s": 4656, "predict_s": 178}, "total_s": 4892, "peak_rss_gb": 11.76, "peak_gpu_alloc_gb": 5.5, "peak_gpu_reserved_gb": 10.74, "gpu": "NVIDIA GeForce RTX 3060", "n_pred": 687, "n_genes": 8749, "finite": true}

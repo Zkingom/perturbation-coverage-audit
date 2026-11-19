@@ -1,0 +1,24 @@
+{
+ "protocol": "combo_second_dataset_v1.4",
+ "frozen_utc": "2026-11-04T10:15:10Z",
+ "frozen_local": "2026-11-04 18:15 (UTC+8)",
+ "protocol_file": {
+  "path": "reports/protocol/combo_second_dataset_v1.4.md",
+  "sha256": "e9dd8ff564d7d2b35f8397e9098979486f2527581c56576423e1c954dfba8f91"
+ },
+ "draft_file": {
+  "path": "reports/protocol/combo_second_dataset_v1.4_DRAFT.md",
+  "sha256": "ecb4f7c11eeaae20d92043fb984385cf917e1ac32aec77cb05eb49997972903f"
+ },
+ "user_choice": "option 1 (Wessels only)",
+ "wessels_or_joung_files_present_at_freeze": false,
+ "wessels_md5": "6897bfdcda928a678208fecf4eeb282e",
+ "reused_code": {
+  "models_v04.py": "5fa95b4d94864d2bdd899d4f70c79d2e4863abb8a5a42b3246d54b7439141dc1",
+  "norman_v12.py": "af6a83e7fe49907cd885cc82eb0e1d948bc9209e7fe2f532ef5d391af4f33d2d",
+  "norman_v13.py": "5f7273bdf7586d9094f32fb02d9d7b7b8a5b3c84a2c0be86b5e4cd491aa2a75f",
+  "resume_v07.py": "bdeb590081511ab39826a79399f3a1e1ed390b83f65e126be4b37cd0ca7aa609",
+  "paths.py": "5f153e53d8a500fb6d53977e9e1980fa264487c3a0e883172480b373908b1128"
+ },
+ "master_seed": 20261001
+}

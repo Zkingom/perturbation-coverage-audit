@@ -1,0 +1,123 @@
+{
+ "protocol_version": "0.6.1",
+ "frozen_utc": "2026-10-06T11:52:14Z",
+ "supersedes": "manifests/freeze_v0.6.json (unchanged)",
+ "protocol_file": {
+  "path": "reports/protocol/audit_protocol_v0.6.1.md",
+  "sha256": "67eee98d5670a7369dcc198f0e596ee30bf48eb6a3874a039dc5fc0e45a969a0"
+ },
+ "v0.6_protocol_unchanged": true,
+ "reused_code_sha256": {
+  "models_v04.py": "5fa95b4d94864d2bdd899d4f70c79d2e4863abb8a5a42b3246d54b7439141dc1",
+  "pipeline_v05.py": "e5b6f290b0ea01ae1f80d7e7c2356864035d44f7b07aa9c213f32f2eb78b5af6",
+  "audit_lib.py": "dad2208c051fb5a50af3ff9166b0c1e2cada7b12e315ae9fdb0f52a87b9491ab",
+  "splits_v04.py": "22c8bbf8f9e703095dfafb32e0049056c464653a810d385a1b46ac050da26e6e",
+  "paths.py": "5f153e53d8a500fb6d53977e9e1980fa264487c3a0e883172480b373908b1128",
+  "pseudobulk_v04.py": "82ddfbadae3a93d091a254944bea8e202e2eee723f98147383c23c285c960d40",
+  "download_resumable.py": "315dbe2ee6aa6b8f5c84e1039f0669fa47b399e3ff91410fd29d074f586e8cf9"
+ },
+ "reused_code_unchanged_since_v0.6": {
+  "models_v04.py": true,
+  "pipeline_v05.py": true,
+  "audit_lib.py": true,
+  "splits_v04.py": true,
+  "paths.py": true,
+  "pseudobulk_v04.py": true,
+  "download_resumable.py": true
+ },
+ "d0_round1_code_snapshot_sha256": {
+  "splits_v06.py": "a10d073b5ecfa0d5b3fef8d304876660f06314a5dacf60bd24593dd03b248827",
+  "methods_v06.py": "bcf4ac67d13c83a79cb9d1fee546047ee344c3d8694530ea8294c9e68d0da8bc",
+  "proxy_v06.py": "04f324a4ebdfd0037319a61273b5593ab5dd784cd7001638a773a7381a6186e1",
+  "eval_v06.py": "06bc20f9274644304193bcb698259b99dd68be06560794425824e41a0b232f87",
+  "analysis_v06.py": "6f2a66880775c1b1b6f760ce047026d74e8c5fe3df1df2cb9424e0a9580a9f27",
+  "pipeline_v06.py": "63b748cd86b65a204b3e5828f785d02f69458e1b8f36b81fb6b159e15fc44290",
+  "pseudobulk_v06.py": "ef2bc89fe1516f68b6b4e47ab45ad3ba5a8bce85cb4410f093e5e061661d50f2",
+  "synth_v06.py": "b2af19757df3c13c3f4a74645c71687192a85bc340f960449a91e7690aeba2cb",
+  "tests_v06.py": "c04adf14b8b10bef3b13802813cbeedb269e6bd37adc7f35a9dd029b477199c9"
+ },
+ "dev_inputs_sha256": {
+  "data/processed/v0.3_figshare_k562ess/p0v3_units_all_targets.csv": "a1fe5b88bb8753bdda7886675f94ed978e67316111f987e883c8cc021cc897ea",
+  "data/processed/v0.4/pseudobulk_logmean.npy": "d381611783a97142fa864c62d421e6158128ee2db648d8a37d42b0cbc02cab91",
+  "data/processed/v0.4/pseudobulk_rows.csv": "421e3be30447c705774dde75916bc5522afdb7ea72031344cb2851ea09836b33",
+  "data/processed/v0.4/pseudobulk_genes.csv": "2d95b3c995cb13c682123da0295421c354e70e14f0a463fdcc95eb75fc39559e",
+  "data/processed/priors/go_ase100.npz": "1bd09731639327cc4ac0c5e8103e875684e59b2feae2d5cc329a3d9ea7eaacbd",
+  "data/processed/priors/string_expdb_v0.4_universe.parquet": "4b3fdd7f239b65f5aed0f6dee673ce00d25c9cb3e0d3ba74b55b908acea3d9c1",
+  "data/raw/raw_manifest.json": "db27e9c45dc892264dcffcfadd51f0243a5eef544b9f6ed61cdc443f67415a3d"
+ },
+ "dev_inputs_unchanged": {
+  "data/processed/v0.3_figshare_k562ess/p0v3_units_all_targets.csv": true,
+  "data/processed/v0.4/pseudobulk_logmean.npy": true,
+  "data/processed/v0.4/pseudobulk_rows.csv": true,
+  "data/processed/v0.4/pseudobulk_genes.csv": true,
+  "data/processed/priors/go_ase100.npz": true,
+  "data/processed/priors/string_expdb_v0.4_universe.parquet": true,
+  "data/raw/raw_manifest.json": true
+ },
+ "confirmation_files": {
+  "K562_gwps_raw_singlecell_01.h5ad": {
+   "size_bytes": 65830941948,
+   "md5": "887e3e6a8c8df6eadf7a3030a53c9546",
+   "sha256": "b697ef7fedcec2972ec334608f86f2a29cb25e70c81b6725195f4cda60a9de2c"
+  },
+  "rpe1_raw_bulk_01.h5ad": {
+   "size_bytes": 95350546,
+   "md5": "74765fa87635467a869ea972356ae0e7",
+   "sha256": "603c655f1cfa41d649baf3ae63fca224cc11f297e40d4ed59d390b1e8d2e2db2"
+  },
+  "K562_gwps_raw_bulk_01.h5ad": {
+   "size_bytes": 374587922,
+   "md5": "4570b53c9d62ff6df281e622f0350060",
+   "sha256": "7cec96b3b76169abbf6b6ab9d10bf00d71d942d89e63292351f745e130b154db"
+  },
+  "rpe1_raw_singlecell_01.h5ad": {
+   "size_bytes": 8700873216,
+   "md5": "6a2a9d0d2bf4ec147f4d1104043b268c",
+   "sha256": "9b05ef1f81526216fa008d677e9e0d03dce9a2f7a95499a4fb81e505e9d88ef1"
+  }
+ },
+ "scope": "Design-level freeze of the v0.6.1 revision (dev-phase design, M3 cross-check tolerance, D0' expected results). v0.6-specific code is rewritten in D0' and frozen with v0.7 after user review.",
+ "benchmark_verified": {
+  "doi": "10.1126/sciadv.aed3414",
+  "title": "A systematic comparison of single-cell perturbation response prediction models",
+  "journal": "Science Advances",
+  "year": 2026,
+  "checked": "CrossRef + Europe PMC PMC13557097 abstract and keyword-located passages"
+ },
+ "environments": {
+  "python": "pert-audit (Python 3.11.16; manifests/env_pert-audit.yml)",
+  "r": "pert-audit-r (R 4.5, lme4, arrow, jsonlite; conda-forge)"
+ },
+ "post_freeze_code_fix": {
+  "utc": "2026-10-08T10:36:01Z",
+  "approved_by_user": "2026-10-06/07 reply to D0' report, item 4 (pure code fix)",
+  "change": "methods_v06.m3_threshold: HiGHS dual-simplex solver failure -> highs-ipm retry -> bisection on eta_{n+1}(S) with range check; same mathematical quantity",
+  "protocol_file_sha256_at_freeze": "67eee98d5670a7369dcc198f0e596ee30bf48eb6a3874a039dc5fc0e45a969a0",
+  "protocol_file_sha256_after_addendum": "c9ae34a3820e2daa1212da77b15c485470484729bd9641552e6b7e864af5e308",
+  "d0p_code_sha256_after_fix": {
+   "splits_v06.py": "a10d073b5ecfa0d5b3fef8d304876660f06314a5dacf60bd24593dd03b248827",
+   "methods_v06.py": "f7d1081a692be3def44c8c02f66633ad59ed18fc627088c580cd943888967fd6",
+   "proxy_v06.py": "255493b27877b31ea51440bfc71a6b2a2b8ba9998078c9c29c4714bad29601f7",
+   "eval_v06.py": "6c8b3607c9c3e0aac9d898255e96c4035056b3cda9363115330ffab64b02f830",
+   "analysis_v06.py": "89b02a4d4499c802711d5a79c715bb8c6b54b745b6c3ed0c1a9df93d82d2f2b5",
+   "pipeline_v06.py": "b33a21a118e8f744befd8fede00350ff6dbf9e3f5e46508c18290819dfdec0f2",
+   "pseudobulk_v06.py": "ef2bc89fe1516f68b6b4e47ab45ad3ba5a8bce85cb4410f093e5e061661d50f2",
+   "synth_v06.py": "484b270c6f4e4e082df720dae9f18ec869642a4c74d6bec1d48975d3113c0cb4",
+   "tests_v06.py": "5c10cca6b8e91cbbecb40afe319f043d2d6518297a4611ae99f650ea911eac69",
+   "m3_crosscheck_v061.py": "59c23de22015e63f2e39767d2ae8ff20e65f4a8628c8a8a3eb1e5c4425fc8f36"
+  },
+  "m3_crosscheck_rerun": {
+   "c1_frac_within_1e-6": 1.0,
+   "c1_max_rel": 6.821210263296962e-13,
+   "c1_pass": true,
+   "c2_infinite_agree": true,
+   "c3_pkg_error_frac": 0.0,
+   "c3_bisect_max_rel": null,
+   "c3_pass": true,
+   "n_points": 720,
+   "n_compared_exact": 720,
+   "pass": true
+  },
+  "regression_case": "results/d0p_v0.6.1/m3_fallback_case_split02.npz"
+ }
+}

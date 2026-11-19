@@ -1,0 +1,27 @@
+F:\codex_in_this\claude_science\code\eval_v06.py:240: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+stage1 split 00 round 0 fold 0 K=10 d=100 n_test=102 82.2s
+stage1 split 01 round 0 fold 1 K=10 d=100 n_test=101 152.6s
+stage1 split 02 round 0 fold 2 K=10 d=100 n_test=101 122.6s
+stage1 split 03 round 0 fold 3 K=10 d=100 n_test=100 103.9s
+stage1 split 04 round 0 fold 4 K=10 d=100 n_test=100 101.6s
+stage1 split 05 round 0 fold 5 K=10 d=100 n_test=100 104.3s
+stage1 split 06 round 0 fold 6 K=50 d=100 n_test=100 101.6s
+stage1 split 07 round 1 fold 0 K=10 d=100 n_test=101 117.8s
+stage1 split 08 round 1 fold 1 K=50 d=100 n_test=101 108.5s
+stage1 split 09 round 1 fold 2 K=10 d=100 n_test=101 111.6s
+stage1 split 10 round 1 fold 3 K=20 d=100 n_test=101 114.7s
+stage1 split 11 round 1 fold 4 K=50 d=100 n_test=100 113.2s
+stage1 split 12 round 1 fold 5 K=30 d=100 n_test=100 107.8s
+stage1 split 13 round 1 fold 6 K=10 d=100 n_test=100 106.2s
+stage1 split 14 round 2 fold 0 K=20 d=100 n_test=101 102.6s
+stage1 split 15 round 2 fold 1 K=50 d=100 n_test=101 106.2s
+stage1 split 16 round 2 fold 2 K=50 d=100 n_test=100 103.0s
+stage1 split 17 round 2 fold 3 K=10 d=100 n_test=100 103.1s
+stage1 split 18 round 2 fold 4 K=50 d=100 n_test=100 109.2s
+stage1 split 19 round 2 fold 5 K=20 d=100 n_test=101 107.3s
+stage1 split 20 round 2 fold 6 K=20 d=100 n_test=101 115.8s
+selected proxies: h=sim|gbm d=ridge s=ridge
+stage 2 rows 918720 in 2124s
+primary M2 3; best M_dist Mdist-N 1.0
+{"kind": "dist", "expected_11d": {"rho(d, S1) > rho(h, S1)": true, "_rho_d_S1": 0.24129363380483204, "_rho_h_S1": 0.04615312655626207, "matched D_GO-quintile max dev: Mdist-N <= 0.5 x M0": false, "_dgo_maxdev_M0_MdistN": [0.049643705463182974, 0.042857142857142816], "(b2) h coefficient CI includes 1 (OR)": true, "matched T5 Mcomb-N - best M_dist: CI includes 0": true}, "all_expected_pass": false}

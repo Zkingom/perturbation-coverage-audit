@@ -1,0 +1,18 @@
+2026-10-14T00:08:38Z available memory at start 3.91 GB; process memory cap 4.8 GB; 921 min to the power cut
+2026-10-14T00:08:51Z time check for ext split 10: 906 min usable before the power cut, need 19 min -> start
+2026-10-14T00:23:27Z ext split 10: K=10 unc_calt median 0.0622 oof median 0.0622 n_oob min 7 (<3: 0)
+2026-10-14T00:23:27Z time check for ext split 11: 892 min usable before the power cut, need 19 min -> start
+2026-10-14T00:36:48Z ext split 11: K=20 unc_calt median 0.0953 oof median 0.0937 n_oob min 7 (<3: 0)
+2026-10-14T00:36:48Z time check for ext split 12: 878 min usable before the power cut, need 19 min -> start
+2026-10-14T00:49:49Z ext split 12: K=50 unc_calt median 0.1597 oof median 0.1637 n_oob min 9 (<3: 0)
+2026-10-14T00:49:49Z time check for ext split 13: 865 min usable before the power cut, need 19 min -> start
+2026-10-14T01:06:34Z ext split 13: K=50 unc_calt median 0.1591 oof median 0.1608 n_oob min 6 (<3: 0)
+2026-10-14T01:06:34Z time check for ext split 14: 848 min usable before the power cut, need 19 min -> start
+2026-10-14T01:25:57Z ext split 14: K=50 unc_calt median 0.1810 oof median 0.1794 n_oob min 6 (<3: 0)
+2026-10-14T01:25:57Z time check for ext split 15: 829 min usable before the power cut, need 19 min -> start
+2026-10-14T01:43:34Z ext split 15: K=50 unc_calt median 0.1732 oof median 0.1712 n_oob min 8 (<3: 0)
+2026-10-14T01:43:34Z time check for ext split 16: 811 min usable before the power cut, need 19 min -> start
+2026-10-14T01:56:41Z ext split 16: K=30 unc_calt median 0.1303 oof median 0.1303 n_oob min 8 (<3: 0)
+2026-10-14T01:56:42Z time check for ext split 17: 798 min usable before the power cut, need 19 min -> start
+2026-10-14T02:09:48Z ext split 17: K=30 unc_calt median 0.1210 oof median 0.1181 n_oob min 6 (<3: 0)
+2026-10-14T02:09:48Z time check for ext split 18: 785 min usable before the power cut, need 19 min -> start

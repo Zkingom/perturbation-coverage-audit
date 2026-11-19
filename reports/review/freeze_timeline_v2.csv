@@ -1,0 +1,40 @@
+utc_or_local,event,kind,note
+2026-10-04T06:23:27Z,protocol v0.5 frozen (manifests/freeze_v0.5.json),freeze,G1 on the development screen
+2026-10-04T07:55:54Z,protocol v0.5.1 frozen,freeze,C5 demoted to secondary before any G1 coverage result was read
+2026-10-06T10:38:40Z,protocol v0.6 frozen,freeze,"design-level: dev = K562 essential, RPE1 primary / GWPS secondary confirmation, isolation rule"
+2026-10-06T11:52:14Z,protocol v0.6.1 frozen,freeze,"narrowed claims, Mdist/Mscore baselines, width matching; before any dev analysis of v0.6"
+2026-10-08T10:36:01Z,post-freeze record (freeze_v0.6.1.json): post_freeze_code_fix,pure code fix,affects conclusions: no
+2026-10-08T11:35:41Z,FIRST READ of development-set responses under v0.6.x (D1 stage 1),first data read,"d1_stage1.log line 1; v0.6.2 was frozen the same day, before the rerun"
+2026-10-08T11:53:59Z,protocol v0.6.2 frozen,freeze,"learner-unit rule + single E_true definition, after the stage-1 crash and before any dev result existed"
+2026-10-09T04:36:24Z,post-freeze record (freeze_v0.6.2.json): post_freeze_additions,"added analysis module (v0.7 sensitivity), declared",affects conclusions: no (sensitivity only)
+2026-10-10 20:58 local,RPE1 confirmatory result written (primary helper),confirmation result,confirm_v07_result_primary.json
+2026-10-10T04:01:30Z,post-freeze record (freeze_v0.6.2.json): post_freeze_code_fix_speedup,"pure speed-up, byte-identical output",affects conclusions: no
+2026-10-10T04:28:02Z,v0.7-development rerun with the added baselines (ext arrays),dev analysis,results/d1_v0.7dev
+2026-10-10T09:05:55Z,protocol v0.7 frozen (manifests/freeze_v0.7.json),freeze,confirmation design; user reviewed the full protocol before the freeze
+2026-10-10T09:07:37Z,post-freeze record: post_freeze_code_fix,pure code fix,affects conclusions: no
+2026-10-10T09:07:49Z,RPE1 C0 started (file hashes; pseudobulk; unit table; splits; response-free power),confirmation C0,"c0.log; C0 builds expression but computes no effect strength, score or coverage"
+2026-10-10T09:11:54Z,post-freeze record: post_freeze_code_fix_2,pure code fix,affects conclusions: no
+2026-10-10T11:47:21Z,"FIRST READ of RPE1 responses in model fitting / scores (C1 stage 1, split 00)",first data read,c1_stage1.log line 1; i.e. after the v0.7 freeze and after C0
+2026-10-10T11:56:20Z,post-freeze record: post_freeze_execution_helper,execution helper calling frozen code,affects conclusions: no
+2026-10-10T12:59:19Z,post-freeze record: post_freeze_execution_helper_2,execution order (primary before descriptive),affects conclusions: no (primary blocks reproduced exactly later)
+2026-10-11 11:02 local,RPE1 full descriptive run; all confirmatory blocks reproduced exactly,confirmation result,confirm_v07_result.json
+2026-10-12T05:34:52Z,post-freeze record: post_freeze_execution_resume,engineering: resumable writes,affects conclusions: no (validated byte-identical on dev)
+2026-10-12T06:10:52Z,GWPS C0 started,confirmation C0,c0.log
+2026-10-12T10:54:05Z,post-freeze record: post_freeze_execution_lowmem,engineering: low-memory loader,affects conclusions: no (validated byte-identical on dev)
+2026-10-12T10:54:35Z,GWPS C1 stage 1 started (FIRST READ of GWPS responses in scores),first data read,c1_resume.log line 1
+2026-10-12T11:41:47Z,post-freeze record: post_freeze_execution_lowmem_2,engineering: chunked row/column computation,affects conclusions: no (validated byte-identical on dev)
+2026-10-14T00:07:51Z,post-freeze record: post_freeze_execution_f1,engineering: string interning in finish,"affects conclusions: no (validated byte-identical on dev; exceeded memory cap on GWPS, not used)"
+2026-10-14T12:15:51Z,post-freeze record: post_freeze_execution_f2,engineering: column store in finish,"affects conclusions: no (validated on dev; exceeded cap on GWPS, not used)"
+2026-10-15 16:49 local,GWPS confirmatory result written (primary helper),confirmation result,confirm_v07_result_primary.json
+2026-10-15 17:59 local,GWPS full descriptive finish; confirmatory blocks matched exactly,confirmation result,confirm_v07_result.json
+2026-10-15T08:11:25Z,post-freeze record: post_freeze_execution_helper_gwps_primary,execution helper (GWPS primary before finish),affects conclusions: no (all confirmatory blocks matched the later finish exactly)
+2026-10-15T09:13:27Z,post-freeze record: post_freeze_execution_f2c,engineering: integer-coded column store in finish,affects conclusions: no (validated byte-identical on dev; used for the GWPS finish)
+2026-10-15T12:23:55Z,post-freeze record: post_freeze_execution_helper_confounding_lowmem,filtered reader for the confounding analysis,affects conclusions: no (validated byte-identical on RPE1)
+2026-10-15T12:23:55Z,post-freeze record: post_confirmation_exploratory_modularity,post-confirmation exploratory (own frozen protocol),affects conclusions: no (exploratory tier)
+2026-10-15T13:15:46Z,post-freeze record: post_confirmation_exploratory_gridK_rpe1,post-confirmation exploratory (own frozen protocol),affects conclusions: no (exploratory tier)
+2026-10-15T13:15:46Z,post-freeze record: illustrative_reliability_analysis,"illustrative, outside every protocol",affects conclusions: no (illustrative tier)
+2026-10-16T00:16:55Z,post-freeze record: illustrative_noise_floor_analysis,"illustrative, outside every protocol",affects conclusions: no (illustrative tier)
+2026-10-16T05:25:31Z,post-freeze record: gears_robustness_preparation,"robustness check prepared, not run",affects conclusions: not applicable yet
+2026-10-19T11:50:36Z,protocol gears_coupling v1.0 frozen (manifests/freeze_gears_coupling_v1.0.json),freeze,post-confirmation coupling test with GEARS on RPE1; before any GEARS output was read locally
+2026-10-28T00:17:18Z,protocol gears_coupling v1.1 frozen (manifests/freeze_gears_coupling_v1.1.json),freeze,"blank, negative and split-half positive controls; before any GEARS metric was computed locally"
+2026-11-01T08:39:44Z,protocol combo_crosscell v1.2 frozen (manifests/freeze_v1.2.json),freeze,Norman combinations and Nadig HepG2/Jurkat; no file of these datasets present on disk at freeze

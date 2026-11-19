@@ -1,0 +1,25 @@
+2026-10-16T12:53:41 alive=True rc=None avail_GB=5.23 rss_GB=0.34 last=
+2026-10-16T12:53:51 alive=True rc=None avail_GB=4.23 rss_GB=1.32 last=
+2026-10-16T12:54:01 alive=True rc=None avail_GB=3.75 rss_GB=1.78 last=12:53:52 gwps: 20000 control cells, grid [30, 36, 44, 53, 65, 79, 95, 116, 140, 170, 206, 250, 303, 368, 446, 541, 656, 796, 965, 1170], reps 200
+2026-10-16T12:54:11 alive=True rc=None avail_GB=3.59 rss_GB=1.84 last=12:53:52 gwps: 20000 control cells, grid [30, 36, 44, 53, 65, 79, 95, 116, 140, 170, 206, 250, 303, 368, 446, 541, 656, 796, 965, 1170], reps 200
+2026-10-16T12:54:21 alive=True rc=None avail_GB=3.42 rss_GB=1.87 last=12:53:52 gwps: 20000 control cells, grid [30, 36, 44, 53, 65, 79, 95, 116, 140, 170, 206, 250, 303, 368, 446, 541, 656, 796, 965, 1170], reps 200
+2026-10-16T12:54:31 alive=True rc=None avail_GB=4.23 rss_GB=1.90 last=12:53:52 gwps: 20000 control cells, grid [30, 36, 44, 53, 65, 79, 95, 116, 140, 170, 206, 250, 303, 368, 446, 541, 656, 796, 965, 1170], reps 200
+2026-10-16T12:54:41 alive=True rc=None avail_GB=3.93 rss_GB=1.98 last=12:53:52 gwps: 20000 control cells, grid [30, 36, 44, 53, 65, 79, 95, 116, 140, 170, 206, 250, 303, 368, 446, 541, 656, 796, 965, 1170], reps 200
+2026-10-16T12:54:51 alive=True rc=None avail_GB=4.06 rss_GB=1.72 last=12:53:52 gwps: 20000 control cells, grid [30, 36, 44, 53, 65, 79, 95, 116, 140, 170, 206, 250, 303, 368, 446, 541, 656, 796, 965, 1170], reps 200
+2026-10-16T12:55:01 alive=True rc=None avail_GB=3.90 rss_GB=1.73 last=12:54:55 split 00: null mean at n=30: 7.344, at n=1170: 1.135
+2026-10-16T12:55:11 alive=True rc=None avail_GB=4.09 rss_GB=1.38 last=12:55:09 split 02: null mean at n=30: 7.303, at n=1170: 1.129
+2026-10-16T12:55:21 alive=True rc=None avail_GB=3.61 rss_GB=1.72 last=12:55:17 split 03: null mean at n=30: 7.318, at n=1170: 1.131
+2026-10-16T12:55:31 alive=True rc=None avail_GB=4.79 rss_GB=1.38 last=12:55:31 split 05: null mean at n=30: 7.304, at n=1170: 1.129
+2026-10-16T12:55:41 alive=True rc=None avail_GB=4.68 rss_GB=1.34 last=12:55:39 split 06: null mean at n=30: 7.315, at n=1170: 1.130
+2026-10-16T12:55:51 alive=True rc=None avail_GB=4.14 rss_GB=1.72 last=12:55:46 split 07: null mean at n=30: 7.290, at n=1170: 1.127
+2026-10-16T12:56:01 alive=True rc=None avail_GB=4.35 rss_GB=1.37 last=12:56:00 split 09: null mean at n=30: 7.318, at n=1170: 1.131
+2026-10-16T12:56:11 alive=True rc=None avail_GB=4.10 rss_GB=1.73 last=12:56:08 split 10: null mean at n=30: 7.303, at n=1170: 1.129
+2026-10-16T12:56:21 alive=True rc=None avail_GB=3.95 rss_GB=1.72 last=12:56:15 split 11: null mean at n=30: 7.323, at n=1170: 1.131
+2026-10-16T12:56:31 alive=True rc=None avail_GB=5.13 rss_GB=1.38 last=12:56:30 split 13: null mean at n=30: 7.300, at n=1170: 1.128
+2026-10-16T12:56:41 alive=True rc=None avail_GB=4.63 rss_GB=1.72 last=12:56:37 split 14: null mean at n=30: 7.321, at n=1170: 1.132
+2026-10-16T12:56:51 alive=True rc=None avail_GB=4.90 rss_GB=1.29 last=12:56:44 split 15: null mean at n=30: 7.317, at n=1170: 1.131
+2026-10-16T12:57:01 alive=True rc=None avail_GB=4.58 rss_GB=1.37 last=12:56:59 split 17: null mean at n=30: 7.317, at n=1170: 1.131
+2026-10-16T12:57:11 alive=True rc=None avail_GB=4.13 rss_GB=1.73 last=12:57:06 split 18: null mean at n=30: 7.317, at n=1170: 1.131
+2026-10-16T12:57:21 alive=True rc=None avail_GB=5.06 rss_GB=0.63 last=12:57:21 split 20: null mean at n=30: 7.317, at n=1170: 1.131
+2026-10-16T12:57:31 alive=True rc=None avail_GB=4.90 rss_GB=0.63 last=12:57:21 split 20: null mean at n=30: 7.317, at n=1170: 1.131
+2026-10-16T12:57:41 alive=False rc=0 avail_GB=6.32 rss_GB=0.00 last=12:57:36 done T5 orig 0.518 corr 0.664 z 0.711

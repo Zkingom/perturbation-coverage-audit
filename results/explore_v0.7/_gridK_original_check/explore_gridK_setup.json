@@ -1,0 +1,21 @@
+{
+ "utc": "2026-10-15T13:19:48Z",
+ "extended": false,
+ "K_CANDIDATES": [
+  5,
+  10,
+  20,
+  30,
+  50
+ ],
+ "D_CANDIDATES": [
+  2,
+  5,
+  10,
+  20,
+  30,
+  50,
+  100
+ ],
+ "out": "F:\\codex_in_this\\claude_science\\results\\explore_v0.7\\_gridK_original_check"
+}

@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "F:\codex_in_this\claude_science\code\confirm_run_v07.py", line 280, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "F:\codex_in_this\claude_science\code\confirm_run_v07.py", line 275, in main
+    return do_c0(a.dataset, a.sc, a.chunk_rows)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\codex_in_this\claude_science\code\confirm_run_v07.py", line 123, in do_c0
+    sc = check_file(sc_name, fz, sc_path, log)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\codex_in_this\claude_science\code\confirm_run_v07.py", line 86, in check_file
+    p = Path(path) if path else raw(name)
+                                ^^^^^^^^^
+  File "F:\codex_in_this\claude_science\code\paths.py", line 30, in raw
+    entry = json.loads(RAW_MANIFEST.read_text(encoding="utf8"))["files"][name]
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'rpe1_raw_singlecell_01.h5ad'

@@ -1,0 +1,11 @@
+2026-10-09T04:36:59Z STOP: available memory 3.33 GB < 3.5 GB
+2026-10-09T04:41:34Z STOP: available memory 3.38 GB < 3.5 GB
+2026-10-09T04:48:19Z selected proxies: h=sim_prior|ridge d=ridge s=ridge
+2026-10-09T04:50:50Z stage 2 rows 110925 in 151s
+2026-10-09T04:50:50Z primary M2 3; best M_dist Mdist-N 1.0
+2026-10-09T04:53:42Z stages 2-4 done in 325s; coverage rows 121125 (0.06 GB in memory); {"peak_rss_sampled_gb": 0.8205146789550781, "peak_working_set_gb": 0.8660430908203125, "min_system_available_gb": 3.218700408935547, "available_now_gb": 4.4175872802734375}
+2026-10-09T04:53:58Z sens: randomised matching done for linear_pca
+2026-10-09T04:54:12Z sens: randomised matching done for linear_go
+2026-10-09T04:55:25Z sens: confounding bootstrap done
+2026-10-09T04:55:26Z sens: distance strata done
+2026-10-09T04:55:26Z done: {"peak_rss_sampled_gb": 0.8205146789550781, "peak_working_set_gb": 0.8660430908203125, "min_system_available_gb": 3.218700408935547, "available_now_gb": 4.781768798828125} sens 104s

@@ -1,0 +1,12 @@
+{
+ "dataset": "gwps",
+ "input": "H:\\cs+bio_file\\K562_gwps_raw_singlecell_01.h5ad",
+ "n_cells_file": 1989578,
+ "n_ctrl_total": 75328,
+ "n_ctrl_kept": 20000,
+ "seed": 20270501,
+ "genes": 8248,
+ "per_cell_transform": "log1p(1e4*counts/UMI_count), float64 -> stored float32",
+ "control_guides": 514,
+ "seconds": 1251
+}

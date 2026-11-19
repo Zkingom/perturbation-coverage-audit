@@ -1,0 +1,88 @@
+2026-10-14T04:35:52Z available memory at start 3.72 GB; process memory cap 4.8 GB; 654 min to the power cut
+2026-10-14T04:36:05Z time check for ext split 18: 639 min usable before the power cut, need 19 min -> start
+2026-10-14T04:49:39Z ext split 18: K=50 unc_calt median 0.1661 oof median 0.1667 n_oob min 7 (<3: 0)
+2026-10-14T04:49:39Z time check for ext split 19: 625 min usable before the power cut, need 19 min -> start
+2026-10-14T05:02:43Z ext split 19: K=50 unc_calt median 0.1705 oof median 0.1711 n_oob min 6 (<3: 0)
+2026-10-14T05:02:43Z time check for ext split 20: 612 min usable before the power cut, need 20 min -> start
+2026-10-14T05:15:51Z ext split 20: K=20 unc_calt median 0.0940 oof median 0.0933 n_oob min 6 (<3: 0)
+2026-10-14T05:15:51Z time check for stage2 split 01: 599 min usable before the power cut, need 30 min -> start
+F:\codex_in_this\claude_science\code\eval_v06.py:251: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+2026-10-14T05:33:00Z stage2 split 01: 439292 rows 1029s
+2026-10-14T05:33:00Z time check for stage2 split 02: 582 min usable before the power cut, need 26 min -> start
+F:\codex_in_this\claude_science\code\eval_v06.py:251: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+2026-10-14T05:49:12Z stage2 split 02: 439292 rows 972s
+2026-10-14T05:49:12Z time check for stage2 split 03: 566 min usable before the power cut, need 25 min -> start
+F:\codex_in_this\claude_science\code\eval_v06.py:251: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+2026-10-14T06:05:47Z stage2 split 03: 439292 rows 995s
+2026-10-14T06:05:47Z time check for stage2 split 04: 549 min usable before the power cut, need 25 min -> start
+F:\codex_in_this\claude_science\code\eval_v06.py:251: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+2026-10-14T06:21:41Z stage2 split 04: 439292 rows 954s
+2026-10-14T06:21:41Z time check for stage2 split 05: 533 min usable before the power cut, need 25 min -> start
+F:\codex_in_this\claude_science\code\eval_v06.py:251: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+2026-10-14T06:38:35Z stage2 split 05: 438751 rows 1014s
+2026-10-14T06:38:35Z time check for stage2 split 06: 516 min usable before the power cut, need 25 min -> start
+F:\codex_in_this\claude_science\code\eval_v06.py:251: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+2026-10-14T06:54:28Z stage2 split 06: 439292 rows 953s
+2026-10-14T06:54:28Z time check for stage2 split 07: 501 min usable before the power cut, need 25 min -> start
+F:\codex_in_this\claude_science\code\eval_v06.py:251: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+2026-10-14T07:11:26Z stage2 split 07: 439292 rows 1018s
+2026-10-14T07:11:26Z time check for stage2 split 08: 484 min usable before the power cut, need 25 min -> start
+F:\codex_in_this\claude_science\code\eval_v06.py:251: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+2026-10-14T07:28:26Z stage2 split 08: 439292 rows 1020s
+2026-10-14T07:28:26Z time check for stage2 split 09: 467 min usable before the power cut, need 25 min -> start
+F:\codex_in_this\claude_science\code\eval_v06.py:251: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+2026-10-14T07:45:00Z stage2 split 09: 439292 rows 994s
+2026-10-14T07:45:00Z time check for stage2 split 10: 450 min usable before the power cut, need 25 min -> start
+F:\codex_in_this\claude_science\code\eval_v06.py:251: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+2026-10-14T08:02:20Z stage2 split 10: 439292 rows 1039s
+2026-10-14T08:02:20Z time check for stage2 split 11: 433 min usable before the power cut, need 25 min -> start
+F:\codex_in_this\claude_science\code\eval_v06.py:251: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+2026-10-14T08:18:36Z stage2 split 11: 439833 rows 976s
+2026-10-14T08:18:36Z time check for stage2 split 12: 416 min usable before the power cut, need 25 min -> start
+F:\codex_in_this\claude_science\code\eval_v06.py:251: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+2026-10-14T08:35:09Z stage2 split 12: 438751 rows 993s
+2026-10-14T08:35:09Z time check for stage2 split 13: 400 min usable before the power cut, need 25 min -> start
+F:\codex_in_this\claude_science\code\eval_v06.py:251: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+2026-10-14T08:52:17Z stage2 split 13: 438751 rows 1028s
+2026-10-14T08:52:17Z time check for stage2 split 14: 383 min usable before the power cut, need 25 min -> start
+F:\codex_in_this\claude_science\code\eval_v06.py:251: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+2026-10-14T09:09:23Z stage2 split 14: 439292 rows 1026s
+2026-10-14T09:09:23Z time check for stage2 split 15: 366 min usable before the power cut, need 25 min -> start
+F:\codex_in_this\claude_science\code\eval_v06.py:251: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+2026-10-14T09:27:12Z stage2 split 15: 439292 rows 1070s
+2026-10-14T09:27:12Z time check for stage2 split 16: 348 min usable before the power cut, need 25 min -> start
+F:\codex_in_this\claude_science\code\eval_v06.py:251: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+2026-10-14T09:44:26Z stage2 split 16: 439292 rows 1033s
+2026-10-14T09:44:26Z time check for stage2 split 17: 331 min usable before the power cut, need 25 min -> start
+F:\codex_in_this\claude_science\code\eval_v06.py:251: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+2026-10-14T10:00:22Z stage2 split 17: 439292 rows 956s
+2026-10-14T10:00:22Z time check for stage2 split 18: 315 min usable before the power cut, need 25 min -> start
+F:\codex_in_this\claude_science\code\eval_v06.py:251: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+2026-10-14T10:17:26Z stage2 split 18: 439292 rows 1024s
+2026-10-14T10:17:26Z time check for stage2 split 19: 298 min usable before the power cut, need 25 min -> start
+F:\codex_in_this\claude_science\code\eval_v06.py:251: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+2026-10-14T10:33:43Z stage2 split 19: 439292 rows 977s
+2026-10-14T10:33:43Z time check for stage2 split 20: 281 min usable before the power cut, need 25 min -> start
+F:\codex_in_this\claude_science\code\eval_v06.py:251: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+2026-10-14T10:50:29Z stage2 split 20: 438751 rows 1005s
+2026-10-14T10:50:29Z run done rc=0 seconds={"stage1": 1, "ext": 2386, "stage2": 20077} peak RSS 4.24 GB

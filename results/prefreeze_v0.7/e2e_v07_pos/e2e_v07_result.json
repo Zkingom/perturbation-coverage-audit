@@ -1,0 +1,223 @@
+{
+ "kind": "pos",
+ "seconds": 2456,
+ "frozen": {
+  "h": "sim_prior_base|ridge",
+  "d": "gbm",
+  "s": "gbm",
+  "hypers": {
+   "M1": "0.0",
+   "M2": "3",
+   "M3": "quad",
+   "Mdist-N": "1.0",
+   "Mdist-M": "3",
+   "Mscore-N": "0.0",
+   "Mcomb-N": "0.0",
+   "Mcomb-3": "lin2",
+   "oracle": "0.0",
+   "MD-GO": "5",
+   "MD-STR": "5",
+   "Munc-N": "1.0",
+   "Munc-M": "3"
+  },
+  "primary": "M1",
+  "best_dist": "Mdist-N"
+ },
+ "expected_v07": {
+  "B0": true,
+  "step1_pass": true,
+  "guard_M_perm": true,
+  "classification_step1_passed": true,
+  "E2_reports_width_ratio": true,
+  "no_selection_in_confirmation": true
+ },
+ "all_expected_pass": true,
+ "classification": "steps 1 and 2 passed: the deployable prior-neighbour proxy repairs part of the failure and adds to the strongest distance / difficulty baseline",
+ "step1": {
+  "E1": {
+   "diff": 0.2412177985948477,
+   "lo": 0.18114990637867495,
+   "hi": 0.30128569081102047,
+   "report": null
+  },
+  "E2": {
+   "diff": 0.2943722943722944,
+   "lo": 0.20970438082185822,
+   "hi": 0.3790402079227306,
+   "report": "+29.4 pp [21.0, 37.9]; subset width ratio 1.84"
+  }
+ },
+ "step2": {
+  "E1": {
+   "diff": 0.24590163934426235,
+   "lo": 0.18706378639611593,
+   "hi": 0.30473949229240876,
+   "report": null
+  },
+  "E2": {
+   "diff": 0.2770562770562769,
+   "lo": 0.1984971729218299,
+   "hi": 0.3556153811907239,
+   "report": "+27.7 pp [19.8, 35.6]; subset width ratio 1.81"
+  }
+ },
+ "guards": {
+  "nominal_marginal_in_band": true,
+  "M_perm": true,
+  "matching_primary_comparators": true,
+  "P_not_minus": true
+ },
+ "B0": {
+  "pass": true,
+  "M0_T5": {
+   "cov": 0.5362997658079626,
+   "lo": 0.46313545389924654,
+   "hi": 0.6079340161404109,
+   "n": 427,
+   "method": "gee"
+  }
+ },
+ "matching": {
+  "M0": {
+   "status": {
+    "reference": 21
+   },
+   "max_rel_dev_expected_width": 0.0,
+   "realized_width_ratio_range": [
+    0.9999999999999994,
+    1.0000000000000004
+   ]
+  },
+  "M1": {
+   "status": {
+    "matched": 21
+   },
+   "max_rel_dev_expected_width": 2.182408199705145e-16,
+   "realized_width_ratio_range": [
+    0.9750614798812255,
+    1.0036533238765866
+   ]
+  },
+  "M2": {
+   "status": {
+    "matched": 21
+   },
+   "max_rel_dev_expected_width": 1.4719280323965903e-16,
+   "realized_width_ratio_range": [
+    0.9466453234748998,
+    1.0061454847930986
+   ]
+  },
+  "M3": {
+   "status": {
+    "matched": 21
+   },
+   "max_rel_dev_expected_width": 1.9789856363522112e-16,
+   "realized_width_ratio_range": [
+    0.9883986899578467,
+    1.0117909110738754
+   ]
+  },
+  "Mdist-N": {
+   "status": {
+    "matched": 21
+   },
+   "max_rel_dev_expected_width": 1.26116457425306e-16,
+   "realized_width_ratio_range": [
+    0.9886520814857679,
+    1.0077345001689997
+   ]
+  },
+  "Mdist-M": {
+   "status": {
+    "matched": 21
+   },
+   "max_rel_dev_expected_width": 1.4719280323965903e-16,
+   "realized_width_ratio_range": [
+    0.9911070272390322,
+    1.014147569374501
+   ]
+  },
+  "Mscore-N": {
+   "status": {
+    "matched": 21
+   },
+   "max_rel_dev_expected_width": 1.4719280323965903e-16,
+   "realized_width_ratio_range": [
+    0.9896760007857645,
+    1.0055376735739892
+   ]
+  },
+  "Mcomb-N": {
+   "status": {
+    "matched": 21
+   },
+   "max_rel_dev_expected_width": 1.4719280323965903e-16,
+   "realized_width_ratio_range": [
+    0.9901957838430365,
+    1.0109137305389502
+   ]
+  },
+  "Mcomb-3": {
+   "status": {
+    "matched": 21
+   },
+   "max_rel_dev_expected_width": 1.4719280323965903e-16,
+   "realized_width_ratio_range": [
+    0.9868293279165792,
+    1.0059179742104465
+   ]
+  },
+  "oracle": {
+   "status": {
+    "unmatched_too_narrow": 14,
+    "matched": 7
+   },
+   "max_rel_dev_expected_width": 0.36384828839064876,
+   "realized_width_ratio_range": [
+    0.6361517116093512,
+    1.0158518980194016
+   ]
+  },
+  "MD-GO": {
+   "status": {
+    "matched": 21
+   },
+   "max_rel_dev_expected_width": 1.656969636066795e-16,
+   "realized_width_ratio_range": [
+    0.903072105758097,
+    1.1122584629956005
+   ]
+  },
+  "MD-STR": {
+   "status": {
+    "matched": 21
+   },
+   "max_rel_dev_expected_width": 1.656969636066795e-16,
+   "realized_width_ratio_range": [
+    0.9623745691098161,
+    1.0208128329738522
+   ]
+  },
+  "Munc-N": {
+   "status": {
+    "matched": 21
+   },
+   "max_rel_dev_expected_width": 1.9789856363522112e-16,
+   "realized_width_ratio_range": [
+    0.9886048866405597,
+    1.004386748330227
+   ]
+  },
+  "Munc-M": {
+   "status": {
+    "matched": 21
+   },
+   "max_rel_dev_expected_width": 1.656969636066795e-16,
+   "realized_width_ratio_range": [
+    0.9776433722610732,
+    1.0072133969705188
+   ]
+  }
+ }
+}

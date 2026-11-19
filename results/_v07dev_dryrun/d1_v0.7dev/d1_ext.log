@@ -1,0 +1,44 @@
+2026-10-10T04:26:30Z 21 stage-1 caches copied and verified against manifests/d1_stage1_cache_v0.6.2.json
+2026-10-10T04:26:36Z ext split 00: K=50 unc_calt median 0.3902 oof median nan n_oob min 0 (<3: 1086)
+2026-10-10T04:26:36Z split 00 3s {"peak_rss_sampled_gb": 1.9765243530273438, "peak_working_set_gb": 2.542163848876953, "min_system_available_gb": 3.3018836975097656, "available_now_gb": 3.794483184814453}
+2026-10-10T04:26:38Z ext split 01: K=50 unc_calt median 0.3775 oof median nan n_oob min 0 (<3: 1085)
+2026-10-10T04:26:38Z split 01 3s {"peak_rss_sampled_gb": 2.0042152404785156, "peak_working_set_gb": 2.542163848876953, "min_system_available_gb": 3.3018836975097656, "available_now_gb": 4.753719329833984}
+2026-10-10T04:26:41Z ext split 02: K=50 unc_calt median 0.4138 oof median nan n_oob min 0 (<3: 1086)
+2026-10-10T04:26:41Z split 02 3s {"peak_rss_sampled_gb": 2.0042152404785156, "peak_working_set_gb": 2.542163848876953, "min_system_available_gb": 3.3018836975097656, "available_now_gb": 4.7306365966796875}
+2026-10-10T04:26:44Z ext split 03: K=50 unc_calt median 0.4134 oof median nan n_oob min 0 (<3: 1086)
+2026-10-10T04:26:44Z split 03 3s {"peak_rss_sampled_gb": 2.0042152404785156, "peak_working_set_gb": 2.542163848876953, "min_system_available_gb": 3.3018836975097656, "available_now_gb": 4.715492248535156}
+2026-10-10T04:26:46Z ext split 04: K=50 unc_calt median 0.4618 oof median nan n_oob min 0 (<3: 1086)
+2026-10-10T04:26:46Z split 04 3s {"peak_rss_sampled_gb": 2.0042152404785156, "peak_working_set_gb": 2.542163848876953, "min_system_available_gb": 3.3018836975097656, "available_now_gb": 4.689586639404297}
+2026-10-10T04:26:49Z ext split 05: K=50 unc_calt median 0.4620 oof median nan n_oob min 0 (<3: 1086)
+2026-10-10T04:26:49Z split 05 3s {"peak_rss_sampled_gb": 2.0042152404785156, "peak_working_set_gb": 2.542163848876953, "min_system_available_gb": 3.3018836975097656, "available_now_gb": 4.665981292724609}
+2026-10-10T04:26:52Z ext split 06: K=50 unc_calt median 0.4185 oof median nan n_oob min 0 (<3: 1086)
+2026-10-10T04:26:52Z split 06 3s {"peak_rss_sampled_gb": 2.0042152404785156, "peak_working_set_gb": 2.542163848876953, "min_system_available_gb": 3.3018836975097656, "available_now_gb": 4.643344879150391}
+2026-10-10T04:26:54Z ext split 07: K=30 unc_calt median 0.3010 oof median nan n_oob min 0 (<3: 1085)
+2026-10-10T04:26:54Z split 07 3s {"peak_rss_sampled_gb": 2.0042152404785156, "peak_working_set_gb": 2.542163848876953, "min_system_available_gb": 3.3018836975097656, "available_now_gb": 4.619087219238281}
+2026-10-10T04:26:57Z ext split 08: K=50 unc_calt median 0.3802 oof median nan n_oob min 0 (<3: 1086)
+2026-10-10T04:26:57Z split 08 3s {"peak_rss_sampled_gb": 2.0042152404785156, "peak_working_set_gb": 2.542163848876953, "min_system_available_gb": 3.3018836975097656, "available_now_gb": 4.598724365234375}
+2026-10-10T04:27:00Z ext split 09: K=30 unc_calt median 0.3190 oof median nan n_oob min 0 (<3: 1086)
+2026-10-10T04:27:00Z split 09 3s {"peak_rss_sampled_gb": 2.0042152404785156, "peak_working_set_gb": 2.542163848876953, "min_system_available_gb": 3.3018836975097656, "available_now_gb": 4.604381561279297}
+2026-10-10T04:27:02Z ext split 10: K=50 unc_calt median 0.3935 oof median nan n_oob min 0 (<3: 1086)
+2026-10-10T04:27:02Z split 10 3s {"peak_rss_sampled_gb": 2.010608673095703, "peak_working_set_gb": 2.542163848876953, "min_system_available_gb": 3.3018836975097656, "available_now_gb": 4.565853118896484}
+2026-10-10T04:27:05Z ext split 11: K=30 unc_calt median 0.3408 oof median nan n_oob min 0 (<3: 1086)
+2026-10-10T04:27:05Z split 11 3s {"peak_rss_sampled_gb": 2.010608673095703, "peak_working_set_gb": 2.542163848876953, "min_system_available_gb": 3.3018836975097656, "available_now_gb": 4.544548034667969}
+2026-10-10T04:27:07Z ext split 12: K=50 unc_calt median 0.4464 oof median nan n_oob min 0 (<3: 1086)
+2026-10-10T04:27:08Z split 12 3s {"peak_rss_sampled_gb": 2.010608673095703, "peak_working_set_gb": 2.542163848876953, "min_system_available_gb": 3.3018836975097656, "available_now_gb": 4.513038635253906}
+2026-10-10T04:27:10Z ext split 13: K=30 unc_calt median 0.3244 oof median nan n_oob min 0 (<3: 1086)
+2026-10-10T04:27:10Z split 13 3s {"peak_rss_sampled_gb": 2.010608673095703, "peak_working_set_gb": 2.542163848876953, "min_system_available_gb": 3.3018836975097656, "available_now_gb": 4.487430572509766}
+2026-10-10T04:27:13Z ext split 14: K=50 unc_calt median 0.4083 oof median nan n_oob min 0 (<3: 1085)
+2026-10-10T04:27:13Z split 14 3s {"peak_rss_sampled_gb": 2.023517608642578, "peak_working_set_gb": 2.542163848876953, "min_system_available_gb": 3.3018836975097656, "available_now_gb": 4.4602203369140625}
+2026-10-10T04:27:15Z ext split 15: K=50 unc_calt median 0.4451 oof median nan n_oob min 0 (<3: 1086)
+2026-10-10T04:27:15Z split 15 3s {"peak_rss_sampled_gb": 2.023517608642578, "peak_working_set_gb": 2.542163848876953, "min_system_available_gb": 3.3018836975097656, "available_now_gb": 4.430278778076172}
+2026-10-10T04:27:18Z ext split 16: K=50 unc_calt median 0.4031 oof median nan n_oob min 0 (<3: 1086)
+2026-10-10T04:27:18Z split 16 3s {"peak_rss_sampled_gb": 2.023517608642578, "peak_working_set_gb": 2.542163848876953, "min_system_available_gb": 3.3018836975097656, "available_now_gb": 4.407478332519531}
+2026-10-10T04:27:21Z ext split 17: K=20 unc_calt median 0.2427 oof median nan n_oob min 0 (<3: 1086)
+2026-10-10T04:27:21Z split 17 3s {"peak_rss_sampled_gb": 2.023517608642578, "peak_working_set_gb": 2.542163848876953, "min_system_available_gb": 3.3018836975097656, "available_now_gb": 4.379177093505859}
+2026-10-10T04:27:23Z ext split 18: K=50 unc_calt median 0.4037 oof median nan n_oob min 0 (<3: 1086)
+2026-10-10T04:27:23Z split 18 3s {"peak_rss_sampled_gb": 2.023517608642578, "peak_working_set_gb": 2.542163848876953, "min_system_available_gb": 3.3018836975097656, "available_now_gb": 4.347789764404297}
+2026-10-10T04:27:26Z ext split 19: K=50 unc_calt median 0.4491 oof median nan n_oob min 0 (<3: 1086)
+2026-10-10T04:27:26Z split 19 3s {"peak_rss_sampled_gb": 2.023517608642578, "peak_working_set_gb": 2.542163848876953, "min_system_available_gb": 3.3018836975097656, "available_now_gb": 4.330677032470703}
+2026-10-10T04:27:29Z ext split 20: K=50 unc_calt median 0.4110 oof median nan n_oob min 0 (<3: 1086)
+2026-10-10T04:27:29Z split 20 3s {"peak_rss_sampled_gb": 2.023517608642578, "peak_working_set_gb": 2.542163848876953, "min_system_available_gb": 3.3018836975097656, "available_now_gb": 4.308441162109375}
+2026-10-10T04:27:29Z ext done in 56s

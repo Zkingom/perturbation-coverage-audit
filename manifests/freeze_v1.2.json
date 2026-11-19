@@ -1,0 +1,33 @@
+{
+ "protocol": "combo_crosscell_v1.2",
+ "frozen_utc": "2026-11-01T08:39:44Z",
+ "frozen_local": "2026-11-01 16:39 (UTC+8)",
+ "protocol_file": {
+  "path": "reports/protocol/combo_crosscell_v1.2.md",
+  "sha256": "4520fe6b50097781fc6a3c58e80026661146263b7aa6871e750c5f83213735f6"
+ },
+ "reused_frozen_code": {
+  "models_v04.py": "5fa95b4d94864d2bdd899d4f70c79d2e4863abb8a5a42b3246d54b7439141dc1",
+  "pseudobulk_v06.py": "ef2bc89fe1516f68b6b4e47ab45ad3ba5a8bce85cb4410f093e5e061661d50f2",
+  "lowmem_v07.py": "bdb98fce0a0b11f324382d6b0c078a5bab690fd7e837b78c84c546bee2aaaff5",
+  "data_v07.py": "67bbf4ba9c69304efb4fd10b6d63de3ef35f98aac44b1e2ce83e1ff126ecd91b",
+  "splits_v06.py": "a10d073b5ecfa0d5b3fef8d304876660f06314a5dacf60bd24593dd03b248827",
+  "audit_lib.py": "dad2208c051fb5a50af3ff9166b0c1e2cada7b12e315ae9fdb0f52a87b9491ab",
+  "paths.py": "5f153e53d8a500fb6d53977e9e1980fa264487c3a0e883172480b373908b1128",
+  "eval_v06.py": "4bddaa54bf158200b05903b5ee48db82a8ba39aa2443af2bbc5a5568d044c1ee",
+  "resume_v07.py": "bdeb590081511ab39826a79399f3a1e1ed390b83f65e126be4b37cd0ca7aa609",
+  "coupling_controls_v11.py": "b1dbaacbdb4384976492323d70b11688fb7c64caadd0e615a0ed425ab0c90430"
+ },
+ "constants_source": {
+  "path": "reports/review/constructive_reference_by_model_v2.csv",
+  "sha256": "2fe7b72d540f511e8239aecd65d80d0c96b22ef7e079c912ef680cbde7601043",
+  "R_lo": 0.112,
+  "R_hi": 0.224
+ },
+ "data_state_at_freeze": {
+  "G:\\biology\\scperturb_13350497": false,
+  "G:\\biology\\geo_GSE264667": false
+ },
+ "pending_user_confirmation": "section 3.3 item 3: linear-PCA embedding for double perturbations P_AB = G[A] + G[B] (algorithm extension); if rejected, amend as v1.2.1 before any data is read",
+ "master_seed": 20261001
+}

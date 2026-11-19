@@ -1,0 +1,23 @@
+2026-11-05 21:10:43 Ensembl: 336 ids, by id 335, by symbol 1, missing 0, release {'releases': [116]}, assembly GRCh38.p14
+2026-11-05 21:10:43 C0 {"E": 1908, "E_tss_groups": 1835, "always_train": 452, "cells": 262956, "rows": 2679, "coord_source": {"archive_ensembl116": 2055, "id": 335, "symbol": 3}, "half_reconstruction_max_abs_diff": 5.329070518200751e-15, "test_size_range": [272, 273]}
+2026-11-05 21:14:55 split 00 done K=50 test=273 cal=286 10.7s
+2026-11-05 21:15:05 split 01 done K=50 test=273 cal=286 10.8s
+2026-11-05 21:15:16 split 02 done K=50 test=273 cal=286 10.8s
+2026-11-05 21:15:27 split 03 done K=50 test=273 cal=286 10.8s
+2026-11-05 21:15:38 split 04 done K=50 test=272 cal=286 10.7s
+2026-11-05 21:15:49 split 05 done K=50 test=272 cal=286 10.7s
+2026-11-05 21:15:59 split 06 done K=50 test=272 cal=286 10.7s
+2026-11-05 21:16:11 split 07 done K=50 test=273 cal=286 11.7s
+2026-11-05 21:16:22 split 08 done K=30 test=273 cal=286 10.9s
+2026-11-05 21:16:33 split 09 done K=50 test=273 cal=286 10.8s
+2026-11-05 21:16:43 split 10 done K=50 test=273 cal=285 10.7s
+2026-11-05 21:16:54 split 11 done K=50 test=272 cal=286 10.5s
+2026-11-05 21:17:05 split 12 done K=50 test=272 cal=286 11.1s
+2026-11-05 21:17:16 split 13 done K=50 test=272 cal=285 10.9s
+2026-11-05 21:17:27 split 14 done K=50 test=273 cal=286 10.9s
+2026-11-05 21:17:37 split 15 done K=50 test=273 cal=286 10.8s
+2026-11-05 21:17:48 split 16 done K=30 test=273 cal=286 10.8s
+2026-11-05 21:18:00 split 17 done K=30 test=273 cal=286 12.2s
+2026-11-05 21:18:12 split 18 done K=50 test=272 cal=286 11.1s
+2026-11-05 21:18:23 split 19 done K=50 test=272 cal=286 11.0s
+2026-11-05 21:18:33 split 20 done K=50 test=272 cal=286 11.0s

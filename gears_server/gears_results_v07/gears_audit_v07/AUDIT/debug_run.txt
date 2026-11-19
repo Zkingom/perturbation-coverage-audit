@@ -1,0 +1,76 @@
+/root/autodl-tmp/gears/gears_bundle_v07/venv_gears/lib/python3.10/site-packages/numba/np/ufunc/parallel.py:371: NumbaWarning: The TBB threading layer requires TBB version 2021 update 6 or later i.e., TBB_INTERFACE_VERSION >= 12060. Found TBB_INTERFACE_VERSION = 12050. The TBB threading layer is disabled.
+  warnings.warn(problem)
+[fast_predict_patch] GEARS predict 加速补丁已启用
+[mem_patch] GEARS similarity-network cache enabled
+[mem_patch] lean evaluate enabled
+[mem_patch] deeper_analysis / non_dropout_analysis without full densify
+[debug sitecustomize] tracing on, epochs = 1
+2026-10-26 20:22:56 split 00: start
+Found local copy...
+Found local copy...
+These perturbations are not in the GO graph and their perturbation can thus not be predicted
+[]
+Local copy of pyg dataset is detected. Loading...
+Done!
+Creating dataloaders....
+Done!
+[trace] 20:23:57 enter GEARS.model_initialize rss=10605MB
+[mem_patch] co-express network from cache coexp_bcc190262e356000_custom_1_0.75_0.4_20.csv
+[mem_patch] GO network from cache go_default_k20.pkl
+[trace] 20:23:59 exit  GEARS.model_initialize rss=10667MB
+[trace] 20:23:59 enter GEARS.train rss=10667MB
+Start Training...
+Epoch 1 Step 1 Train Loss: 0.4769
+Epoch 1 Step 51 Train Loss: 0.4875
+Epoch 1 Step 101 Train Loss: 0.4709
+Epoch 1 Step 151 Train Loss: 0.5142
+Epoch 1 Step 201 Train Loss: 0.5019
+Epoch 1 Step 251 Train Loss: 0.4993
+Epoch 1 Step 301 Train Loss: 0.4824
+Epoch 1 Step 351 Train Loss: 0.4263
+Epoch 1 Step 401 Train Loss: 0.4828
+Epoch 1 Step 451 Train Loss: 0.4992
+Epoch 1 Step 501 Train Loss: 0.4465
+Epoch 1 Step 551 Train Loss: 0.4801
+Epoch 1 Step 601 Train Loss: 0.5428
+Epoch 1 Step 651 Train Loss: 0.4199
+Epoch 1 Step 701 Train Loss: 0.4548
+Epoch 1 Step 751 Train Loss: 0.4638
+Epoch 1 Step 801 Train Loss: 0.4698
+Epoch 1 Step 851 Train Loss: 0.4616
+Epoch 1 Step 901 Train Loss: 0.4563
+Epoch 1 Step 951 Train Loss: 0.4734
+Epoch 1 Step 1001 Train Loss: 0.4735
+Epoch 1 Step 1051 Train Loss: 0.4572
+Epoch 1 Step 1101 Train Loss: 0.4258
+Epoch 1 Step 1151 Train Loss: 0.4392
+[trace] 20:26:55 enter evaluate rss=11047MB
+[trace] 20:27:41 exit  evaluate rss=12303MB
+[trace] 20:27:41 enter evaluate rss=12303MB
+[trace] 20:27:44 exit  evaluate rss=12304MB
+[trace] 20:27:44 enter compute_metrics rss=12304MB
+[trace] 20:27:53 exit  compute_metrics rss=12298MB
+[trace] 20:27:53 enter compute_metrics rss=12298MB
+[trace] 20:27:53 exit  compute_metrics rss=12298MB
+Epoch 1: Train Overall MSE: 0.0239 Validation Overall MSE: 0.0226. 
+Train Top 20 DE MSE: 0.0648 Validation Top 20 DE MSE: 0.0567. 
+Done!
+Start Testing...
+[trace] 20:27:53 enter evaluate rss=12298MB
+[trace] 20:28:04 exit  evaluate rss=12846MB
+[trace] 20:28:04 enter compute_metrics rss=12846MB
+[trace] 20:28:05 exit  compute_metrics rss=12846MB
+Best performing model: Test Top 20 DE MSE: 0.0530
+[trace] 20:28:05 enter deeper_analysis rss=12846MB
+[trace] 20:28:20 exit  deeper_analysis rss=12809MB
+[trace] 20:28:20 enter non_dropout_analysis rss=12809MB
+[trace] 20:28:27 exit  non_dropout_analysis rss=12809MB
+Done!
+[trace] 20:28:27 exit  GEARS.train rss=12261MB
+[trace] 20:28:27 enter GEARS.predict rss=12261MB
+[trace] 20:31:27 exit  GEARS.predict rss=12645MB
+[trace] 20:31:27 enter GEARS.save_model rss=12645MB
+[trace] 20:31:27 exit  GEARS.save_model rss=12645MB
+2026-10-26 20:31:28 split 00 done {"split": 0, "seed_mode": "benchmark", "seed": 1, "hp": {"hidden_size": 64, "epochs": 20, "uncertainty": false, "batch_size": 32, "test_batch_size": 128}, "timing_s": {"load_s": 56, "train_s": 269, "predict_s": 180}, "total_s": 511, "peak_rss_gb": 13.03, "peak_gpu_alloc_gb": 4.49, "peak_gpu_reserved_gb": 9.56, "gpu": "NVIDIA GeForce RTX 3060", "n_pred": 688, "n_genes": 8749, "finite": true}
+2026-10-26 20:31:28 verify: 1/21 splits done and hash-verified
+EXIT rc=0

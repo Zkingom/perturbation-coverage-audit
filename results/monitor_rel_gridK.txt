@@ -1,0 +1,8 @@
+2026-10-15 21:16:28	step1	2820	True	3.44	0.58	21:16:24 dev: effect strengths
+2026-10-15 21:18:28	step1	2820	True	2.51	1.29	21:17:51 gwps: effect strengths
+2026-10-15 21:19:38	step1	2820	False	3.65	0.00	21:19:32 done
+2026-10-15 21:19:50	step2	15148	True	3.00	0.46	2026-10-15T13:19:48Z available memory at start 3.31 GB; process memory cap 4.0 GB; 130 min to the power cut
+2026-10-15 21:21:50	step2	15148	True	2.03	1.18	2026-10-15T13:21:46Z time check for ext split 00: 113 min usable before the power cut, need 8 min -> start
+2026-10-15 21:23:50	step2	15148	True	2.87	0.31	  return pd.concat(out, ignore_index=True)
+2026-10-15 21:25:20	step2	15148	False	2.78	0.00	2026-10-15T13:25:12Z run done rc=0 seconds={"stage1": 113, "ext": 67, "stage2": 140} peak RSS 1.32 GB
+2026-10-15 21:25:35	step3	1656	False	2.50	0.00	2026-10-15T13:25:34Z STOP: available memory 2.39 GB < 2.5 GB

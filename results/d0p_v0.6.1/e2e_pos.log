@@ -1,0 +1,62 @@
+F:\codex_in_this\claude_science\code\eval_v06.py:229: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+stage1 split 00 round 0 fold 0 K=30 d=100 n_test=102 91.3s
+stage1 split 01 round 0 fold 1 K=50 d=100 n_test=101 86.6s
+stage1 split 02 round 0 fold 2 K=10 d=100 n_test=101 83.7s
+stage1 split 03 round 0 fold 3 K=10 d=100 n_test=101 83.7s
+stage1 split 04 round 0 fold 4 K=30 d=100 n_test=101 82.1s
+stage1 split 05 round 0 fold 5 K=50 d=100 n_test=101 87.4s
+stage1 split 06 round 0 fold 6 K=10 d=100 n_test=101 86.9s
+stage1 split 07 round 1 fold 0 K=10 d=100 n_test=102 87.3s
+stage1 split 08 round 1 fold 1 K=10 d=100 n_test=101 89.4s
+stage1 split 09 round 1 fold 2 K=10 d=100 n_test=101 89.3s
+stage1 split 10 round 1 fold 3 K=10 d=100 n_test=101 88.6s
+stage1 split 11 round 1 fold 4 K=10 d=100 n_test=101 87.9s
+stage1 split 12 round 1 fold 5 K=10 d=100 n_test=101 88.5s
+stage1 split 13 round 1 fold 6 K=10 d=100 n_test=101 90.3s
+stage1 split 14 round 2 fold 0 K=50 d=100 n_test=102 93.0s
+stage1 split 15 round 2 fold 1 K=50 d=100 n_test=101 90.0s
+stage1 split 16 round 2 fold 2 K=50 d=100 n_test=101 88.1s
+stage1 split 17 round 2 fold 3 K=50 d=100 n_test=101 88.5s
+stage1 split 18 round 2 fold 4 K=50 d=100 n_test=101 87.6s
+stage1 split 19 round 2 fold 5 K=50 d=100 n_test=101 82.6s
+stage1 split 20 round 2 fold 6 K=50 d=100 n_test=101 82.4s
+selected proxies: h=sim_prior_base|ridge d=gbm s=gbm
+Traceback (most recent call last):
+  File "F:\codex_in_this\claude_science\code\tests_v06.py", line 384, in <module>
+    e2e(sys.argv[2], sys.argv[3])
+  File "F:\codex_in_this\claude_science\code\tests_v06.py", line 356, in e2e
+    summ, cov, pt = p6.run_dataset(D, ev.DEV_SEED_BASE, outdir, n_rounds=3)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\codex_in_this\claude_science\code\pipeline_v06.py", line 84, in run_dataset
+    parts.append(ev.apply_methods(c, P, ev.PRIMARY_K, sel, mode="matched_cal"))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\codex_in_this\claude_science\code\eval_v06.py", line 202, in apply_methods
+    a_used, _, resid, mono = match_width(name, hy, s_cal, P_cal, P_cal, P_oof, u_cal, W0)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\codex_in_this\claude_science\code\methods_v06.py", line 202, in match_width
+    if W(lo) <= target:
+       ^^^^^
+  File "F:\codex_in_this\claude_science\code\methods_v06.py", line 197, in W
+    t = thresholds(name, hyper, s_cal, P_cal, P_q, P_oof, u_q, grid[i])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\codex_in_this\claude_science\code\methods_v06.py", line 173, in thresholds
+    return _gcc_thresholds(s_cal, f(P_cal[var]), f(P_q[var]), u_q, alpha)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\codex_in_this\claude_science\code\methods_v06.py", line 153, in _gcc_thresholds
+    return np.array([m3_threshold(Phi_cal, s_cal, Phi_q[i], u[i] - alpha, alpha) for i in range(len(Phi_q))])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\codex_in_this\claude_science\code\methods_v06.py", line 153, in <listcomp>
+    return np.array([m3_threshold(Phi_cal, s_cal, Phi_q[i], u[i] - alpha, alpha) for i in range(len(Phi_q))])
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\codex_in_this\claude_science\code\methods_v06.py", line 117, in m3_threshold
+    raise RuntimeError(f"M3 LP failed: {r.message}")
+RuntimeError: M3 LP failed: (HiGHS Status 0: Not Set)
+
+==== rerun after M3 solver fallback fix ====
+F:\codex_in_this\claude_science\code\eval_v06.py:229: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+selected proxies: h=sim_prior_base|ridge d=gbm s=gbm
+stage 2 rows 923940 in 1506s
+primary M1 0.0; best M_dist Mdist-N 1.0
+{"kind": "pos", "expected_11d": {"P+": true, "matched T5 primary - M0: CI lower > 0": true, "(b2) h coefficient CI lower > 1 (OR)": true, "matched T5 Mcomb-N - best M_dist > 0": true}, "all_expected_pass": true}

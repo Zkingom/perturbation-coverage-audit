@@ -1,0 +1,28 @@
+{
+ "split": 19,
+ "at": {
+  "n": 257,
+  "n_target_in_readout": 74,
+  "n_target_not_in_readout": 183,
+  "n_excluded_columns_counts": {
+   "0": 183,
+   "1": 74
+  },
+  "n_nonfinite": 0,
+  "max_abs_diff_vs_cache": 0.0,
+  "n_cells_lt30": 79
+ },
+ "learner": {
+  "n": 1086,
+  "n_target_in_readout": 1086,
+  "n_target_not_in_readout": 0,
+  "n_excluded_columns_counts": {
+   "1": 1085,
+   "2": 1
+  },
+  "n_nonfinite": 0,
+  "max_abs_diff_vs_cache": 0.0,
+  "n_cells_lt30": 0
+ },
+ "pass": true
+}

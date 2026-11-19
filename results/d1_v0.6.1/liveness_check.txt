@@ -1,0 +1,1 @@
+2026-10-09T08:32:13.6503797Z pid=10960 alive=True (checked via Get-Process; proc.poll() not callable, kernel busy with monitor cell) cpu_delta_30s=29.91s cpu_total=3414.9s rss_gb=2.52->2.52

@@ -1,0 +1,102 @@
+number_in_text,where,source_file,field,value,auto_check,evidence_tier
+0.059 (R GEARS),"Results, Discussion",results/gears_coupling_v1.1/gears_coupling_result.json,v1.0.gears.R,0.05915144734945965,ok,post-confirmation (protocol gears_coupling v1.0/v1.1)
+0.065 (R linear-PCA),Results,results/gears_coupling_v1.1/gears_coupling_result.json,v1.0.linear_pca.R,0.0652589753683509,ok,"post-confirmation, descriptive"
+"0.91 [0.76, 1.11] (R ratio)","Results, Discussion",results/gears_coupling_v1.1/gears_coupling_result.json,v1.0.R_ratio / R_ratio_CI,"0.9064 [0.7590900463707458, 1.108014570988918]",ok,post-confirmation (protocol gears_coupling v1.0/v1.1)
+24% down / 11% up,Results,results/gears_coupling_v1.1/gears_coupling_result.json,1 − R_ratio_CI[0]; R_ratio_CI[1] − 1,"[0.7590900463707458, 1.108014570988918]",no decimal token (counts/text),execution record / provenance
+0.112 / 0.097 (CV),Results,results/gears_coupling_v1.1/gears_coupling_result.json,v1.0.gears.CV; v1.0.linear_pca.CV,"(0.11201026102212434, 0.09691393291513699)",ok,post-confirmation (protocol gears_coupling v1.0/v1.1)
+"1.16 [1.06, 1.27] (CV ratio)",Results,results/gears_coupling_v1.1/gears_coupling_result.json,v1.0.CV_ratio / CV_ratio_CI,"(1.1557704620264095, [1.0594012377466906, 1.2665952116731034])",ok,post-confirmation (protocol gears_coupling v1.0/v1.1)
+6.3% / 9.7% (RER GEARS),Results,results/gears_coupling_v1.1/gears_coupling_result.json,v1.0.gears.RER / RER_T5,"(0.06256819890073495, 0.09714141539797205)",ok,post-confirmation (protocol gears_coupling v1.0/v1.1)
+4.3% / 7.9% (RER PCA),Results,results/gears_coupling_v1.1/gears_coupling_result.json,v1.0.linear_pca.RER / RER_T5,"(0.0431270882301138, 0.07879688987363065)",ok,post-confirmation (protocol gears_coupling v1.0/v1.1)
+"+1.9 [1.5, 2.4] pp",Results,results/gears_coupling_v1.1/gears_coupling_result.json,v1.0.dRER_all / dRER_all_CI,"(0.019441110670621153, [0.014643332550895002, 0.02413912306110471])",ok,execution record / provenance
+"+1.8 [0.8, 2.8] pp",Results,results/gears_coupling_v1.1/gears_coupling_result.json,v1.0.dRER_T5 / dRER_T5_CI,"(0.018344525524341404, [0.008069045964667922, 0.028186390152024475])",ok,execution record / provenance
+0.498 (GEARS M0 T5),"Results, Discussion",results/gears_coupling_v1.1/gears_coupling_result.json,v1.0.coverage.M0_T5,0.49762131303520457,ok,post-confirmation (protocol gears_coupling v1.0/v1.1)
+1.000 (T1–T4),Results,results/gears_coupling_v1.1/gears_coupling_result.json,v1.0.coverage.tiers.1–4,1.0,ok,execution record / provenance
+0.899 (marginal),Results,results/gears_coupling_v1.1/gears_coupling_result.json,v1.0.coverage.M0_marginal,0.8994860079954312,ok,execution record / provenance
+"0.830 [0.788, 0.867] (positive R, RPE1)","Results, Discussion",results/gears_coupling_v1.1/controls_summary.json,rpe1.positive.R_ctrl_half / R_ctrl_CI,"(0.8296756680584942, [0.78833143072251, 0.8666872049756709])",ok,post-confirmation (protocol gears_coupling v1.0/v1.1)
+0.039 (PCA half basis),"Results, Discussion",results/gears_coupling_v1.1/controls_summary.json,rpe1.positive.R_pca_half,0.038758935859378285,ok,post-confirmation (protocol gears_coupling v1.0/v1.1)
+0.036 (GEARS half basis),"Results, Discussion",results/gears_coupling_v1.1/gears_coupling_result.json,v1.1.half.gears.R,0.036393192029733235,ok,post-confirmation (protocol gears_coupling v1.0/v1.1)
+"+28.9 [27.5, 30.3] pp; +44.9 pp T5",Results,results/gears_coupling_v1.1/controls_summary.json,rpe1.positive.dRER_all(_CI) / dRER_T5,"(0.2891264809967595, [0.27452235629900834, 0.3033916770561615], 0.4494147708503249)",ok,execution record / provenance
+0.980 vs 0.104 (dev positive),Results,results/gears_coupling_v1.1/controls_summary.json,dev.positive.R_ctrl_half / R_pca_half,"(0.9804287948335859, 0.10429281727227546)",ok,post-confirmation (protocol gears_coupling v1.0/v1.1)
+20/20 (PCA negative),"Results, Discussion",results/gears_coupling_v1.1/gears_coupling_result.json,v1.1.pca_negative.verdict_counts,{'not reduced': 20},no decimal token (counts/text),post-confirmation (protocol gears_coupling v1.0/v1.1)
+"19/20, 1/20 (GEARS negative)","Results, Discussion",results/gears_coupling_v1.1/gears_coupling_result.json,v1.1.gears_negative.verdict_counts,"{'not reduced': 19, 'coupling metrics up with accuracy down': 1}",no decimal token (counts/text),post-confirmation (protocol gears_coupling v1.0/v1.1)
+3.4% / 0.6% (permuted RER; out-of-protocol),Discussion,results/gears_coupling_v1.1/gears_coupling_result.json,v1.1.gears_negative.RER_mean; v1.1.pca_negative.RER_mean,"(0.03393787040584849, 0.0059739746743170345)",ok,outside protocol (observation)
+0.112 (dev R linear-PCA),Results,results/gears_coupling_v1.1/controls_summary.json,dev.full.linear_pca.R,0.11221412197296354,ok,"post-confirmation, descriptive"
+"5,253 rows",Methods,results/gears_coupling_v1.1/gears_coupling_result.json,v1.0.gears.n,5253,no decimal token (counts/text),execution record / provenance
+0.740 / 0.708 / 0.822 (top 10% by ĥ),Results,reports/review/constructive_subset_coverage.csv,"coverage, subset 'top 10% by h'","[0.7399, 0.7083, 0.8223]",ok,"post-confirmation, descriptive"
+within 3.1 pp,Results,reports/review/constructive_subset_coverage.csv,"max |deficit_beyond_mix|, top 10% by h",0.0314,ok,execution record / provenance
+0.886 / 0.890 / 0.892 (CORUM),Results,reports/review/corum_subset_coverage.csv,"coverage, CORUM complex member","[0.886, 0.8902, 0.8921]",ok,"post-confirmation, descriptive"
+RTX 3060,"Methods, Discussion",G:/biology/gears_results_v07/gears_results_v07/results/split_XX/done.json,gpu (all 21),NVIDIA GeForce RTX 3060,manual: checked against the named log/audit file on 2026-10-28,execution record / provenance
+hidden 64 / 20 epochs / batch 32 / test batch 128 / seed 1,Methods,G:/biology/gears_results_v07/gears_results_v07/results/split_XX/done.json,"hp, seed",,manual: checked against the named log/audit file on 2026-10-28,execution record / provenance
+"84 min; 4,779 s vs 269 s",Methods,G:/biology/gears_results_v07/gears_audit_v07/AUDIT/run_all.log; done.json timing_s; debug_run.txt,split 00,,manual: checked against the named log/audit file on 2026-10-28,execution record / provenance
+21/21 rc=0,"Methods, Discussion",AUDIT/run_all.log; logs/run_all_timing.txt,,,manual: checked against the named log/audit file on 2026-10-28,execution record / provenance
+"13,728 edges; 2.9e-5",Methods,G:/biology/FINAL_SUMMARY.txt,postchecks (B),,manual: checked against the named log/audit file on 2026-10-28,execution record / provenance
+15 GB container limit; exit code 137,"Methods, Discussion",executing agent's report relayed by the user; AUDIT/mem_run.txt maxuse=15360MB,,,manual: checked against the named log/audit file on 2026-10-28,execution record / provenance
+"11,485 ctrl; 587 AT; 15 excluded; 8,749 genes; seed 20270701",Methods,gears_bundle_v07/bundle_info.json; manifests/freeze_gears_coupling_v1.0.json,,,no decimal token (counts/text),execution record / provenance
+175 val; 511–513 cal+test,Methods,"AUDIT/coexp_manifest.tsv (val_n, test_n)",,,manual: checked against the named log/audit file on 2026-10-28,execution record / provenance
+"sha256 fb789a15…, 23b6f082…",Methods,"manifests/freeze_gears_coupling_v1.0.json, _v1.1.json",protocol_file.sha256,,manual: checked against the named log/audit file on 2026-10-28,execution record / provenance
+"sha256 e92e9bb9…, 05a957c4…",Methods,G:/biology/*.tar.gz.sha256 (verified locally),,,manual: checked against the named log/audit file on 2026-10-28,execution record / provenance
+pip versions,Methods,AUDIT/pip_freeze.txt,,,manual: checked against the named log/audit file on 2026-10-28,execution record / provenance
+"B0 0.48 [0.43, 0.53], 0.52 [0.49, 0.55]; E1 +9.7 [5.8, 13.6], +1.0 [−0.1, 2.1]",Abstract,"results/conf_v0.7/{rpe1,gwps}/confirm_v07_result.json",B0.M0_T5; step1.E1,unchanged; also in Table S5,manual: checked against the named log/audit file on 2026-10-28,execution record / provenance
+all other numbers (unchanged from v0.8 / v0.5 / v0.1),"Results, Discussion, Introduction",reports/review/source_to_number_mapping.csv (Table S5),,unchanged,manual: checked against the named log/audit file on 2026-10-28,execution record / provenance
+0.517 / 0.508 / 0.504 (simulated constructive reference),"Results, Methods",results/constructive_reference_mc/mc_result.json,"results.{dev,rpe1,gwps}.sim_mean",,ok,"post-confirmation, descriptive"
+"seed 20261001; 4,000 replicates",Methods,results/constructive_reference_mc/mc_result.json,seed; reps,,no decimal token (counts/text),execution record / provenance
+0.511 / 0.493 / 0.520 (mean-model T5 = constructive realisation),Results,reports/review/constructive_reference_by_model_v2.csv,"T5_cov, model = mean",,ok,"post-confirmation, descriptive"
+−1.3 to +1.5 pp (observed − mean-model reference),"Results, Discussion",reports/review/constructive_reference_by_model_v2.csv,"excess_vs_constructive, linear_pca/linear_go (×100)",,ok,"post-confirmation, descriptive"
+−2.8 to +1.4 pp (observed − simulated reference),"Results, Discussion",reports/review/constructive_reference_by_model_v2.csv,"excess_vs_mc_pp, linear_pca/linear_go",,ok,"post-confirmation, descriptive"
+"0.708 / 0.734 / 0.835 (composition-expected, top 10% by ĥ)",Supplementary Note 1 §6,reports/review/constructive_subset_coverage.csv,expected_from_tier_mix,,ok,"post-confirmation, descriptive"
+0.065 / 0.112 (R linear-PCA RPE1/dev),Results,reports/review/constructive_reference_by_model_v2.csv,"resid_var_share_log, linear_pca",,ok,"post-confirmation, descriptive"
+"0.516 [0.468, 0.564]",Results/Discussion/Abstract (unchanged),results/d1_v0.7dev/confirm_v07_on_dev/confirm_v07_dev.json,B0.M0_T5.cov/lo/hi,"M0 T5 coverage, development",ok,descriptive (development)
+0.904,Results/Discussion/Abstract (unchanged),results/d1_v0.7dev/confirm_v07_on_dev/confirm_v07_dev.json,nominal_marginal_primary,"nominal marginal coverage, development",ok,descriptive (development)
+0.494 / 0.793,Results/Discussion/Abstract (unchanged),results/d1_v0.7dev/confirm_v07_on_dev/confirm_v07_dev.json,"P.rho, P.auroc_T5","rho(h,E) and AUROC(T5), development",ok,descriptive (development)
+"+12.0 [8.0, 16.0]",Results/Discussion/Abstract (unchanged),results/d1_v0.7dev/confirm_v07_on_dev/confirm_v07_dev.json,step1.E1.diff/lo/hi,"step 1 E1 (M1 - M0, T5), development",ok,descriptive (development)
+"+15.4 [10.8, 20.0]; ratio 1.38",Results/Discussion/Abstract (unchanged),results/d1_v0.7dev/confirm_v07_on_dev/confirm_v07_dev.json,step1.E2.*,"step 1 E2 + subset width ratio, development",ok,descriptive (development)
+"+6.3 [3.2, 9.4]",Results/Discussion/Abstract (unchanged),results/d1_v0.7dev/confirm_v07_on_dev/confirm_v07_dev.json,step2.E1.*,"step 2 E1 (M1 - Mdist-M, T5), development",ok,descriptive (development)
+"+48.2 [43.3, 53.0]",Results/Discussion/Abstract (unchanged),results/d1_v0.7dev/confirm_v07_on_dev/confirm_v07_dev.json,descriptive_rand.oracle.E1_vs_M0,"oracle E1 vs M0, development",ok,descriptive
+"+4.2 [1.5, 6.9]",Results/Discussion/Abstract (unchanged),results/d1_v0.7dev/confirm_v07_on_dev/confirm_v07_dev.json,descriptive_rand.Mdist-N.E1_vs_M0,"Mdist-N E1 vs M0, development",ok,descriptive
+"+5.7 [2.1, 9.2]",Results/Discussion/Abstract (unchanged),results/d1_v0.7dev/confirm_v07_on_dev/confirm_v07_dev.json,descriptive_rand.Mdist-M.E1_vs_M0,"Mdist-M E1 vs M0, development",ok,descriptive
+"-0.9 [-3.1, 1.3]",Results/Discussion/Abstract (unchanged),results/d1_v0.7dev/confirm_v07_on_dev/confirm_v07_dev.json,descriptive_rand.MD-GO.E1_vs_M0,"MD-GO E1 vs M0, development",ok,descriptive
+"-0.5 [-4.2, 3.2]",Results/Discussion/Abstract (unchanged),results/d1_v0.7dev/confirm_v07_on_dev/confirm_v07_dev.json,descriptive_rand.MD-STR.E1_vs_M0,"MD-STR E1 vs M0, development",ok,descriptive
+"-6.5 [-10.2, -2.8]",Results/Discussion/Abstract (unchanged),results/d1_v0.7dev/confirm_v07_on_dev/confirm_v07_dev.json,descriptive_rand.Munc-N.E1_vs_M0,"Munc-N E1 vs M0, development",ok,descriptive
+"-0.9 [-3.0, 1.1]",Results/Discussion/Abstract (unchanged),results/d1_v0.7dev/confirm_v07_on_dev/confirm_v07_dev.json,descriptive_rand.Munc-M.E1_vs_M0,"Munc-M E1 vs M0, development",ok,descriptive
+"+12.7 [8.7, 16.7]",Results/Discussion/Abstract (unchanged),results/d1_v0.7dev/confirm_v07_on_dev/confirm_v07_dev.json,descriptive_rand.Mscore-N.E1_vs_M0,"Mscore-N E1 vs M0, development",ok,descriptive
+"+12.3 [8.2, 16.3]",Results/Discussion/Abstract (unchanged),results/d1_v0.7dev/confirm_v07_on_dev/confirm_v07_dev.json,sensitivity_grid_matching.step1.E1,"grid-matching sensitivity step 1 E1, development",ok,descriptive
+"0.552 [0.503, 0.600]",Results/Discussion/Abstract (unchanged),results/noise_floor_illustrative_v07/dev/noise_floor_results.json,M0_tiers_corr.5,"M0 T5 coverage, noise-corrected tiers, development",ok,post hoc illustrative (outside protocol)
+-0.256 -> 0.221,Results/Discussion/Abstract (unchanged),results/noise_floor_illustrative_v07/dev/noise_floor_results.json,rho_logn.E / .E_corr,"rho(E, log cells) before/after correction, development",ok,post hoc illustrative (outside protocol)
+"0.480 [0.431, 0.528]",Results/Discussion/Abstract (unchanged),results/conf_v0.7/rpe1/confirm_v07_result.json,B0.M0_T5.cov/lo/hi,"M0 T5 coverage, RPE1",ok,confirmatory
+0.900,Results/Discussion/Abstract (unchanged),results/conf_v0.7/rpe1/confirm_v07_result.json,nominal_marginal_primary,"nominal marginal coverage, RPE1",ok,confirmatory
+0.427 / 0.742,Results/Discussion/Abstract (unchanged),results/conf_v0.7/rpe1/confirm_v07_result.json,"P.rho, P.auroc_T5","rho(h,E) and AUROC(T5), RPE1",ok,confirmatory
+"+9.7 [5.8, 13.6]",Results/Discussion/Abstract (unchanged),results/conf_v0.7/rpe1/confirm_v07_result.json,step1.E1.diff/lo/hi,"step 1 E1 (M1 - M0, T5), RPE1",ok,confirmatory
+"+17.4 [12.6, 22.3]; ratio 1.38",Results/Discussion/Abstract (unchanged),results/conf_v0.7/rpe1/confirm_v07_result.json,step1.E2.*,"step 1 E2 + subset width ratio, RPE1",ok,confirmatory
+"+10.9 [7.8, 14.0]",Results/Discussion/Abstract (unchanged),results/conf_v0.7/rpe1/confirm_v07_result.json,step2.E1.*,"step 2 E1 (M1 - Mdist-M, T5), RPE1",ok,confirmatory
+"+52.0 [47.1, 56.8]",Results/Discussion/Abstract (unchanged),results/conf_v0.7/rpe1/confirm_v07_result.json,descriptive_rand.oracle.E1_vs_M0,"oracle E1 vs M0, RPE1",ok,descriptive
+"+1.7 [-0.1, 3.6]",Results/Discussion/Abstract (unchanged),results/conf_v0.7/rpe1/confirm_v07_result.json,descriptive_rand.Mdist-N.E1_vs_M0,"Mdist-N E1 vs M0, RPE1",ok,descriptive
+"-1.2 [-4.1, 1.6]",Results/Discussion/Abstract (unchanged),results/conf_v0.7/rpe1/confirm_v07_result.json,descriptive_rand.Mdist-M.E1_vs_M0,"Mdist-M E1 vs M0, RPE1",ok,descriptive
+"-1.1 [-3.7, 1.4]",Results/Discussion/Abstract (unchanged),results/conf_v0.7/rpe1/confirm_v07_result.json,descriptive_rand.MD-GO.E1_vs_M0,"MD-GO E1 vs M0, RPE1",ok,descriptive
+"+0.1 [-3.5, 3.7]",Results/Discussion/Abstract (unchanged),results/conf_v0.7/rpe1/confirm_v07_result.json,descriptive_rand.MD-STR.E1_vs_M0,"MD-STR E1 vs M0, RPE1",ok,descriptive
+"-4.6 [-9.7, 0.6]",Results/Discussion/Abstract (unchanged),results/conf_v0.7/rpe1/confirm_v07_result.json,descriptive_rand.Munc-N.E1_vs_M0,"Munc-N E1 vs M0, RPE1",ok,descriptive
+"-1.8 [-3.4, -0.2]",Results/Discussion/Abstract (unchanged),results/conf_v0.7/rpe1/confirm_v07_result.json,descriptive_rand.Munc-M.E1_vs_M0,"Munc-M E1 vs M0, RPE1",ok,descriptive
+"+11.9 [7.8, 16.0]",Results/Discussion/Abstract (unchanged),results/conf_v0.7/rpe1/confirm_v07_result.json,descriptive_rand.Mscore-N.E1_vs_M0,"Mscore-N E1 vs M0, RPE1",ok,descriptive
+"+10.3 [6.3, 14.2]",Results/Discussion/Abstract (unchanged),results/conf_v0.7/rpe1/confirm_v07_result.json,sensitivity_grid_matching.step1.E1,"grid-matching sensitivity step 1 E1, RPE1",ok,descriptive
+"0.492 [0.443, 0.542]",Results/Discussion/Abstract (unchanged),results/noise_floor_illustrative_v07/rpe1/noise_floor_results.json,M0_tiers_corr.5,"M0 T5 coverage, noise-corrected tiers, RPE1",ok,post hoc illustrative (outside protocol)
+-0.512 -> -0.044,Results/Discussion/Abstract (unchanged),results/noise_floor_illustrative_v07/rpe1/noise_floor_results.json,rho_logn.E / .E_corr,"rho(E, log cells) before/after correction, RPE1",ok,post hoc illustrative (outside protocol)
+"0.518 [0.490, 0.546]",Results/Discussion/Abstract (unchanged),results/conf_v0.7/gwps/confirm_v07_result.json,B0.M0_T5.cov/lo/hi,"M0 T5 coverage, GWPS",ok,confirmatory
+0.903,Results/Discussion/Abstract (unchanged),results/conf_v0.7/gwps/confirm_v07_result.json,nominal_marginal_primary,"nominal marginal coverage, GWPS",ok,confirmatory
+0.110 / 0.569,Results/Discussion/Abstract (unchanged),results/conf_v0.7/gwps/confirm_v07_result.json,"P.rho, P.auroc_T5","rho(h,E) and AUROC(T5), GWPS",ok,confirmatory
+"+1.0 [-0.1, 2.1]",Results/Discussion/Abstract (unchanged),results/conf_v0.7/gwps/confirm_v07_result.json,step1.E1.diff/lo/hi,"step 1 E1 (M1 - M0, T5), GWPS",ok,confirmatory
+"+4.4 [3.1, 5.7]; ratio 1.09",Results/Discussion/Abstract (unchanged),results/conf_v0.7/gwps/confirm_v07_result.json,step1.E2.*,"step 1 E2 + subset width ratio, GWPS",ok,confirmatory
+"+1.8 [0.8, 2.9]",Results/Discussion/Abstract (unchanged),results/conf_v0.7/gwps/confirm_v07_result.json,step2.E1.*,"step 2 E1 (M1 - Mdist-M, T5), GWPS",ok,confirmatory
+"+47.0 [44.1, 49.9]",Results/Discussion/Abstract (unchanged),results/conf_v0.7/gwps/confirm_v07_result.json,descriptive_rand.oracle.E1_vs_M0,"oracle E1 vs M0, GWPS",ok,descriptive
+"+0.3 [-0.4, 1.0]",Results/Discussion/Abstract (unchanged),results/conf_v0.7/gwps/confirm_v07_result.json,descriptive_rand.Mdist-N.E1_vs_M0,"Mdist-N E1 vs M0, GWPS",ok,descriptive
+"-0.8 [-1.9, 0.4]",Results/Discussion/Abstract (unchanged),results/conf_v0.7/gwps/confirm_v07_result.json,descriptive_rand.Mdist-M.E1_vs_M0,"Mdist-M E1 vs M0, GWPS",ok,descriptive
+"-1.3 [-2.6, -0.1]",Results/Discussion/Abstract (unchanged),results/conf_v0.7/gwps/confirm_v07_result.json,descriptive_rand.MD-GO.E1_vs_M0,"MD-GO E1 vs M0, GWPS",ok,descriptive
+"-0.7 [-2.1, 0.7]",Results/Discussion/Abstract (unchanged),results/conf_v0.7/gwps/confirm_v07_result.json,descriptive_rand.MD-STR.E1_vs_M0,"MD-STR E1 vs M0, GWPS",ok,descriptive
+"-10.5 [-13.4, -7.7]",Results/Discussion/Abstract (unchanged),results/conf_v0.7/gwps/confirm_v07_result.json,descriptive_rand.Munc-N.E1_vs_M0,"Munc-N E1 vs M0, GWPS",ok,descriptive
+"-0.6 [-1.6, 0.4]",Results/Discussion/Abstract (unchanged),results/conf_v0.7/gwps/confirm_v07_result.json,descriptive_rand.Munc-M.E1_vs_M0,"Munc-M E1 vs M0, GWPS",ok,descriptive
+"+0.7 [-0.5, 1.8]",Results/Discussion/Abstract (unchanged),results/conf_v0.7/gwps/confirm_v07_result.json,descriptive_rand.Mscore-N.E1_vs_M0,"Mscore-N E1 vs M0, GWPS",ok,descriptive
+"+0.8 [-0.3, 1.9]",Results/Discussion/Abstract (unchanged),results/conf_v0.7/gwps/confirm_v07_result.json,sensitivity_grid_matching.step1.E1,"grid-matching sensitivity step 1 E1, GWPS",ok,descriptive
+"0.664 [0.637, 0.690]",Results/Discussion/Abstract (unchanged),results/noise_floor_illustrative_v07/gwps/noise_floor_results.json,M0_tiers_corr.5,"M0 T5 coverage, noise-corrected tiers, GWPS",ok,post hoc illustrative (outside protocol)
+-0.799 -> 0.003,Results/Discussion/Abstract (unchanged),results/noise_floor_illustrative_v07/gwps/noise_floor_results.json,rho_logn.E / .E_corr,"rho(E, log cells) before/after correction, GWPS",ok,post hoc illustrative (outside protocol)
+"{'rho_net': 0.40620547741576973, 'ci': [0.35720727089057724, 0.44986795429261944], 'n_genes_with_neighbours': 1473, 'n_genes': 1751}",Results/Discussion/Abstract (unchanged),results/explore_modularity_v07/explore_results.json,datasets.rpe1.rho_net,"STRING-neighbour autocorrelation of E, rpe1",ok,post-confirmation exploratory
+"{'rho_net': 0.1141239944077061, 'ci': [0.08357055438975852, 0.14464824660431636], 'n_genes_with_neighbours': 3603, 'n_genes': 5683}",Results/Discussion/Abstract (unchanged),results/explore_modularity_v07/explore_results.json,datasets.gwps.rho_net,"STRING-neighbour autocorrelation of E, gwps",ok,post-confirmation exploratory
+0.491,Results/Discussion/Abstract (unchanged),results/explore_v0.7/rpe1_gridK/confirm_v07_result.json,B0.M0_T5.cov,"M0 T5 coverage, extended K/d grids, RPE1",ok,post-confirmation exploratory
+"+9.5 [5.6, 13.4]",Results/Discussion/Abstract (unchanged),results/explore_v0.7/rpe1_gridK/confirm_v07_result.json,step1.E1,"step 1 E1, extended K/d grids, RPE1",ok,post-confirmation exploratory

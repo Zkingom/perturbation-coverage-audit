@@ -1,0 +1,12 @@
+{
+ "source": "G:\\biology\\geo_GSE264667\\NormanWeissman2019_filtered.h5ad",
+ "n_cells": 111445,
+ "n_genes": 33694,
+ "n_units": 237,
+ "lib_vs_obs_ncounts_max_abs_diff": 0.0,
+ "lib_vs_obs_ncounts_corr": 1.0,
+ "nonint_values": 0,
+ "half_seed": 20276001,
+ "block": 1500,
+ "seconds": 44.1
+}

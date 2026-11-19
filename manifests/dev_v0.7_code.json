@@ -1,0 +1,40 @@
+{
+ "created_utc": "2026-10-10T04:12:59Z",
+ "status": "development code for the v0.7 dev rerun (NOT a freeze)",
+ "added_after_seeing_D1_v0.6.2": [
+  "MD-GO, MD-STR (Mondrian on raw prior-distance quintiles)",
+  "Munc-N, Munc-M (PRESCRIBE-like bootstrap model-uncertainty proxy, B=50)",
+  "decision_paired (top-10% by h endpoint with paired GEE CI)",
+  "strongest-baseline selection without tie rule"
+ ],
+ "v0.6.2_final_copies": "code/archive/*_v0.6.2_final.py",
+ "code_sha256": {
+  "methods_v06.py": "e1d434aed5db24ff10d83959132b7aea09a9318dcb7e1a9e4b6647ee1d16a31f",
+  "eval_v06.py": "4bddaa54bf158200b05903b5ee48db82a8ba39aa2443af2bbc5a5568d044c1ee",
+  "analysis_v06.py": "4fd6a04ae93cd6c84f8d2a31d4d92ec9a8da02e4a3a740bbedd0256dd50940c3",
+  "pipeline_v06.py": "f6961cb931491a86baccd1c226b6818878c665f7a9be37044fe169d6f7afcd1f",
+  "sens_v07.py": "c238ab935eae79715793e99965398317c516d575710848dbe5cf66ee0e82f30c",
+  "d1_run_v061.py": "18d1a3a9cbd91fc3f774a88c74aeeef697944ef0e409b73744c2cf95c27414d0",
+  "ext_v07dev.py": "49c7ab6233e11cc60333ea413a29cd4d1e874e2ecc5075daec37f1e847fd8f1a",
+  "proxy_v06.py": "123b343ed4c77e30c1e0a1d5e3a2017183f14e36ad3703ee040f4f2753b7d69e",
+  "splits_v06.py": "a10d073b5ecfa0d5b3fef8d304876660f06314a5dacf60bd24593dd03b248827",
+  "models_v04.py": "5fa95b4d94864d2bdd899d4f70c79d2e4863abb8a5a42b3246d54b7439141dc1",
+  "pipeline_v05.py": "e5b6f290b0ea01ae1f80d7e7c2356864035d44f7b07aa9c213f32f2eb78b5af6",
+  "paths.py": "5f153e53d8a500fb6d53977e9e1980fa264487c3a0e883172480b373908b1128",
+  "enrich_v07dev.py": "70cd4d2c574fe25a43feb6767197aa2e8996b3c09587d69eede79e18f1b47d69"
+ },
+ "smoke_test": "results/_v07dev_smoke (1 split, B=4 ext; not a result)",
+ "history": [
+  {
+   "utc": "2026-10-10T04:27:40Z",
+   "event": "first ext launch failed: NameError ROOT in d1_run_v061.do_ext (pure code error); fixed (MANIFESTS constant); both new modes dry-run end to end in results/_v07dev_dryrun (ext with B=2; v07dev wrapper with stubbed pipeline). Not results."
+  },
+  {
+   "utc": "2026-10-10T04:43:54Z",
+   "event": "enrich_v07dev.py finalised after code test (STRING degree read in chunks); lead agent ran the hypothesis() and one enrichment table on dev data while testing (descriptive; final run by sub-agent)."
+  }
+ ],
+ "enrichment_code_sha256": {
+  "enrich_v07dev.py": "ee3176385e5d0ee412bc01d8a248879dc7eb933f976c521e1a85f6d1a810eca5"
+ }
+}

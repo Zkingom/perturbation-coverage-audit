@@ -1,0 +1,37 @@
+{
+ "protocol": "combo_crosscell_v1.2.1 (amendment)",
+ "frozen_utc": "2026-11-04T09:03:48Z",
+ "frozen_local": "2026-11-04 17:03 (UTC+8)",
+ "amends": {
+  "path": "reports/protocol/combo_crosscell_v1.2.md",
+  "sha256": "4520fe6b50097781fc6a3c58e80026661146263b7aa6871e750c5f83213735f6"
+ },
+ "protocol_file": {
+  "path": "reports/protocol/combo_crosscell_v1.2.1_amendment.md",
+  "sha256": "5bfa4d18dde1215cf0d9aa102ca47fc59ed3b779e23ead27c8c9a3352b221818"
+ },
+ "nadig_files_present_at_freeze": {
+  "G:\\biology\\scperturb_13350497": false,
+  "G:\\biology\\geo_GSE264667": false
+ },
+ "geo_header_info_read_2026_11_04": {
+  "hepg2": {
+   "shape": [
+    145473,
+    9624
+   ],
+   "X": "dense float32"
+  },
+  "jurkat": {
+   "shape": [
+    262956,
+    8882
+   ],
+   "X": "dense float32"
+  }
+ },
+ "scperturb_md5": {
+  "NadigOConner2024_hepg2.h5ad": "af2be47f7477cf32fa6e4bec1c6a4868",
+  "NadigOConner2024_jurkat.h5ad": "d8b05d00bfbd686d37ffdd4293bc6c8c"
+ }
+}

@@ -1,0 +1,46 @@
+{
+ "counts": {
+  "E": 1786,
+  "tss_groups_E": 1721,
+  "always_train": 257,
+  "dropped": 14,
+  "secondary_rows": 119,
+  "readout_genes": 8563
+ },
+ "counts_expected": {
+  "E": 1786,
+  "tss_groups_E": 1721,
+  "always_train": 257,
+  "dropped": 14,
+  "secondary_rows": 119,
+  "readout_genes": 8563
+ },
+ "counts_ok": true,
+ "unit_table_identical": true,
+ "folds": [
+  {
+   "train": 1074,
+   "val": 178,
+   "cal": 267,
+   "test": 267
+  },
+  {
+   "train": 1075,
+   "val": 177,
+   "cal": 267,
+   "test": 267
+  },
+  {
+   "train": 1074,
+   "val": 178,
+   "cal": 267,
+   "test": 267
+  }
+ ],
+ "folds_ok": true,
+ "ase_max_abs_diff": {
+  "2": 2.7200464103316335e-15,
+  "10": 1.5515366769136563e-14
+ },
+ "ase_ok": true
+}

@@ -1,0 +1,20 @@
+2026-10-10T09:07:49Z rpe1_raw_singlecell_01.h5ad: size and sha256 match the freeze manifest
+2026-10-10T09:07:49Z rpe1_raw_bulk_01.h5ad: size and sha256 match the freeze manifest
+2026-10-10T09:07:49Z G:\biology\figshare_20029387_v1\rpe1_raw_singlecell_01.h5ad: 247914 cells x 8749 genes, 2662 rows, passes=1, free=4.80 GB
+2026-10-10T09:08:59Z {"cells": 247914, "genes": 8749, "rows": 2662, "passes": 1, "seconds": 69, "qc_vs_bulk": {"rows_single_cell": 2662, "rows_bulk": 2679, "rows_compared": 2662, "genes_identical": true, "max_abs_diff": 2.0345052121228946e-05, "max_rel_diff": 5.941709432169066e-08, "n_entries_outside_tol": 0, "tolerance": "0.001 + 0.0001 x |bulk|", "cell_counts_match_bulk": true, "pass": true}}
+Traceback (most recent call last):
+  File "F:\codex_in_this\claude_science\code\confirm_run_v07.py", line 295, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "F:\codex_in_this\claude_science\code\confirm_run_v07.py", line 290, in main
+    return do_c0(a.dataset, a.sc, a.chunk_rows)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\codex_in_this\claude_science\code\confirm_run_v07.py", line 155, in do_c0
+    U, readout, info = dv.build_units(bulk, pdir / "coords_ensembl_extra.csv", excl, log)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\codex_in_this\claude_science\code\data_v07.py", line 129, in build_units
+    extra = ensembl_coords(miss, [sym[e] for e in miss], coords_cache_csv, log)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\codex_in_this\claude_science\code\data_v07.py", line 70, in ensembl_coords
+    raise RuntimeError(f"Ensembl lookup failed at batch {s}: {r.status_code}")
+RuntimeError: Ensembl lookup failed at batch 200: 500

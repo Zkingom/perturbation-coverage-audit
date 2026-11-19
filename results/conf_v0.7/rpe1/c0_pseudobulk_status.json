@@ -1,0 +1,1 @@
+{"input": "G:\\biology\\figshare_20029387_v1\\rpe1_raw_singlecell_01.h5ad", "outdir": "F:\\codex_in_this\\claude_science\\data\\processed\\v0.7\\rpe1", "passes": 1, "started_utc": "2026-10-10T09:07:49Z", "pid": 22392, "cells": 247914, "genes": 8749, "rows": 2662, "phase": "done", "qc_pass": true, "updated_utc": "2026-10-10T09:08:59Z"}

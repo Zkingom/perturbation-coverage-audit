@@ -1,0 +1,16 @@
+{
+ "split00": {
+  "seconds_new": 58.2,
+  "n_diffs": 0,
+  "diffs": [],
+  "bytes_identical": true
+ },
+ "all21": {
+  "seconds_new": 110.6,
+  "n_diffs": 1,
+  "diffs": [
+   "/m3_solver_fallbacks/ipm: 5 vs 0"
+  ],
+  "bytes_identical": false
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "protocol_version": "gears_coupling_v1.1",
+ "frozen_utc": "2026-10-28T00:17:18Z",
+ "amends": {
+  "path": "reports/protocol/gears_coupling_v1.0.md",
+  "sha256": "fb789a15c57fc2b24469fdc4dfd94c7403aa3a15ca841cddda90f897f32dabd1"
+ },
+ "protocol_file": {
+  "path": "reports/protocol/gears_coupling_v1.1.md",
+  "sha256": "23b6f082e2097bbaf398b2514bd3add7d88c5aa3f390f3624628f50fd49a6b03"
+ },
+ "note": "frozen before any GEARS output was unpacked or read locally"
+}

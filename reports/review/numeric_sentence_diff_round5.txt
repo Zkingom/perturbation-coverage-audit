@@ -1,0 +1,458 @@
+-# Abstract (draft v0.2, 2026-10-28)
+-0.48, 95% CI 0.43–0.53) and on target genes outside the essential-gene library (0.52, 95% CI 0.49–0.55).
+-A deployable proxy for effect scale built from prior-knowledge neighbours met the pre-registered criteria on RPE1 (+9.7 percentage points (95% CI 5.8 to 13.6) top-quintile coverage at matched width) and did not meet them on the non-library genes (+1.0 percentage points (95% CI -0.1 to 2.1);
+-# Introduction (draft v0.2, 2026-10-28)
+-doi:10.1016/j.cell.2022.05.013
+-doi:10.1038/s41592-025-02772-6
+-doi:10.1038/s41587-023-01905-6
+-doi:10.1038/s41587-025-02777-8
+-doi:10.1126/sciadv.aed3414
+-doi:10.1080/01621459.2017.1307116
+-doi:10.1093/jrsssb/qkaf008
+-arXiv:2510.07964 (2025).
+-The data DOI 10.25452/figshare.plus.20029387.v1 was confirmed through the Figshare API (article 20029387, version 1, published 2022-06-09);
+-# Methods (draft v0.6, 2026-10-28)
+-We used the genome-scale CRISPRi Perturb-seq screens of Replogle et al.¹ (raw single-cell and bulk files, Figshare+ doi:10.25452/figshare.plus.20029387.v1): K562 essential-gene screen (development set), RPE1 essential-gene screen (primary confirmation set) and the K562 genome-wide screen (secondary confirmation set) from which all 2,057 targets of the K562 essential-gene screen were removed before any other processing step, so that no such target enters any fold including training;
++date: "Manuscript version 1.0, 28 October 2026"
++0.480, 95% CI 0.43 to 0.53) and on target genes outside the essential-gene library (0.518, 95% CI 0.49 to 0.55).
++A deployable proxy for effect scale built from prior-knowledge neighbours met the pre-registered criteria on RPE1 (+9.7 percentage points (95% CI 5.8 to 13.6) top-quintile coverage at matched width) and did not meet them on the non-library genes (+1.0 percentage points (95% CI −0.1 to 2.1);
++We used the genome-scale CRISPRi Perturb-seq screens of Replogle et al.^1^ (raw single-cell and bulk files, Figshare+ doi:10.25452/figshare.plus.20029387.v1): K562 essential-gene screen (development set), RPE1 essential-gene screen (primary confirmation set) and the K562 genome-wide screen (secondary confirmation set) from which all 2,057 targets of the K562 essential-gene screen were removed before any other processing step, so that no such target enters any fold including training;
+-(ii) **linear-PCA**, the linear baseline of Ahlmann-Eltze et al.² (gene embedding from the top K principal components of the training expression matrix, two-sided ridge λ = 0.1), with K selected on the validation fold from {5, 10, 20, 30, 50};
+-**Reference and score.** Following Systema⁴, expression was referenced to the centroid of training perturbations rather than to control cells: μ is the mean over training perturbations with ≥ 30 cells, σ_g = 1.4826 × MAD_g, floored at the 5th percentile across genes.
++(ii) **linear-PCA**, the linear baseline of Ahlmann-Eltze et al.^2^ (gene embedding from the top K principal components of the training expression matrix, two-sided ridge λ = 0.1), with K selected on the validation fold from {5, 10, 20, 30, 50};
++**Reference and score.** Following Systema^4^, expression was referenced to the centroid of training perturbations rather than to control cells: μ is the mean over training perturbations with ≥ 30 cells, σ_g = 1.4826 × MAD_g, floored at the 5th percentile across genes.
+-- **Secondary and reference methods**: Mscore-N (all ĥ features fitted directly to the out-of-fold score), M2 (Mondrian on ĥ), M3 (conditional conformal of Gibbs, Cherian and Candès⁷, own exact linear-programming implementation cross-checked against the authors' package), a **reference method** that normalises by the measured E_true (not deployable, and partly definitional: for the mean-response model the score equals E_true exactly, so the normalised score is constant, and on the non-library target set the normalised score of linear-PCA is nearly constant, coefficient of variation 0.008) and **M_perm** (ĥ permuted within calibration and test;
++- **Secondary and reference methods**: Mscore-N (all ĥ features fitted directly to the out-of-fold score), M2 (Mondrian on ĥ), M3 (conditional conformal of Gibbs, Cherian and Candès^7^, own exact linear-programming implementation cross-checked against the authors' package), a **reference method** that normalises by the measured E_true (not deployable, and partly definitional: for the mean-response model the score equals E_true exactly, so the normalised score is constant, and on the non-library target set the normalised score of linear-PCA is nearly constant, coefficient of variation 0.008) and **M_perm** (ĥ permuted within calibration and test;
+-Measured effect strength also decreases with cell number (Spearman −0.35, −0.64, −0.81), so the excluded perturbations are both the apparently strongest and the least precisely measured, and the direction of the resulting bias on the coverage estimate cannot be signed (Supplementary Table S4).
++Measured effect strength also decreases with cell number (Spearman −0.35, −0.64, −0.81), so the excluded perturbations are both the apparently strongest and the least precisely measured, and the direction of the resulting bias on the coverage estimate cannot be signed (Supplementary Table S5).
+-ĥ predictability within CORUM⁹ complex members vs non-members and within STRING-degree tertiles (STRING v12¹⁰, experimental + database channels, score ≥ 0.7;
++ĥ predictability within CORUM^10^ complex members vs non-members and within STRING-degree tertiles (STRING v12^11^, experimental + database channels, score ≥ 0.7;
+-For the non-library target set the confirmatory block was computed first (the descriptive summary over 9.2 million coverage rows exceeded the available memory at the time) and the full descriptive run followed;
++For the non-library target set the confirmatory block was computed before the descriptive run (the descriptive summary over 9.2 million coverage rows exceeded the available memory at the time) and the full descriptive run followed;
+-**Question.** Whether a non-linear model with a larger capacity, GEARS³ (v0.1.2), reduces the coupling between the conformity score S1 and measured effect strength E_true that we observed for the linear models.
++**Question.** Whether a non-linear model with a larger capacity, GEARS^3^ (v0.1.2), reduces the coupling between the conformity score S1 and measured effect strength E_true that we observed for the linear models.
+-doi:10.1016/j.cell.2022.05.013
+-doi:10.1038/s41592-025-02772-6
+-doi:10.1038/s41587-023-01905-6
+-doi:10.1038/s41587-025-02777-8
+-doi:10.1080/01621459.2017.1307116
+-arXiv:2510.07964 (2025).
+-doi:10.1093/jrsssb/qkaf008
+-doi:10.1093/biomet/80.1.27
+-doi:10.1093/nar/gkac1015
+-doi:10.1093/nar/gkac1000
+-# Results (draft v0.10, 2026-10-28;
+-score S1, the σ-scaled RMS error on the 50 most perturbation-specific genes) with split conformal prediction at α = 0.1, treating each target gene as the exchangeable unit and holding out whole TSS groups (repeated grouped 7-fold, 3 rounds, 21 splits).
+-Marginal coverage was at its nominal level in all three datasets (K562 essential development 0.90;
++score S1, the σ-scaled RMS error on the 50 most perturbation-specific genes) with split-conformal prediction at α = 0.1, treating each target gene as the exchangeable unit and holding out whole TSS groups (repeated grouped 7-fold, 3 rounds, 21 splits).
++Marginal coverage was at its nominal level in all three datasets (K562 essential development 0.904;
+-Coverage, however, collapsed in the top quintile of measured effect strength (tier T5): 0.516 in the development set, 0.480 (95% CI 0.431–0.528;
+-1,751 genes) in the pre-registered RPE1 confirmation and 0.518 (95% CI 0.490–0.546;
++Coverage, however, collapsed in the top quintile of measured effect strength (tier T5): 0.516 in the development set, 0.480 (95% CI 0.43 to 0.53;
++1,751 genes) in the pre-registered RPE1 confirmation and 0.518 (95% CI 0.49 to 0.55;
+-In a post hoc illustrative analysis outside the pre-registered protocol, re-tiering the non-library target set perturbations by effect strength corrected for a cell-number-matched noise floor (estimated from non-targeting control cells) gave a T5 coverage of 0.664 (95% CI 0.637–0.690) (Supplementary Fig.
++In a post hoc illustrative analysis outside the pre-registered protocol, re-tiering the non-library target set perturbations by effect strength corrected for a cell-number-matched noise floor (estimated from non-targeting control cells) gave a T5 coverage of 0.664 (95% CI 0.64 to 0.69) (Supplementary Fig.
++linear-PCA, α = 0.1, 21 grouped splits;
++dotted line nominal 0.9.
+-Observed T5 coverage of linear-PCA and linear-GO differed from the mean-model realisation of this reference by −1.3 to +1.5 percentage points, and from the simulated reference by −2.8 to +1.4 percentage points, in the three datasets (Supplementary Table S8).
++Observed T5 coverage of linear-PCA and linear-GO differed from the mean-model realisation of this reference by −1.3 to +1.5 percentage points, and from the simulated reference by −2.8 to +1.4 percentage points, in the three datasets (Supplementary Table S4).
+-Adv.* 2026, doi:10.1126/sciadv.aed3414);
+-On RPE1 and the non-library target set, respectively: similarity/training-quality difficulty, normalised +1.7 pp (95% CI -0.1 to 3.6) / +0.3 pp (95% CI -0.4 to 1.0), Mondrian -1.2 pp (95% CI -4.1 to 1.6) / -0.8 pp (95% CI -1.9 to 0.4);
+-Mondrian on raw GO-distance quintiles -1.1 pp (95% CI -3.7 to 1.4) / -1.3 pp (95% CI -2.6 to -0.1);
+-on STRING-distance quintiles +0.1 pp (95% CI -3.5 to 3.7) / -0.7 pp (95% CI -2.1 to 0.7);
+-and a PRESCRIBE-like bootstrap model-uncertainty proxy, normalised -4.6 pp (95% CI -9.7 to 0.6) / -10.5 pp (95% CI -13.4 to -7.7), Mondrian -1.8 pp (95% CI -3.4 to -0.2) / -0.6 pp (95% CI -1.6 to 0.4).
++On RPE1 and the non-library target set, respectively: similarity/training-quality difficulty, normalised +1.7 pp (95% CI −0.1 to 3.6) / +0.3 pp (95% CI −0.4 to 1.0), Mondrian −1.2 pp (95% CI −4.1 to 1.6) / −0.8 pp (95% CI −1.9 to 0.4);
++Mondrian on raw GO-distance quintiles −1.1 pp (95% CI −3.7 to 1.4) / −1.3 pp (95% CI −2.6 to −0.1);
++on STRING-distance quintiles +0.1 pp (95% CI −3.5 to 3.7) / −0.7 pp (95% CI −2.1 to 0.7);
++and a PRESCRIBE-like bootstrap model-uncertainty proxy, normalised −4.6 pp (95% CI −9.7 to 0.6) / −10.5 pp (95% CI −13.4 to −7.7), Mondrian −1.8 pp (95% CI −3.4 to −0.2) / −0.6 pp (95% CI −1.6 to 0.4).
+-On the same half-data basis it reached R = 0.830 (95% CI 0.788 to 0.867), against 0.039 for linear-PCA and 0.036 for GEARS, and was much more accurate than linear-PCA (paired RER difference +28.9 percentage points overall, 95% CI 27.5 to 30.3;
++On the same half-data basis it reached R = 0.830 (95% CI 0.79 to 0.87), against 0.039 for linear-PCA and 0.036 for GEARS, and was much more accurate than linear-PCA (paired RER difference +28.9 percentage points overall, 95% CI 27.5 to 30.3;
+-cross-cell-line).* ĥ predicted effect strength out of sample (Spearman ρ = 0.43, 95% CI 0.39–0.47;
++cross-cell-line).* ĥ predicted effect strength out of sample (Spearman ρ = 0.43, 95% CI 0.39 to 0.47;
+-Normalising the conformity score by ĥ (M1) raised width-matched T5 coverage by +9.7 pp (95% CI 5.8 to 13.6) (development: +12.0 pp, 95% CI 8.0 to 16.0), and the pre-registered hierarchical criteria were met (step 1 vs M0;
++Normalising the conformity score by ĥ (M1) raised width-matched T5 coverage by +9.7 pp (95% CI 5.8 to 13.6;
++1c) (development: +12.0 pp, 95% CI 8.0 to 16.0), and the pre-registered hierarchical criteria were met (step 1 vs M0;
+-In the decision scenario (top 10% by ĥ), coverage rose by +17.4 pp [12.6, 22.3] with a subset width ratio of 1.38;
++In the decision scenario (top 10% by ĥ), coverage rose by +17.4 pp (95% CI 12.6 to 22.3) with a subset width ratio of 1.38;
+-*Non-library target set (cross-gene-set).* ĥ barely predicted effect strength (ρ = 0.11, 95% CI 0.08–0.14;
+-AUROC 0.57, 95% CI 0.55–0.59;
+-Consistently, the pre-registered step 1 was not passed: M1 changed width-matched T5 coverage by +1.0 pp (95% CI -0.1 to 2.1) (pre-specified margin 5 pp), and Mscore-N by +0.7 pp (95% CI -0.5 to 1.8).
+-With an observed SE of 0.57 pp, power to pass at half the development-set effect was 0.96 (post hoc scenario power at the observed SE, using the development-set effect size;
+-the pre-specified C0 power was 0.81 for the same scenario), so the outcome is unlikely to be explained by low power alone;
+-In the decision scenario coverage rose by +4.4 pp [3.1, 5.7], with a subset width ratio of 1.09.
++*Non-library target set (cross-gene-set).* ĥ barely predicted effect strength (ρ = 0.11, 95% CI 0.08 to 0.14;
++AUROC 0.57, 95% CI 0.55 to 0.59;
++Consistently, the pre-registered step 1 was not passed: M1 changed width-matched T5 coverage by +1.0 pp (95% CI −0.1 to 2.1) (pre-specified margin 5 pp), and Mscore-N by +0.7 pp (95% CI −0.5 to 1.8).
++With an observed SE of 0.6 pp, power to pass at half the development-set effect was 0.960 (post hoc scenario power at the observed SE, using the development-set effect size;
++the pre-specified C0 power was 0.809 for the same scenario), so the outcome is unlikely to be explained by low power alone;
++In the decision scenario coverage rose by +4.4 pp (95% CI 3.1 to 5.7), with a subset width ratio of 1.09.
+-permuted-ĥ control mean -0.9 pp, 0/20 permutations meeting the step-1 criterion).
+-Grid-based width matching gave the same result (+0.8 pp (95% CI -0.3 to 1.9)), as did linear-GO (width-matched T5 coverage 0.517 under M0 and 0.526 under M1).
++permuted-ĥ control mean −0.9 pp, 0/20 permutations meeting the step-1 criterion).
++Grid-based width matching gave the same result (+0.8 pp (95% CI −0.3 to 1.9)), as did linear-GO (width-matched T5 coverage 0.517 under M0 and 0.526 under M1).
+-These deficits agree within 3.1 percentage points with what the subsets' share of T5 units alone predicts (Supplementary Table S7), so they follow from the same construction rather than adding independent evidence (post-confirmation, descriptive).
+-S_explore), effect strength was highly repeatable across cell halves in all three datasets (Spearman–Brown reliability ≈ 0.99;
+-non-library target set 0.992), and attenuation correction or a cross-split definition of effect strength (genes selected on one half, magnitude measured on the other) left the proxy's predictability on the non-library target set essentially unchanged (ρ = 0.110 and 0.119), so measurement noise in the outcome did not account for the proxy's poor predictability there.
+-Effect strength was network-autocorrelated among essential genes but hardly among non-essential genes (STRING neighbour correlation 0.41 vs 0.11), and within each dataset the proxy predicted effect strength better for CORUM complex members and highly connected genes.
+-M0 coverage of CORUM complex members (0.886, 0.890, 0.892) was fully accounted for by their T5 share (Supplementary Table S9), whereas highly connected genes were covered somewhat better than their T5 share predicts on the two essential-gene screens but not on the non-library target set;
++These deficits agree within 3.1 percentage points with what the subsets' share of T5 units alone predicts (Supplementary Table S9), so they follow from the same construction rather than adding independent evidence (post-confirmation, descriptive).
++S3), effect strength was highly repeatable across cell halves in all three datasets (Spearman–Brown reliability 0.99 in all three datasets), and attenuation correction or a cross-split definition of effect strength (genes selected on one half, magnitude measured on the other) left the proxy's predictability on the non-library target set essentially unchanged (ρ = 0.11 and 0.12), so measurement noise in the outcome did not account for the proxy's poor predictability there.
++Effect strength was network-autocorrelated among essential-library targets but hardly among non-library targets (STRING neighbour correlation 0.41 vs 0.11), and within each dataset the proxy predicted effect strength better for CORUM complex members and highly connected genes.
++M0 coverage of CORUM complex members (0.886, 0.890, 0.892) was fully accounted for by their T5 share (Supplementary Table S10), whereas highly connected genes were covered somewhat better than their T5 share predicts on the two essential-gene screens but not on the non-library target set;
+-On the non-library target set the association was at least as strong (split-half version +7.44 [6.78, 8.23] unadjusted, +5.52 [4.21, 6.77] adjusted;
+-Target baseline expression was negatively associated with miscoverage in all three datasets (non-library target set, split-half -0.35 [-0.54, -0.19];
++On the non-library target set the association was at least as strong (split-half version +7.44 (95% CI 6.78 to 8.23) unadjusted, +5.52 (95% CI 4.21 to 6.77) adjusted;
++Target baseline expression was negatively associated with miscoverage in all three datasets (non-library target set, split-half −0.35 (95% CI −0.54 to −0.19);
+-# Discussion (draft v0.8, 2026-10-28)
+-**A more accurate non-linear model did not reduce the coupling detectably.** GEARS reduced the mean-model error more than linear-PCA, overall and in the top tier, but its scale-independent share R was not larger (ratio 0.91, 95% CI 0.76 to 1.11), and its top-tier coverage was 0.498, at the constructive reference.
+-The positive control shows that it can be, in principle: predicting each perturbation's profile from its own other half of the cells gave R = 0.83 on the half-data basis, against 0.039 for linear-PCA and 0.036 for GEARS on the same basis.
++**A more accurate non-linear model did not reduce the coupling detectably.** GEARS reduced the mean-model error more than linear-PCA, overall and in the top tier, but its scale-independent share R was not larger (ratio 0.91, 95% CI 0.76 to 1.11), and its T5 coverage was 0.498, at the constructive reference.
++The positive control shows that it can be, in principle: predicting each perturbation's profile from its own other half of the cells gave R = 0.830 on the half-data basis, against 0.039 for linear-PCA and 0.036 for GEARS on the same basis.
+-post hoc scenario power 0.96 for half the development-set effect at the observed SE), in line with its predictability (ρ = 0.43 vs 0.11).
+-Perturbations with little prior information pay for this: in the lowest STRING-degree tertile, the change in T5 coverage under M1 was negative in all three datasets, with CIs excluding zero on RPE1 and non-library target set (RPE1 -14.9 pp (95% CI -22.4 to -7.5);
+-non-library target set -3.7 pp (95% CI -5.5 to -1.8);
+-development -5.1 pp (95% CI -15.8 to 5.5)), whereas the gains concentrated in densely connected genes (non-library target set, high-degree stratum at fixed cut-points, +10.2 pp (95% CI 6.0 to 14.3)).
++post hoc scenario power 0.960 for half the development-set effect at the observed SE), in line with its predictability (ρ = 0.43 vs 0.11).
++Perturbations with little prior information pay for this: in the lowest STRING-degree tertile, the change in T5 coverage under M1 was negative in all three datasets, with CIs excluding zero on RPE1 and non-library target set (RPE1 −14.9 pp (95% CI −22.4 to −7.5);
++non-library target set −3.7 pp (95% CI −5.5 to −1.8);
++development −5.1 pp (95% CI −15.8 to 5.5)), whereas the gains concentrated in densely connected genes (non-library target set, high-degree stratum at fixed cut-points, +10.2 pp (95% CI 6.0 to 14.3)).
+-An illustrative cross-split analysis (genes selected on one half, magnitude measured on the other) left ĥ's predictability unchanged (non-library target set, ρ = 0.119) and reliability stayed high after partialling out cell number (non-library target set, 0.960).
+-However, on the non-library target set measured effect strength is strongly anti-correlated with cell number (ρ = -0.80), so part of the strong-effect tier there may reflect measurement precision (a noise floor) rather than biological effect size;
+-In a post hoc illustrative analysis, on both essential-gene screens, re-tiering perturbations by effect strength corrected for a cell-number-matched null from non-targeting control cells left the failure essentially unchanged (M0 T5 coverage 0.55 and 0.49);
+-on non-library target set the same correction raised T5 coverage from 0.52 to 0.66 and 21% of perturbations did not exceed the null, so on the non-library target set a sizeable part of the apparent failure reflects the precision of low-cell-number measurements.
++An illustrative cross-split analysis (genes selected on one half, magnitude measured on the other) left ĥ's predictability unchanged (non-library target set, ρ = 0.12) and reliability stayed high after partialling out cell number (non-library target set, 0.960).
++However, on the non-library target set measured effect strength is strongly anti-correlated with cell number (ρ = −0.80), so part of the strong-effect tier there may reflect measurement precision (a noise floor) rather than biological effect size;
++In a post hoc illustrative analysis, on both essential-gene screens, re-tiering perturbations by effect strength corrected for a cell-number-matched null from non-targeting control cells left the failure essentially unchanged (M0 T5 coverage 0.552 and 0.492);
++on non-library target set the same correction raised T5 coverage from 0.518 to 0.664 and 21% of perturbations did not exceed the null, so on the non-library target set a sizeable part of the apparent failure reflects the precision of low-cell-number measurements.
+-in an exploratory extension on RPE1 (K up to 200, d up to 200) the failure and the partial repair were unchanged (M0 T5 0.49;
+-M1 − M0 +9.5 [5.6, 13.4] pp), although d still sat at the new ceiling in every split and validation error improved by < 2% (Supplementary Note 1 §4).
++in an exploratory extension on RPE1 (K up to 200, d up to 200) the failure and the partial repair were unchanged (M0 T5 0.491;
++M1 − M0 +9.5 pp (95% CI 5.6 to 13.4)), although d still sat at the new ceiling in every split and validation error improved by < 2% (Supplementary Note 1 §4).
+-doi:10.1126/sciadv.aed3414
+-doi:10.1038/s41588-025-02169-3
+-# Supplementary Note 1 (draft v0.4): post-confirmation exploratory and illustrative analyses
++Raw data: Replogle et al.^1^, Figshare+ doi:10.25452/figshare.plus.20029387.v1.
++https://doi.org/10.1016/j.cell.2022.05.013
++https://doi.org/10.1038/s41592-025-02772-6
++https://doi.org/10.1038/s41587-023-01905-6
++https://doi.org/10.1038/s41587-025-02777-8
++https://doi.org/10.1126/sciadv.aed3414
++https://doi.org/10.1080/01621459.2017.1307116
++https://doi.org/10.1093/jrsssb/qkaf008
++arXiv:2510.07964.
++https://doi.org/10.1093/biomet/80.1.27
++https://doi.org/10.1093/nar/gkac1015
++https://doi.org/10.1093/nar/gkac1000
++https://doi.org/10.1038/s41588-025-02169-3
++S1–S3 and Supplementary Tables S1–S10 are provided in a separate file (manuscript_v1.0_supplementary.pdf);
++date: "Manuscript version 1.0, 28 October 2026"
+-*Measurement noise does not explain the failure.* Split-half reliability of effect strength (Spearman–Brown, cells split into halves A and B) was ≈0.99 in all three datasets (non-library target set 0.992, 95% CI 0.992–0.993), and correcting ρ(ĥ, E) for attenuation left it essentially unchanged (non-library target set 0.110).
++*Measurement noise does not explain the failure.* Split-half reliability of effect strength (Spearman–Brown, cells split into halves A and B) was ≈0.99 in all three datasets (non-library target set 0.992, 95% CI 0.99 to 0.99), and correcting ρ(ĥ, E) for attenuation left it essentially unchanged (non-library target set 0.110).
+-*Effect strength is network-modular among essential but not non-essential genes.* The correlation between a gene's effect strength and the STRING-weighted mean of its neighbours' effect strengths was 0.41 on RPE1 and 0.11 on non-library target set (difference 0.29, 95% CI 0.23–0.35).
++*Effect strength is network-modular among essential-library targets but not among non-library targets.* The correlation between a gene's effect strength and the STRING-weighted mean of its neighbours' effect strengths was 0.41 on RPE1 and 0.11 on non-library target set (difference 0.29, 95% CI 0.23 to 0.35).
+-RPE1 -14.9 pp).
++RPE1 −14.9 pp).
+-| ρ(ĥ, cross-split E) | 0.502 [0.464, 0.538] | 0.368 [0.327, 0.409] | 0.119 [0.093, 0.144] |
++| ρ(ĥ, cross-split E) | 0.502 [0.46, 0.54] | 0.368 [0.33, 0.41] | 0.119 [0.09, 0.14] |
+-| partial reliability given log cells | 0.987 [0.984, 0.988] | 0.976 [0.972, 0.979] | 0.960 [0.955, 0.964] |
+-| ρ(E_true, log cells) | -0.256 | -0.512 | -0.799 [-0.813, -0.784] |
+-| ρ(cross-split E, log cells) | -0.002 | -0.229 | -0.542 |
++| partial reliability given log cells | 0.987 [0.98, 0.99] | 0.976 [0.97, 0.98] | 0.960 [0.95, 0.96] |
++| ρ(E_true, log cells) | −0.256 | −0.512 | −0.799 [−0.81, −0.78] |
++| ρ(cross-split E, log cells) | −0.002 | −0.229 | −0.542 |
+-*An observation that must be reported.* On non-library target set, measured effect strength is strongly anti-correlated with the number of cells per perturbation (ρ = -0.80;
+-development -0.26, RPE1 -0.51).
+-The cross-split definition removes selection inflation and weakens, but does not remove, this coupling (non-library target set -0.54;
++*An observation that must be reported.* On non-library target set, measured effect strength is strongly anti-correlated with the number of cells per perturbation (ρ = −0.80;
++development −0.26, RPE1 −0.51).
++The cross-split definition removes selection inflation and weakens, but does not remove, this coupling (non-library target set −0.54;
+-| ρ(E_true, log cells) | -0.256 | -0.512 | -0.799 |
+-| ρ(E_corr, log cells) | 0.221 | -0.044 | 0.003 |
++| ρ(E_true, log cells) | −0.256 | −0.512 | −0.799 |
++| ρ(E_corr, log cells) | 0.221 | −0.044 | 0.003 |
+-| T5 overlap (original vs corrected tiers) | 0.81 | 0.87 | 0.59 |
+-| **M0 T5 coverage, original tiers** | 0.516 [0.468, 0.564] | 0.480 [0.431, 0.528] | 0.518 [0.490, 0.546] |
+-| **M0 T5 coverage, E_corr tiers** | 0.552 [0.503, 0.600] | 0.492 [0.443, 0.542] | 0.664 [0.637, 0.690] |
+-| M0 T5 coverage, E_z tiers | 0.621 [0.572, 0.668] | 0.551 [0.501, 0.600] | 0.711 [0.685, 0.736] |
++| T5 overlap (original vs corrected tiers) | 0.810 | 0.866 | 0.586 |
++| **M0 T5 coverage, original tiers** | 0.516 [0.47, 0.56] | 0.480 [0.43, 0.53] | 0.518 [0.49, 0.55] |
++| **M0 T5 coverage, E_corr tiers** | 0.552 [0.50, 0.60] | 0.492 [0.44, 0.54] | 0.664 [0.64, 0.69] |
++| M0 T5 coverage, E_z tiers | 0.621 [0.57, 0.67] | 0.551 [0.50, 0.60] | 0.711 [0.68, 0.74] |
+-*Reading (essential-gene screens).* On both essential-gene screens the coverage failure is essentially unchanged after noise-floor correction (T5 0.55 and 0.49), while the correction removes the cell-number association (development ρ −0.26 → +0.22;
++*Reading (essential-gene screens).* On both essential-gene screens the coverage failure is essentially unchanged after noise-floor correction (T5 0.552 and 0.492), while the correction removes the cell-number association (development ρ −0.26 → +0.22;
+-Standardising by the null SD (E_z) moves some coverage loss into T3–T4 and raises T5 modestly (0.62, 0.55), as expected for a score that ranks perturbations partly by precision;
+-*Reading (non-library target set, pre-written rule).* M0 T5 coverage under noise-corrected tiers is 0.664 [0.637, 0.690], below the 0.75 threshold, so the "effect-strength" framing is retained for non-library target set and the cell-number association is reported as a limitation.
++Standardising by the null SD (E_z) moves some coverage loss into T3–T4 and raises T5 modestly (0.621, 0.551), as expected for a score that ranks perturbations partly by precision;
++*Reading (non-library target set, pre-written rule).* M0 T5 coverage under noise-corrected tiers is 0.664 (95% CI 0.64 to 0.69), below the 0.75 threshold, so the "effect-strength" framing is retained for non-library target set and the cell-number association is reported as a limitation.
+-and T5 coverage rises by ~15 pp (to 0.71 after SD standardisation), with the coverage loss partly redistributed to weaker tiers (T1 0.956).
++and T5 coverage rises by 14.6 pp (to 0.711 after SD standardisation), with the coverage loss partly redistributed to weaker tiers (T1 0.956).
+-| M0 T5 coverage | 0.480 [0.431, 0.528] | 0.491 [0.443, 0.539] |
++| M0 T5 coverage | 0.480 [0.43, 0.53] | 0.491 [0.44, 0.54] |
+-| development | top 10% by predicted effect strength | 0.740 [0.684, 0.795] | 0.60 | 0.709 | +0.031 |
+-| RPE1 | top 10% by predicted effect strength | 0.708 [0.643, 0.773] | 0.51 | 0.734 | -0.026 |
+-| non-library target set | top 10% by predicted effect strength | 0.822 [0.795, 0.849] | 0.34 | 0.835 | -0.012 |
+-| development | top 20% by STRING degree | 0.871 [0.842, 0.904] | 0.39 | 0.812 | +0.059 |
+-| RPE1 | top 20% by STRING degree | 0.869 [0.838, 0.903] | 0.31 | 0.841 | +0.028 |
+-| non-library target set | top 20% by STRING degree | 0.861 [0.841, 0.881] | 0.25 | 0.880 | -0.019 |
+-| development | CORUM complex member | 0.886 [0.867, 0.902] | 0.23 | 0.888 | -0.002 |
+-| RPE1 | CORUM complex member | 0.890 [0.872, 0.909] | 0.22 | 0.883 | +0.007 |
+-| non-library target set | CORUM complex member | 0.892 [0.877, 0.905] | 0.23 | 0.891 | +0.001 |
+-*Reading.* Subsets a practitioner can name in advance do under-cover — a 10% selection by predicted effect strength is covered 0.74, 0.71 and 0.82 against a nominal 0.9, with intervals excluding 0.9 — and this is the operationally relevant statement.
+-It is, however, not independent evidence of a calibration defect beyond the construction: the deficits agree with what the subsets' top-tier composition alone predicts, to within 3.1 percentage points for the proxy-defined subsets and 0.7 for CORUM membership.
+-*Hypothesis (not tested here).* One subset behaves differently and in the opposite direction: genes with many STRING partners are covered **better** than their effect-strength composition predicts — by +5.9 pp (development) and +2.8 pp (RPE1) in the top degree quintile, and +11.7 pp and +8.6 pp in the top decile, while the non-library target set shows no such excess (-1.9 pp).
++| development | top 10% by predicted effect strength | 0.740 [0.68, 0.80] | 0.60 | 0.709 | +0.031 |
++| RPE1 | top 10% by predicted effect strength | 0.708 [0.64, 0.77] | 0.51 | 0.734 | −0.026 |
++| non-library target set | top 10% by predicted effect strength | 0.822 [0.80, 0.85] | 0.34 | 0.835 | −0.012 |
++| development | top 20% by STRING degree | 0.871 [0.84, 0.90] | 0.39 | 0.812 | +0.059 |
++| RPE1 | top 20% by STRING degree | 0.869 [0.84, 0.90] | 0.31 | 0.841 | +0.028 |
++| non-library target set | top 20% by STRING degree | 0.861 [0.84, 0.88] | 0.25 | 0.880 | −0.019 |
++| development | CORUM complex member | 0.886 [0.87, 0.90] | 0.23 | 0.888 | −0.002 |
++| RPE1 | CORUM complex member | 0.890 [0.87, 0.91] | 0.22 | 0.883 | +0.007 |
++| non-library target set | CORUM complex member | 0.892 [0.88, 0.90] | 0.23 | 0.891 | +0.001 |
++*Reading.* Subsets a practitioner can name in advance do under-cover — a 10% selection by predicted effect strength is covered 0.740, 0.708 and 0.822 against a nominal 0.9, with intervals excluding 0.9 — and this is the operationally relevant statement.
++It is, however, not independent evidence of a calibration defect beyond the construction: the deficits agree with what the subsets' T5 composition alone predicts, to within 3.1 percentage points for the proxy-defined subsets and 0.7 for CORUM membership.
++*Hypothesis (not tested here).* One subset behaves differently and in the opposite direction: genes with many STRING partners are covered **better** than their effect-strength composition predicts — by +5.9 pp (development) and +2.8 pp (RPE1) in the top degree quintile, and +11.7 pp and +8.6 pp in the top decile, while the non-library target set shows no such excess (−1.9 pp).
++linear-PCA, k = 50, α = 0.1, randomised width matching, 21 grouped splits) when perturbations are tiered by the pre-registered effect strength (filled circles) or by noise-corrected effect strength (open diamonds: effect strength minus the mean effect strength of cell-number-matched pseudo-perturbations drawn from non-targeting control cells);
++protocol explore_modularity_v1.0).
++(a) Spearman ρ between the prior-neighbour proxy ĥ and measured effect strength within within-dataset tertiles of STRING degree (genome-wide partners, experimental + database score ≥ 0.7);
++(b) T5 coverage at nominal α = 0.1 (no width matching) for split conformal, the reference (normalisation by measured effect strength) and a split-half reference (width allocated with effect strength from half A of the cells, coverage judged with half B).](figures/figS_explore_modularity.png){width=95%}
++| 2026-10-04T06:23:27Z | protocol v0.5 frozen (manifests/freeze_v0.5.json) | freeze | G1 on the development screen |
++| 2026-10-04T07:55:54Z | protocol v0.5.1 frozen | freeze | C5 demoted to secondary before any G1 coverage result was read |
++| 2026-10-06T10:38:40Z | protocol v0.6 frozen | freeze | design-level: dev = K562 essential, RPE1 primary / GWPS secondary confirmation, isolation rule |
++| 2026-10-06T11:52:14Z | protocol v0.6.1 frozen | freeze | narrowed claims, Mdist/Mscore baselines, width matching;
++before any dev analysis of v0.6 |
++| 2026-10-08T10:36:01Z | post-freeze record (freeze_v0.6.1.json): post_freeze_code_fix | pure code fix | affects conclusions: no |
++| 2026-10-08T11:35:41Z | FIRST READ of development-set responses under v0.6.x (D1 stage 1) | first data read | d1_stage1.log line 1;
++v0.6.2 was frozen the same day, before the rerun |
++| 2026-10-08T11:53:59Z | protocol v0.6.2 frozen | freeze | learner-unit rule + single E_true definition, after the stage-1 crash and before any dev result existed |
++| 2026-10-09T04:36:24Z | post-freeze record (freeze_v0.6.2.json): post_freeze_additions | added analysis module (v0.7 sensitivity), declared | affects conclusions: no (sensitivity only) |
++| 2026-10-10T04:01:30Z | post-freeze record (freeze_v0.6.2.json): post_freeze_code_fix_speedup | pure speed-up, byte-identical output | affects conclusions: no |
++| 2026-10-10T04:28:02Z | v0.7-development rerun with the added baselines (ext arrays) | dev analysis | results/d1_v0.7dev |
++| 2026-10-10T09:05:55Z | protocol v0.7 frozen (manifests/freeze_v0.7.json) | freeze | confirmation design;
++after the v0.7 freeze and after C0 |
++| dev | 0 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.438 |  |  | 4.61 | 0.72 | 1.000 | 255 |
++| dev | 1 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.623 |  |  | 4.91 | 0.74 | 0.981 | 256 |
++| dev | 2 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.973 |  |  | 4.96 | 0.71 | 1.000 | 255 |
++| dev | 3 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.791 |  |  | 4.91 | 0.72 | 1.000 | 255 |
++| dev | 4 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.195 |  |  | 4.93 | 0.80 | 1.000 | 255 |
++| dev | 5 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.688 |  |  | 4.90 | 0.73 | 1.000 | 255 |
++| dev | 6 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.303 |  |  | 5.32 | 0.84 | 1.000 | 255 |
++| dev | 7 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.672 |  |  | 4.49 | 0.67 | 1.000 | 256 |
++| dev | 8 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.585 |  |  | 4.94 | 0.75 | 0.982 | 255 |
++| dev | 9 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.677 |  |  | 4.87 | 0.73 | 1.000 | 255 |
++| dev | 10 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.443 |  |  | 4.67 | 0.73 | 1.000 | 255 |
++| dev | 11 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.418 |  |  | 4.80 | 0.75 | 1.000 | 255 |
++| dev | 12 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.151 |  |  | 4.75 | 0.77 | 1.000 | 255 |
++| dev | 13 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.576 |  |  | 4.89 | 0.74 | 1.000 | 255 |
++| dev | 14 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.518 |  |  | 4.76 | 0.73 | 1.000 | 256 |
++| dev | 15 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.437 |  |  | 4.74 | 0.74 | 1.000 | 255 |
++| dev | 16 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.211 |  |  | 4.99 | 0.80 | 1.000 | 255 |
++| dev | 17 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.704 |  |  | 4.84 | 0.72 | 1.000 | 255 |
++| dev | 18 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.121 |  |  | 4.92 | 0.80 | 1.000 | 255 |
++| dev | 19 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.781 |  |  | 4.46 | 0.66 | 1.000 | 255 |
++| dev | 20 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 7.387 |  |  | 4.72 | 0.64 | 1.000 | 255 |
++| rpe1 | 0 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 7.382 | 5.47 | 0.74 | 5.47 | 0.74 | 1.000 | 251 |
++| rpe1 | 1 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.580 | 5.83 | 0.89 | 5.83 | 0.89 | 1.000 | 250 |
++| rpe1 | 2 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.884 | 6.10 | 0.89 | 6.10 | 0.89 | 1.000 | 250 |
++| rpe1 | 3 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 7.159 | 5.65 | 0.79 | 5.65 | 0.79 | 1.000 | 250 |
++| rpe1 | 4 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 7.018 | 5.47 | 0.78 | 5.47 | 0.78 | 0.978 | 250 |
++| rpe1 | 5 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.909 | 5.26 | 0.76 | 5.26 | 0.76 | 1.000 | 250 |
++| rpe1 | 6 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 7.960 | 5.32 | 0.67 | 5.32 | 0.67 | 1.000 | 250 |
++| rpe1 | 7 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 7.726 | 5.41 | 0.70 | 5.41 | 0.70 | 1.000 | 251 |
++| rpe1 | 8 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 7.334 | 5.81 | 0.79 | 5.81 | 0.79 | 1.000 | 250 |
++| rpe1 | 9 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.885 | 5.91 | 0.86 | 5.91 | 0.86 | 1.000 | 250 |
++| rpe1 | 10 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.419 | 6.29 | 0.98 | 6.29 | 0.98 | 1.000 | 250 |
++| rpe1 | 11 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.796 | 5.25 | 0.77 | 5.25 | 0.77 | 1.000 | 250 |
++| rpe1 | 12 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.854 | 5.72 | 0.83 | 5.72 | 0.83 | 1.000 | 250 |
++| rpe1 | 13 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 7.229 | 5.55 | 0.77 | 5.55 | 0.77 | 1.000 | 250 |
++| rpe1 | 14 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.564 | 5.89 | 0.90 | 5.89 | 0.90 | 1.000 | 251 |
++| rpe1 | 15 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 7.324 | 5.50 | 0.75 | 5.50 | 0.75 | 1.000 | 250 |
++| rpe1 | 16 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.820 | 5.53 | 0.81 | 5.53 | 0.81 | 1.000 | 250 |
++| rpe1 | 17 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.795 | 6.61 | 0.97 | 6.61 | 0.97 | 1.000 | 250 |
++| rpe1 | 18 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.984 | 5.40 | 0.77 | 5.40 | 0.77 | 1.000 | 250 |
++| rpe1 | 19 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 6.930 | 5.72 | 0.83 | 5.72 | 0.83 | 1.000 | 250 |
++| rpe1 | 20 | 0.010 | 0.015 | 0.927 | matched | 7.536 | 7.54 | 1.00 | 7.55 | 1.00 | 1.000 | 250 |
++| gwps | 0 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 5.725 | 3.88 | 0.68 | 3.88 | 0.68 | 0.984 | 812 |
++| gwps | 1 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 5.734 | 3.80 | 0.66 | 3.80 | 0.66 | 0.976 | 812 |
++| gwps | 2 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 5.385 | 3.68 | 0.68 | 3.68 | 0.68 | 0.979 | 812 |
++| gwps | 3 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 5.507 | 3.79 | 0.69 | 3.79 | 0.69 | 0.982 | 812 |
++| gwps | 4 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 5.560 | 3.68 | 0.66 | 3.68 | 0.66 | 1.000 | 812 |
++| gwps | 5 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 5.633 | 3.64 | 0.65 | 3.64 | 0.65 | 1.000 | 811 |
++| gwps | 6 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 5.170 | 3.90 | 0.75 | 3.90 | 0.75 | 0.994 | 812 |
++| gwps | 7 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 5.450 | 3.64 | 0.67 | 3.64 | 0.67 | 0.993 | 812 |
++| gwps | 8 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 5.432 | 3.79 | 0.70 | 3.79 | 0.70 | 0.977 | 812 |
++| gwps | 9 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 5.578 | 3.78 | 0.68 | 3.78 | 0.68 | 0.980 | 812 |
++| gwps | 10 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 5.406 | 3.77 | 0.70 | 3.77 | 0.70 | 0.988 | 812 |
++| gwps | 11 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 5.583 | 3.79 | 0.68 | 3.79 | 0.68 | 0.994 | 813 |
++| gwps | 12 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 5.597 | 3.77 | 0.67 | 3.77 | 0.67 | 0.994 | 811 |
++| gwps | 13 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 5.639 | 3.78 | 0.67 | 3.78 | 0.67 | 0.994 | 811 |
++| gwps | 14 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 5.394 | 3.75 | 0.70 | 3.75 | 0.70 | 0.988 | 812 |
++| gwps | 15 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 5.653 | 3.79 | 0.67 | 3.79 | 0.67 | 0.988 | 812 |
++| gwps | 16 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 5.395 | 3.74 | 0.69 | 3.74 | 0.69 | 1.000 | 812 |
++| gwps | 17 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 5.573 | 3.83 | 0.69 | 3.83 | 0.69 | 0.994 | 812 |
++| gwps | 18 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 5.422 | 3.79 | 0.70 | 3.79 | 0.70 | 0.982 | 812 |
++| gwps | 19 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 5.450 | 3.71 | 0.68 | 3.71 | 0.68 | 0.993 | 812 |
++| gwps | 20 | 0.010 | 0.010 | 1.000 | unmatched_too_narrow | 5.574 | 3.78 | 0.68 | 3.78 | 0.68 | 0.976 | 811 |
++| RPE1 | B0: M0 T5 coverage | 0.480 (95% CI 0.43 to 0.53) (n=1051, gee) | pass | rule: point estimate < 0.85 and CI upper < 0.90 |
++| RPE1 | P: rho(h, E_true) | 0.43 (95% CI 0.39 to 0.47) | P+ | n_genes=1751 |
++| RPE1 | P: AUROC(T5) | 0.74 (95% CI 0.71 to 0.77) | P+ | P+ needs rho_lo>=0.30 and auroc_lo>=0.65;
++P- if rho_hi<0.20 or auroc_hi<0.60 |
++| RPE1 | step1 E1 (T5, M1 - M0) | +9.7 (95% CI 5.8 to 13.6) pp | pass | margin 5 pp;
++SE=0.0201;
++| RPE1 | step1 E2 (top-10% by h, M1 - M0) | +17.4 (95% CI 12.6 to 22.3) pp;
++subset width ratio 1.38 | pass | coverage 0.883 vs 0.708;
++T5 share 0.51 |
++| RPE1 | step1 E1 power - C0 pre-specified | 1.00x_dev=1.000;
++0.75x_dev=0.974;
++0.50x_dev=0.686 (SE from C0 scaling=0.0206) | pre-specified | dev estimate x {1.00, 0.75, 0.50} |
++| RPE1 | step1 E1 power - post hoc at observed SE | 1.00x_dev=1.000;
++0.75x_dev=0.977;
++0.50x_dev=0.691 (observed SE=0.0201) | post hoc | same dev estimates, SE from this dataset |
++| RPE1 | step1 E2 power - C0 pre-specified | 1.00x_dev=1.000;
++0.75x_dev=0.997;
++0.50x_dev=0.873 (SE from C0 scaling=0.0236) | pre-specified | dev estimate x {1.00, 0.75, 0.50} |
++| RPE1 | step1 E2 power - post hoc at observed SE | 1.00x_dev=1.000;
++0.75x_dev=0.996;
++0.50x_dev=0.861 (observed SE=0.0248) | post hoc | same dev estimates, SE from this dataset |
++| RPE1 | step2 E1 (T5, M1 - Mdist-M) | +10.9 (95% CI 7.8 to 14.0) pp | pass | margin 3 pp;
++SE=0.0158;
++| RPE1 | step2 E2 (top-10% by h, M1 - Mdist-M) | +14.6 (95% CI 10.4 to 18.7) pp;
++subset width ratio 1.25 | pass | coverage 0.883 vs 0.737;
++T5 share 0.51 |
++| RPE1 | step2 E1 power - C0 pre-specified | 1.00x_dev=0.976;
++0.75x_dev=0.839;
++0.50x_dev=0.502 (SE from C0 scaling=0.0161) | pre-specified | dev estimate x {1.00, 0.75, 0.50} |
++| RPE1 | step2 E1 power - post hoc at observed SE | 1.00x_dev=0.980;
++0.75x_dev=0.852;
++0.50x_dev=0.518 (observed SE=0.0158) | post hoc | same dev estimates, SE from this dataset |
++| RPE1 | step2 E2 power - C0 pre-specified | 1.00x_dev=0.993;
++0.75x_dev=0.905;
++0.50x_dev=0.559 (SE from C0 scaling=0.0138) | pre-specified | dev estimate x {1.00, 0.75, 0.50} |
++| RPE1 | step2 E2 power - post hoc at observed SE | 1.00x_dev=0.857;
++0.75x_dev=0.622;
++0.50x_dev=0.328 (observed SE=0.0212) | post hoc | same dev estimates, SE from this dataset |
++| RPE1 | nominal marginal coverage (primary, unmatched) | 0.900 | pass | band [0.88, 0.92] |
++| RPE1 | M_perm mean E1 / permutations passing step 1 | −5.2 pp / 0 of 20 | pass | rule: mean < 2 pp and at most 1 passing |
++| non-library target set | B0: M0 T5 coverage | 0.518 (95% CI 0.49 to 0.55) (n=3417, gee) | pass | rule: point estimate < 0.85 and CI upper < 0.90 |
++| non-library target set | P: rho(h, E_true) | 0.11 (95% CI 0.08 to 0.14) | P- | n_genes=5683 |
++| non-library target set | P: AUROC(T5) | 0.57 (95% CI 0.55 to 0.59) | P- | P+ needs rho_lo>=0.30 and auroc_lo>=0.65;
++P- if rho_hi<0.20 or auroc_hi<0.60 |
++| non-library target set | step1 E1 (T5, M1 - M0) | +1.0 (95% CI −0.1 to 2.1) pp | fail | margin 5 pp;
++SE=0.0057;
++| non-library target set | step1 E2 (top-10% by h, M1 - M0) | +4.4 (95% CI 3.1 to 5.7) pp;
++subset width ratio 1.09 | fail | coverage 0.866 vs 0.822;
++T5 share 0.34 |
++| non-library target set | step1 E1 power - C0 pre-specified | 1.00x_dev=1.000;
++0.75x_dev=1.000;
++0.50x_dev=0.809 (SE from C0 scaling=0.0115) | pre-specified | dev estimate x {1.00, 0.75, 0.50} |
++| non-library target set | step1 E1 power - post hoc at observed SE | 1.00x_dev=1.000;
++0.75x_dev=1.000;
++0.50x_dev=0.960 (observed SE=0.0057) | post hoc | same dev estimates, SE from this dataset |
++| non-library target set | step1 E2 power - C0 pre-specified | 1.00x_dev=1.000;
++0.75x_dev=1.000;
++0.50x_dev=0.980 (SE from C0 scaling=0.0131) | pre-specified | dev estimate x {1.00, 0.75, 0.50} |
++| non-library target set | step1 E2 power - post hoc at observed SE | 1.00x_dev=1.000;
++0.75x_dev=1.000;
++0.50x_dev=1.000 (observed SE=0.0066) | post hoc | same dev estimates, SE from this dataset |
++| non-library target set | step2 E1 (T5, M1 - Mdist-M) | +1.8 (95% CI 0.8 to 2.9) pp | fail | margin 3 pp;
++SE=0.0053;
++| non-library target set | step2 E2 (top-10% by h, M1 - Mdist-M) | +2.6 (95% CI 1.6 to 3.5) pp;
++subset width ratio 1.04 | fail | coverage 0.866 vs 0.841;
++T5 share 0.34 |
++| non-library target set | step2 E1 power - C0 pre-specified | 1.00x_dev=1.000;
++0.75x_dev=0.975;
++0.50x_dev=0.572 (SE from C0 scaling=0.0089) | pre-specified | dev estimate x {1.00, 0.75, 0.50} |
++| non-library target set | step2 E1 power - post hoc at observed SE | 1.00x_dev=1.000;
++0.75x_dev=0.999;
++0.50x_dev=0.620 (observed SE=0.0053) | post hoc | same dev estimates, SE from this dataset |
++| non-library target set | step2 E2 power - C0 pre-specified | 1.00x_dev=1.000;
++0.75x_dev=0.991;
++0.50x_dev=0.606 (SE from C0 scaling=0.0077) | pre-specified | dev estimate x {1.00, 0.75, 0.50} |
++| non-library target set | step2 E2 power - post hoc at observed SE | 1.00x_dev=1.000;
++0.75x_dev=1.000;
++0.50x_dev=0.667 (observed SE=0.0048) | post hoc | same dev estimates, SE from this dataset |
++| non-library target set | nominal marginal coverage (primary, unmatched) | 0.903 | pass | band [0.88, 0.92] |
++| non-library target set | M_perm mean E1 / permutations passing step 1 | −0.9 pp / 0 of 20 | pass | rule: mean < 2 pp and at most 1 passing |
++Table: Confirmatory decision tables (protocol v0.7) for RPE1 and the non-library target set;
++values from results/conf_v0.7/<dataset>/confirm_v07_result.json and c0_report.json.
++| development | linear_go | 5,358 | 1,075 | 0.526 | 0.904 | 0.148 | 0.193 | −0.30 | 0.511 | 0.517 | +0.9 | +1.5 |
++| development | linear_pca | 5,358 | 1,075 | 0.516 | 0.903 | 0.107 | 0.112 | −0.24 | 0.511 | 0.517 | −0.0 | +0.6 |
++| development | mean | 5,358 | 1,075 | 0.511 | 0.902 | 0.000 | 0.000 |  | 0.511 | 0.517 | −0.6 | +0.0 |
++| non-library target set | linear_go | 17,049 | 3,417 | 0.517 | 0.903 | 0.014 | 0.002 | −0.15 | 0.520 | 0.504 | +1.3 | −0.3 |
++| non-library target set | linear_pca | 17,049 | 3,417 | 0.518 | 0.903 | 0.008 | 0.001 | −0.14 | 0.520 | 0.504 | +1.4 | −0.1 |
++| non-library target set | mean | 17,049 | 3,417 | 0.520 | 0.904 | 0.000 | 0.000 |  | 0.520 | 0.504 | +1.6 | +0.0 |
++| RPE1 | linear_go | 5,253 | 1,051 | 0.504 | 0.901 | 0.116 | 0.094 | −0.38 | 0.493 | 0.508 | −0.4 | +1.1 |
++| RPE1 | linear_pca | 5,253 | 1,051 | 0.480 | 0.896 | 0.097 | 0.065 | −0.39 | 0.493 | 0.508 | −2.8 | −1.3 |
++| RPE1 | mean | 5,253 | 1,051 | 0.493 | 0.899 | 0.000 | 0.000 |  | 0.493 | 0.508 | −1.5 | +0.0 |
++| development | 2,057 | 1,863 | 1,786 | 77 | 0.041 | 22.00 | 122.00 | {'median': 7.854, 'q25': 6.195, 'q75': 9.77} | {'median': 3.557, 'q25': 2.779, 'q75': 4.917} | 9e-37 | 0.961 | −0.35 |
++| RPE1 | 2,393 | 2,101 | 1,751 | 350 | 0.167 | 19.00 | 79.00 | {'median': 6.603, 'q25': 5.55, 'q75': 8.371} | {'median': 3.892, 'q25': 2.92, 'q75': 5.19} | 6e-104 | 0.731 | −0.64 |
++| non-library target set | 7,813 | 5,772 | 5,683 | 89 | 0.015 | 21.00 | 177.00 | {'median': 9.58, 'q25': 8.456, 'q75': 11.946} | {'median': 3.222, 'q25': 2.714, 'q75': 4.066} | 2e-56 | 1.000 | −0.81 |
++| development | linear_go | 5,358 | 0.148 | 0.98 | 0.61 | 1.04 | 0.89 | 0.085 | 0.137 | 0.010 | 0.807 |
++| development | linear_pca | 5,358 | 0.107 | 0.99 | 0.81 | 1.04 | 0.94 | 0.043 | 0.076 | −0.004 | 0.888 |
++| development | mean | 5,358 | 0.000 | 1 | 1.00 | 1.00 | 1 | 0 | 0 | 0 | 1.000 |
++| non-library target set | linear_go | 17,049 | 0.014 | 1.00 | 0.99 | 1.01 | 1.00 | 0.002 | 0.006 | −0.000 | 0.998 |
++| non-library target set | linear_pca | 17,049 | 0.008 | 1.00 | 0.99 | 1.01 | 1.00 | 0.001 | 0.003 | −0.000 | 1.000 |
++| non-library target set | mean | 17,049 | 0.000 | 1 | 1.00 | 1.00 | 1 | 0 | 0 | 0 | 1.000 |
++| RPE1 | linear_go | 5,253 | 0.116 | 0.99 | 0.71 | 1.06 | 0.94 | 0.065 | 0.109 | −0.016 | 0.906 |
++| RPE1 | linear_pca | 5,253 | 0.097 | 0.99 | 0.81 | 1.07 | 0.96 | 0.043 | 0.079 | −0.034 | 0.935 |
++| RPE1 | mean | 5,253 | 0.000 | 1 | 1.00 | 1.00 | 1 | 0 | 0 | 0 | 1.000 |
++| R (share of log S1 not explained by log E_true) | linear-PCA 0.065;
++GEARS 0.059;
++ratio 0.91 (0.76 to 1.11) |
++| CV of S1/E_true | linear-PCA 0.097;
++GEARS 0.112;
++ratio 1.16 (1.06 to 1.27) |
++| Error reduction vs mean model, all | linear-PCA 4.3%;
++GEARS 6.3%;
+++1.9 pp (1.5 to 2.4) |
++| Error reduction vs mean model, T5 | linear-PCA 7.9%;
++GEARS 9.7%;
+++1.8 pp (0.8 to 2.8) |
++| M0 T5 coverage (GEARS scores) | GEARS 0.498;
++analytic reference 0.5 |
++| M0 marginal coverage (GEARS scores) | GEARS 0.899;
++nominal 0.9 |
++| Pre-specified verdict (v1.0) | not reduced |
++| Control (v1.1): R, split-half predictor (95% CI) | RPE1 0.830 (0.79 to 0.87);
++development 0.980 (0.96 to 0.99) |
++| Control (v1.1): R, linear-PCA | RPE1 0.039;
++development 0.104 |
++| Control (v1.1): R, GEARS | RPE1 0.036 |
++| Control (v1.1): Error reduction, control − linear-PCA, all | RPE1 +28.9 pp (27.5 to 30.3);
++development +26.2 pp (24.6 to 27.9) |
++| Control (v1.1): Error reduction, control − linear-PCA, T5 | RPE1 +44.9 pp (42.3 to 47.6);
++development +45.5 pp (42.3 to 48.5) |
++| Control (v1.1): Positive-control verdict | RPE1 threshold reachable;
++| Control (v1.1): Negative control (20 permutations): linear-PCA verdicts | RPE1 not reduced 20 |
++| Control (v1.1): Negative control (20 permutations): GEARS verdicts | RPE1 not reduced 19, coupling metrics up with accuracy down 1 |
++| Control (v1.1): Mean error reduction of permuted predictions (outside protocol) | RPE1 linear-PCA 0.6%;
++GEARS 3.4% |
++Table: Post-confirmation coupling test with GEARS on RPE1 (protocols gears_coupling v1.0 and v1.1).
++Values from results/gears_coupling_v1.1/gears_coupling_result.json and controls_summary.json;
++| development | T5 (outcome-defined, top 20% by measured effect) | 0 | 1,075 | 0.516 | 7.76 | 1.000 | 0.47 | 0.56 | 0.516 | 0.000 |
++| development | T1-T4 (outcome-defined) | 0 | 4,283 | 1.000 | 3.50 | 0.000 | 1.00 | 1.00 | 1.000 | 0.000 |
++| development | top 10% by h (prospective) | 1 | 546 | 0.740 | 6.60 | 0.603 | 0.68 | 0.80 | 0.709 | 0.031 |
++| development | top 20% by h (prospective) | 1 | 1,074 | 0.775 | 6.03 | 0.510 | 0.74 | 0.81 | 0.753 | 0.022 |
++| development | top 20% by STRING degree (prospective) | 1 | 1,086 | 0.871 | 5.23 | 0.389 | 0.84 | 0.90 | 0.812 | 0.059 |
++| development | top 10% by STRING degree (prospective) | 1 | 552 | 0.913 | 5.25 | 0.422 | 0.88 | 0.94 | 0.796 | 0.117 |
++| development | bottom 20% by STRING degree (prospective) | 1 | 1,175 | 0.946 | 3.73 | 0.104 | 0.92 | 0.97 | 0.950 | −0.004 |
++| non-library target set | T5 (outcome-defined, top 20% by measured effect) | 0 | 3,417 | 0.518 | 6.12 | 1.000 | 0.49 | 0.54 | 0.518 | 0.000 |
++| non-library target set | T1-T4 (outcome-defined) | 0 | 13,632 | 1.000 | 3.10 | 0.000 | 1.00 | 1.00 | 1.000 | 0.000 |
++| non-library target set | top 10% by h (prospective) | 1 | 1,722 | 0.822 | 4.35 | 0.343 | 0.80 | 0.85 | 0.835 | −0.012 |
++| non-library target set | top 20% by h (prospective) | 1 | 3,423 | 0.859 | 4.06 | 0.286 | 0.84 | 0.88 | 0.862 | −0.003 |
++| non-library target set | top 20% by STRING degree (prospective) | 1 | 3,621 | 0.861 | 3.93 | 0.250 | 0.84 | 0.88 | 0.880 | −0.019 |
++| non-library target set | top 10% by STRING degree (prospective) | 1 | 1,796 | 0.837 | 4.05 | 0.276 | 0.81 | 0.87 | 0.867 | −0.030 |
++| non-library target set | bottom 20% by STRING degree (prospective) | 1 | 6,222 | 0.918 | 3.60 | 0.180 | 0.91 | 0.93 | 0.914 | 0.005 |
++| RPE1 | T5 (outcome-defined, top 20% by measured effect) | 0 | 1,051 | 0.480 | 8.43 | 1.000 | 0.43 | 0.53 | 0.480 | 0.000 |
++| RPE1 | T1-T4 (outcome-defined) | 0 | 4,202 | 1.000 | 3.78 | 0.000 | 1.00 | 1.00 | 1.000 | 0.000 |
++| RPE1 | top 10% by h (prospective) | 1 | 528 | 0.708 | 7.12 | 0.511 | 0.64 | 0.77 | 0.734 | −0.026 |
++| RPE1 | top 20% by h (prospective) | 1 | 1,053 | 0.769 | 6.35 | 0.435 | 0.73 | 0.81 | 0.774 | −0.004 |
++| RPE1 | top 20% by STRING degree (prospective) | 1 | 1,063 | 0.869 | 5.40 | 0.306 | 0.84 | 0.90 | 0.841 | 0.028 |
++| RPE1 | top 10% by STRING degree (prospective) | 1 | 536 | 0.927 | 5.10 | 0.304 | 0.89 | 0.96 | 0.842 | 0.086 |
++| RPE1 | bottom 20% by STRING degree (prospective) | 1 | 1,194 | 0.931 | 4.05 | 0.137 | 0.90 | 0.95 | 0.929 | 0.002 |
++| development | CORUM complex member (prospective) | 1 | 3,552 | 1,184 | 0.886 | 0.87 | 0.90 | 4.58 | 0.232 | 0.888 | −0.002 |
++| development | not a CORUM member (prospective) | 1 | 1,806 | 602 | 0.936 | 0.92 | 0.95 | 3.90 | 0.138 | 0.933 | 0.003 |
++| RPE1 | CORUM complex member (prospective) | 1 | 3,462 | 1,154 | 0.890 | 0.87 | 0.91 | 4.92 | 0.224 | 0.884 | 0.007 |
++| RPE1 | not a CORUM member (prospective) | 1 | 1,791 | 597 | 0.907 | 0.88 | 0.93 | 4.30 | 0.154 | 0.920 | −0.013 |
++| non-library target set | CORUM complex member (prospective) | 1 | 5,718 | 1,906 | 0.892 | 0.88 | 0.90 | 3.81 | 0.227 | 0.891 | 0.001 |
++| non-library target set | not a CORUM member (prospective) | 1 | 11,331 | 3,777 | 0.909 | 0.90 | 0.92 | 3.65 | 0.187 | 0.910 | −0.001 |

@@ -1,0 +1,154 @@
+{
+ "recorded_utc": "2026-10-09T04:31:50Z",
+ "note": "Stage-1 cache hashes were not recorded when the caches were written (2026-10-08 13:37-14:22Z). Recorded here before stages 2-4, after checking each cache against its read-only split file and stage1 meta (split id, round, fold, cal/test targets in order, size, K, d).",
+ "protocol": "0.6.2",
+ "files": [
+  {
+   "split": 0,
+   "sha256": "61e7c602e87cc05e7f9375766597fa7dce88ec21716e4609af429db0ff85a44a",
+   "bytes": 1560753,
+   "consistent": true,
+   "mtime_utc": "2026-10-08T13:37:35Z"
+  },
+  {
+   "split": 1,
+   "sha256": "3087f3658bc6145438632c981409318099fd1e44795c281fdbdd851a54fd124e",
+   "bytes": 1560968,
+   "consistent": true,
+   "mtime_utc": "2026-10-08T13:40:13Z"
+  },
+  {
+   "split": 2,
+   "sha256": "09aee8d41ef07377f56c8097e7a723bc3038a4274d5ed740495fd03a7eed3504",
+   "bytes": 1560751,
+   "consistent": true,
+   "mtime_utc": "2026-10-08T13:42:36Z"
+  },
+  {
+   "split": 3,
+   "sha256": "fbcf146e1e75341d43736972cfe37ea8966df03591875f408d416dc20ed20a14",
+   "bytes": 1560736,
+   "consistent": true,
+   "mtime_utc": "2026-10-08T13:44:59Z"
+  },
+  {
+   "split": 4,
+   "sha256": "ff4af6a9a668980cba7cd346c08fe511aff281542286941cdb3a389661ae0246",
+   "bytes": 1560732,
+   "consistent": true,
+   "mtime_utc": "2026-10-08T13:46:59Z"
+  },
+  {
+   "split": 5,
+   "sha256": "5fbafcce22994f926dd1a4d8a993fa359f33ca8f3926ea3debccb87bdc667cc0",
+   "bytes": 1560757,
+   "consistent": true,
+   "mtime_utc": "2026-10-08T13:48:57Z"
+  },
+  {
+   "split": 6,
+   "sha256": "1d18ff67be8b599afcb67853c14a975884345b74f27d4810522fdf15ccbf6f03",
+   "bytes": 1560747,
+   "consistent": true,
+   "mtime_utc": "2026-10-08T13:50:56Z"
+  },
+  {
+   "split": 7,
+   "sha256": "411c63d393a0dedbe7582011a5a9cf885f9d35c00b87a706ec9178817202363a",
+   "bytes": 1560960,
+   "consistent": true,
+   "mtime_utc": "2026-10-08T13:52:54Z"
+  },
+  {
+   "split": 8,
+   "sha256": "d5546b93e180b993e7b809b613bf9337f397a4a46a2aae6b8b104de1b3b625a6",
+   "bytes": 1560773,
+   "consistent": true,
+   "mtime_utc": "2026-10-08T13:55:03Z"
+  },
+  {
+   "split": 9,
+   "sha256": "fc73748ad303b88b1f3264905808dcca172989ae8acba7ba0db55bfb99e728d1",
+   "bytes": 1560762,
+   "consistent": true,
+   "mtime_utc": "2026-10-08T13:57:23Z"
+  },
+  {
+   "split": 10,
+   "sha256": "fdb4b8ed0f8f56597ea606eae618b909f88ec446de2022a2083f63f90181137a",
+   "bytes": 1560747,
+   "consistent": true,
+   "mtime_utc": "2026-10-08T13:59:45Z"
+  },
+  {
+   "split": 11,
+   "sha256": "1c77f416adbf2effa79178512c984417c5b378923a659f52246b10c302020bc8",
+   "bytes": 1560721,
+   "consistent": true,
+   "mtime_utc": "2026-10-08T14:02:05Z"
+  },
+  {
+   "split": 12,
+   "sha256": "d2b2088991f3a307380551eab5c9a4e14f692fbd389703c0d30b6c691679d2f3",
+   "bytes": 1560775,
+   "consistent": true,
+   "mtime_utc": "2026-10-08T14:04:33Z"
+  },
+  {
+   "split": 13,
+   "sha256": "d9f43c1f27cfce1d034c6e50000cb1cdc663e13c29b8cf2bacf0befe3a2f463b",
+   "bytes": 1560743,
+   "consistent": true,
+   "mtime_utc": "2026-10-08T14:06:57Z"
+  },
+  {
+   "split": 14,
+   "sha256": "ad0f1fb597777f09473befc6d2ad9d7a8c1f5d711b9395ba8eaea1de96076c98",
+   "bytes": 1560958,
+   "consistent": true,
+   "mtime_utc": "2026-10-08T14:09:22Z"
+  },
+  {
+   "split": 15,
+   "sha256": "b89eb2fbd5dd83f907457fc3c3f6a3edc89b0f6923a59edcd18682ffc523aebe",
+   "bytes": 1560779,
+   "consistent": true,
+   "mtime_utc": "2026-10-08T14:11:51Z"
+  },
+  {
+   "split": 16,
+   "sha256": "435d751f0cd9d15a88391ee2d604304841abca6c16bb53fc332a662d146f6d0c",
+   "bytes": 1560748,
+   "consistent": true,
+   "mtime_utc": "2026-10-08T14:14:16Z"
+  },
+  {
+   "split": 17,
+   "sha256": "ff8df2f94b0d91dc4c62d7c544e70ec243195e32b368c38bbf7dacf32cc17619",
+   "bytes": 1560725,
+   "consistent": true,
+   "mtime_utc": "2026-10-08T14:16:41Z"
+  },
+  {
+   "split": 18,
+   "sha256": "e75ef17bd4be14b8a8dece13b5a03518024ce915c0a97a299ab8c162b52c2f0f",
+   "bytes": 1560729,
+   "consistent": true,
+   "mtime_utc": "2026-10-08T14:18:40Z"
+  },
+  {
+   "split": 19,
+   "sha256": "14d81445e074170e41e699d17fce9fa90c88558a40882ae764c562990ce53670",
+   "bytes": 1560752,
+   "consistent": true,
+   "mtime_utc": "2026-10-08T14:20:41Z"
+  },
+  {
+   "split": 20,
+   "sha256": "af762f4e619993570979c6dda5758bddbfda17afb7e066f958239739d566e786",
+   "bytes": 1560743,
+   "consistent": true,
+   "mtime_utc": "2026-10-08T14:22:40Z"
+  }
+ ]
+}

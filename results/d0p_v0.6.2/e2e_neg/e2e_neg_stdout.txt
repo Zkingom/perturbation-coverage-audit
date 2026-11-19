@@ -1,0 +1,27 @@
+F:\codex_in_this\claude_science\code\eval_v06.py:240: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+stage1 split 00 round 0 fold 0 K=10 d=100 n_test=101 81.4s
+stage1 split 01 round 0 fold 1 K=50 d=100 n_test=101 150.7s
+stage1 split 02 round 0 fold 2 K=50 d=100 n_test=101 122.0s
+stage1 split 03 round 0 fold 3 K=30 d=100 n_test=101 103.3s
+stage1 split 04 round 0 fold 4 K=10 d=100 n_test=101 102.1s
+stage1 split 05 round 0 fold 5 K=10 d=100 n_test=101 102.5s
+stage1 split 06 round 0 fold 6 K=10 d=100 n_test=100 101.5s
+stage1 split 07 round 1 fold 0 K=20 d=100 n_test=101 117.8s
+stage1 split 08 round 1 fold 1 K=10 d=100 n_test=101 107.7s
+stage1 split 09 round 1 fold 2 K=10 d=100 n_test=101 111.0s
+stage1 split 10 round 1 fold 3 K=10 d=100 n_test=101 116.2s
+stage1 split 11 round 1 fold 4 K=10 d=100 n_test=101 112.6s
+stage1 split 12 round 1 fold 5 K=30 d=100 n_test=101 107.7s
+stage1 split 13 round 1 fold 6 K=20 d=100 n_test=100 106.1s
+stage1 split 14 round 2 fold 0 K=50 d=100 n_test=101 102.5s
+stage1 split 15 round 2 fold 1 K=20 d=100 n_test=101 104.1s
+stage1 split 16 round 2 fold 2 K=50 d=100 n_test=101 104.1s
+stage1 split 17 round 2 fold 3 K=50 d=100 n_test=101 101.9s
+stage1 split 18 round 2 fold 4 K=10 d=100 n_test=101 108.5s
+stage1 split 19 round 2 fold 5 K=20 d=100 n_test=101 107.1s
+stage1 split 20 round 2 fold 6 K=50 d=100 n_test=100 116.7s
+selected proxies: h=sim+nbq|gbm d=ridge s=ridge
+stage 2 rows 921330 in 2124s
+primary M1 1.0; best M_dist Mdist-N 1.0
+{"kind": "neg", "expected_11d": {"P-": true, "matched T5 primary - M0: CI includes 0 or diff < 2 pp": true, "M_perm: 0 of 20 meet W+ (matched)": true}, "all_expected_pass": true}

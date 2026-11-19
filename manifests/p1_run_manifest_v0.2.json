@@ -1,0 +1,103 @@
+{
+ "protocol_version": "0.2",
+ "phase": "P0+P1",
+ "master_seed": 20261001,
+ "split_seeds": [
+  20261001,
+  20261002,
+  20261003
+ ],
+ "planted_seed_offset": 12345,
+ "canary_seed_offset": 999,
+ "software": {
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "pandas": "2.3.3",
+  "h5py": "3.16.0",
+  "anndata": "0.12.19",
+  "sklearn": "1.9.1",
+  "statsmodels": "0.15.0",
+  "igraph": "1.0.0",
+  "leidenalg": "0.12.0",
+  "pyarrow": "25.0.0",
+  "python": "3.11.16"
+ },
+ "data": {
+  "gene2go_all.pkl": {
+   "dataverse_datafile_id": 6153417,
+   "bytes": 9462558,
+   "sha256": "f145c5e84a53048d87942a417d870a4f2d8db50200b96e492b358c13aba8c771",
+   "seconds": 9.3,
+   "content_disposition": "attachment; filename*=UTF-8''gene2go.pkl",
+   "downloaded_utc": "2026-10-01T14:58:08Z"
+  },
+  "replogle_k562_essential.zip": {
+   "dataverse_datafile_id": 7458695,
+   "bytes": 669703049,
+   "sha256": "e769c89aa876061fdb3ac02a8de274f19a741a4f95decf14a52fd621d1eea319",
+   "seconds": 440.0,
+   "content_disposition": "attachment; filename*=UTF-8''replogle_k562_essential.zip",
+   "downloaded_utc": "2026-10-01T15:05:28Z"
+  },
+  "perturb_processed.h5ad": {
+   "bytes": 2898717719,
+   "sha256": "550fde89ac85c258c9fd517638fe34fb42c0e748c9305fe6355761a2bb754170"
+  },
+  "essential_all_data_pert_genes.pkl": {
+   "dataverse_datafile_id": 6934320,
+   "bytes": 558811,
+   "sha256": "46c3dfe354d8ad5c0da22c69f3d0ca451987b1a61ed9d984279b22b9565ff8d7",
+   "content_disposition": "attachment; filename*=UTF-8''essential_all_data_pert_genes.pkl",
+   "downloaded_utc": "2026-10-01T15:14:09Z"
+  },
+  "9606.protein.info.v12.0.txt.gz": {
+   "url": "https://stringdb-downloads.org/download/protein.info.v12.0/9606.protein.info.v12.0.txt.gz",
+   "bytes": 1970090,
+   "sha256": "144de4b0d98c6a7dfde6ddc2591cf88657f27b989eadff4f501450c3ed1f0f1c",
+   "downloaded_utc": "2026-10-01T15:18:58Z"
+  },
+  "9606.protein.links.detailed.v12.0.txt.gz": {
+   "url": "https://stringdb-downloads.org/download/protein.links.detailed.v12.0/9606.protein.links.detailed.v12.0.txt.gz",
+   "bytes": 139634808,
+   "sha256": "28a2ea3b22c964e691c0f2f934c5e3e397a4b0a12c833d8787fa02b7847b91b6",
+   "downloaded_utc": "2026-10-01T15:20:25Z"
+  }
+ },
+ "string_version": "12.0 (experimental+database channels, prior 0.041 removed/re-added per STRING scheme)",
+ "machine": {
+  "total_gb": 15.7,
+  "available_gb": 1.5,
+  "disk_available_gb": 33.7,
+  "cores": 20
+ },
+ "expression": "GEARS X = log1p of library-normalised counts restricted to 5000 HVGs (expm1 row sums ~6.6e3); pseudobulk = per-condition mean",
+ "population": {
+  "perturbations": 1092,
+  "target_in_readout": 412,
+  "in_GEARS_pert_names": 1087,
+  "cells_ge_30": 1070,
+  "E": 406,
+  "E_noGO": 0,
+  "tss_groups": 402
+ },
+ "fold_sizes": [
+  {
+   "train": 246,
+   "val": 40,
+   "cal": 60,
+   "test": 60
+  },
+  {
+   "train": 246,
+   "val": 40,
+   "cal": 60,
+   "test": 60
+  },
+  {
+   "train": 246,
+   "val": 40,
+   "cal": 60,
+   "test": 60
+  }
+ ]
+}

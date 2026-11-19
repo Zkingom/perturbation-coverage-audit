@@ -1,0 +1,45 @@
+{
+ "input": "G:\\biology\\figshare_20029387_v1\\rpe1_raw_singlecell_01.h5ad",
+ "cells": 247914,
+ "genes": 8749,
+ "rows": 2662,
+ "passes": 1,
+ "chunk_rows": 4000,
+ "half_seed": 20264001,
+ "library_size": "obs.UMI_count",
+ "qc_vs_bulk": {
+  "rows_single_cell": 2662,
+  "rows_bulk": 2679,
+  "rows_compared": 2662,
+  "genes_identical": true,
+  "max_abs_diff": 2.0345052121228946e-05,
+  "max_rel_diff": 5.941709432169066e-08,
+  "n_entries_outside_tol": 0,
+  "tolerance": "0.001 + 0.0001 x |bulk|",
+  "cell_counts_match_bulk": true,
+  "pass": true
+ },
+ "seconds": 69,
+ "obs_keys": [
+  "UMI_count",
+  "__categories",
+  "cell_barcode",
+  "core_adjusted_UMI_count",
+  "core_scale_factor",
+  "gem_group",
+  "gene",
+  "gene_id",
+  "gene_transcript",
+  "mitopercent",
+  "sgID_AB",
+  "transcript",
+  "z_gemgroup_UMI"
+ ],
+ "outputs_sha256": {
+  "pseudobulk_genes.csv": "a742435b09d60f241624a422c539c9bae9cfd42738f4dc3a32c2fbe5b931d46b",
+  "pseudobulk_logmean.npy": "c4f9c6beffb826f505911e6a49a4e1f93c5cb6e4541028fb25946e47b01a6f6b",
+  "pseudobulk_logmean_A.npy": "b34ed531417bec11c7fa774fbe581bb53a210afdbc2c2399daa8a26bde7abf17",
+  "pseudobulk_logmean_B.npy": "5d15a1c30c21ffd39e1236641343f471bd0cb65f8677e0b25138781900de916d",
+  "pseudobulk_rows.csv": "7346f60777efc7cd49c208c1ffeb883e90700346a517e7c5b1324edbb0b2771f"
+ }
+}

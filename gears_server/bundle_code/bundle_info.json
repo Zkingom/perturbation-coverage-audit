@@ -1,0 +1,59 @@
+{
+ "protocol": "v0.6 section 10 (inherited by v0.7)",
+ "cap_cells_per_perturbation": 16,
+ "seed": 20270701,
+ "source": "rpe1_raw_singlecell_01.h5ad",
+ "source_sha256_from_manifest": "see manifests/raw_manifest_additions_v0.6.json",
+ "n_cells": 48300,
+ "n_ctrl": 11485,
+ "n_genes": 8749,
+ "nnz": 168745629,
+ "n_E": 1751,
+ "n_AT_in_graph": 587,
+ "AT_excluded_not_in_GEARS_graph": [
+  "C7orf26",
+  "ALG1L",
+  "FAM229A",
+  "C16orf86",
+  "CCDC144NL",
+  "KRTAP4-7",
+  "GOLGA6L1",
+  "GNB1L",
+  "SEM1",
+  "FAM102B",
+  "AC118549.1",
+  "MTRNR2L1",
+  "OR4F4",
+  "C19orf53",
+  "C18orf21"
+ ],
+ "n_AT_below_cap": 120,
+ "n_E_below_cap": 0,
+ "duplicate_gene_names": [
+  "HSPA14",
+  "HSPA14"
+ ],
+ "pseudobulk_reproduction_check": [
+  {
+   "target": "TFAM",
+   "max_abs_diff_vs_pseudobulk": 0.0
+  },
+  {
+   "target": "FAM207A",
+   "max_abs_diff_vs_pseudobulk": 0.0
+  },
+  {
+   "target": "HSPA9",
+   "max_abs_diff_vs_pseudobulk": 0.0
+  },
+  {
+   "target": "HMGA1",
+   "max_abs_diff_vs_pseudobulk": 0.0
+  },
+  {
+   "target": "NUP93",
+   "max_abs_diff_vs_pseudobulk": 0.0
+  }
+ ],
+ "seconds": 156
+}

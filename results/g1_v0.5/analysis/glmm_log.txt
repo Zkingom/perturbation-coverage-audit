@@ -1,0 +1,14 @@
+=== STDOUT ===
+A_D_GO_ncells 248 s
+A_D_STRING_ncells 308 s
+A_D_GO_filt_ncells 269 s
+A_D_GO_no_ncells done
+B_D_GO_ncells 72 s
+B_D_STRING_ncells 94 s
+B_D_GO_filt_ncells 74 s
+B_D_GO_no_ncells done
+GLMM complete
+
+=== STDERR ===
+
+=== EXIT 0 ===

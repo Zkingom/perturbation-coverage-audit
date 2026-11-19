@@ -1,0 +1,32 @@
+{
+ "mode": "only",
+ "splits_run": [
+  {
+   "split": 0,
+   "round": 0,
+   "fold": 0,
+   "seconds": 146.8358781337738,
+   "K": 50,
+   "d": 100,
+   "n_test": 255,
+   "n_cal": 267,
+   "n_val": 178,
+   "n_pool": 1343,
+   "peak_rss_gb_so_far": 2.0984535217285156,
+   "min_avail_gb_so_far": 2.098876953125,
+   "cache_mb": 1.560753
+  }
+ ],
+ "memory": {
+  "peak_rss_sampled_gb": 2.0984535217285156,
+  "peak_working_set_gb": 2.1151046752929688,
+  "min_system_available_gb": 2.098876953125,
+  "available_now_gb": 3.8541030883789062
+ },
+ "seconds_total": 149.80027651786804,
+ "threads": {
+  "OMP_NUM_THREADS": "8",
+  "MKL_NUM_THREADS": "8",
+  "OPENBLAS_NUM_THREADS": "8"
+ }
+}

@@ -1,0 +1,10 @@
+2026-10-11T02:05:07Z attached ext arrays from F:\codex_in_this\claude_science\results\conf_v0.7\rpe1\ext_cache
+F:\codex_in_this\claude_science\code\eval_v06.py:251: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+2026-10-11T02:05:08Z selected proxies: h=sim_prior|ridge d=ridge s=ridge
+2026-10-11T02:54:46Z stage 2 rows 2631753 in 2978s
+2026-10-11T02:54:46Z primary M1 0.0; best M_dist Mdist-M 3
+2026-10-11T03:01:51Z confirm_v07: randomised matching rows 73542
+F:\codex_in_this\claude_science\code\eval_v06.py:251: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+2026-10-11T03:02:20Z classification: steps 1 and 2 passed: the deployable prior-neighbour proxy repairs part of the failure and adds to the strongest distance / difficulty baseline

@@ -1,0 +1,2 @@
+20:03:17 PID=22768 alive=True avail_GB=3.13 rss_GB=1.11 | 2026-10-14T12:03:11Z available memory at start 4.15 GB; process memory cap 4.8 GB; 207 min to the power cut
+20:04:07 PID=22768 alive=False avail_GB=5.45 rss_GB=0.00 | 2026-10-14T12:03:58Z STOP: process RSS 4.90 GB > cap 4.8 GB (memory watchdog); partial output discarded

@@ -1,0 +1,4 @@
+2026-10-10T09:12:06Z rpe1_raw_singlecell_01.h5ad: size and sha256 match the freeze manifest
+2026-10-10T09:12:06Z rpe1_raw_bulk_01.h5ad: size and sha256 match the freeze manifest
+2026-10-10T09:12:44Z Ensembl: 336 ids, by id 335, by symbol 1, missing 0, release {'releases': [116]}, assembly GRCh38.p14
+2026-10-10T09:13:04Z C0 done: E=1751 TSS groups=1698 QC pass=True step-2 power at dev estimate=0.98 stop_low_power=False

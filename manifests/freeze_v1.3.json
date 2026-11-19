@@ -1,0 +1,20 @@
+{
+ "protocol": "norman_ablation_bootstrap_v1.3",
+ "frozen_utc": "2026-11-04T09:03:48Z",
+ "frozen_local": "2026-11-04 17:03 (UTC+8)",
+ "protocol_file": {
+  "path": "reports/protocol/norman_ablation_bootstrap_v1.3.md",
+  "sha256": "870fe07f56901d49894344459b7784ff87d2dd020cd490daf754fa50c4340b6e"
+ },
+ "evidence": "post hoc; v1.2 Norman results observed before design",
+ "v12_result_sha256": "fd921b25ea25637440f745d2ded08f436351b7f63cc7e3e64dceb448600a3330",
+ "v12_test_rows_sha256": "4179ae831c0694cc2ab5466f899605179cceb72e4489a6c5f105391037cd5f16",
+ "reused_code": {
+  "models_v04.py": "5fa95b4d94864d2bdd899d4f70c79d2e4863abb8a5a42b3246d54b7439141dc1",
+  "norman_v12.py": "af6a83e7fe49907cd885cc82eb0e1d948bc9209e7fe2f532ef5d391af4f33d2d",
+  "resume_v07.py": "bdeb590081511ab39826a79399f3a1e1ed390b83f65e126be4b37cd0ca7aa609",
+  "paths.py": "5f153e53d8a500fb6d53977e9e1980fa264487c3a0e883172480b373908b1128"
+ },
+ "results_v13_exist_at_freeze": false,
+ "master_seed": 20261001
+}

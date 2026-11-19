@@ -1,0 +1,12 @@
+{
+ "dataset": "dev",
+ "input": "G:\\biology\\figshare_20029387_v1\\K562_essential_raw_singlecell_01.h5ad",
+ "n_cells_file": 310385,
+ "n_ctrl_total": 10691,
+ "n_ctrl_kept": 10691,
+ "seed": 20270501,
+ "genes": 8563,
+ "per_cell_transform": "log1p(1e4*counts/UMI_count), float64 -> stored float32",
+ "control_guides": 97,
+ "seconds": 14
+}

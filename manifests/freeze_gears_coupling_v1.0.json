@@ -1,0 +1,36 @@
+{
+ "protocol_version": "gears_coupling_v1.0",
+ "frozen_utc": "2026-10-19T11:50:36Z",
+ "evidence_tier": "post-confirmation (new analysis after the confirmatory results were observed); never confirmatory",
+ "approved_by_user": "2026-10-19 (accuracy precondition added before freezing)",
+ "protocol_file": {
+  "path": "reports/protocol/gears_coupling_v1.0.md",
+  "sha256": "fb789a15c57fc2b24469fdc4dfd94c7403aa3a15ca841cddda90f897f32dabd1"
+ },
+ "draft_file": {
+  "path": "reports/protocol/gears_coupling_v0.1_draft.md",
+  "sha256": "61f2686b6d370f4ffa9de1eaa614b641ccfeecf8ac8be61592947eca142b59f3"
+ },
+ "bundle": {
+  "path": "gears_upload/gears_bundle_v07.tar.gz",
+  "sha256": "9db14ae8e900e0fb187ff75d6cb7c6f94baab2256cd8a3bc6618fcf2f99dad9b",
+  "bytes": 449429792,
+  "inner_manifest": "gears_bundle_v07/SHA256SUMS"
+ },
+ "server_code_sha256": {
+  "gears_bundle_v07.py": "4b750b31a6ec3ca0ec979ebba8d146c2d271199f563d2d11a4c33bcd407c9d6c",
+  "gears_server/gears_server_run.py": "7e885301e026a2877f3120af042f35e165efedd909bfe48850ffe8c0bcaaa52e",
+  "gears_server/setup_gears_env.sh": "f7a8cbdf85d6f08903ddadcba5024c934099e92e3dd1a6d2eed841a8b69a50da",
+  "gears_server/requirements_gears.txt": "5841a101b90836dca2508a39d13b97e8a3bb1fa5fcb60342bd72a31de87c0689",
+  "gears_server/README_server.md": "1d06051b9138a579ca854720260d894c5083f5438df6e15a67d8d8b55833d83a"
+ },
+ "reference_values_rpe1_linear_pca": {
+  "cv_ratio": 0.0969,
+  "resid_var_share_log": 0.0653,
+  "rel_error_reduction_all": 0.0431,
+  "rel_error_reduction_T5": 0.0788,
+  "mean_model_T5_coverage": 0.4929,
+  "source": "reports/review/constructive_reference_by_model.csv, scale_ratio_by_model.csv"
+ },
+ "status": "frozen, not run (awaiting the rented GPU server)"
+}

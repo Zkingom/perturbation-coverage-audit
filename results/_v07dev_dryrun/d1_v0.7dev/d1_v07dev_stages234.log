@@ -1,0 +1,2 @@
+2026-10-10T04:27:31Z stages 2-4 done in 2s; coverage rows 1; {"peak_rss_sampled_gb": 1.4809379577636719, "peak_working_set_gb": 2.542163848876953, "min_system_available_gb": 4.255889892578125, "available_now_gb": 4.754783630371094}
+2026-10-10T04:27:31Z done: {"peak_rss_sampled_gb": 1.4809379577636719, "peak_working_set_gb": 2.542163848876953, "min_system_available_gb": 4.255889892578125, "available_now_gb": 4.743690490722656}

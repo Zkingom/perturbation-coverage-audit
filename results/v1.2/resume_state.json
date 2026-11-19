@@ -1,0 +1,13 @@
+{
+ "updated_local": "2026-11-03 20:22",
+ "protocol": "combo_crosscell_v1.2 (frozen 2026-11-01T08:39:44Z)",
+ "A0": "done: protocol frozen; linear-PCA embedding for doubles (P_AB = G[A]+G[B]) awaits user confirmation; amend as v1.2.1 before any data read if rejected",
+ "A1": "done: Norman file at G:/biology/geo_GSE264667/NormanWeissman2019_filtered.h5ad, md5 verified; C0 passed",
+ "A2": "done: 21/21 splits cached with markers (results/v1.2/norman/cache)",
+ "A3": "done: both negative controls pass",
+ "A4": "already complete before this round: final GEARS run 21/21 splits, exit code 0 (started 2026-10-26 20:36); v1.1 split-half positive control computed locally 2026-10-28 (controls_summary.json: RPE1 and dev 'threshold reachable'); nothing rerun",
+ "A5": "waiting for user download of HepG2/Jurkat (GEO GSE264667)",
+ "B": "B1-B5 done in manuscript_v1.1",
+ "C": "C1 Nature Methods presubmission draft; C2 handover.md",
+ "next_step": "after HepG2/Jurkat download: verify size, structure, sha256 -> C0 per v0.7 section 3 -> splits -> mean + linear-PCA -> judgement; then PDF build"
+}

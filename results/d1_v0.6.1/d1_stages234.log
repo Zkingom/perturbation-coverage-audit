@@ -1,0 +1,9 @@
+2026-10-09T04:56:18Z selected proxies: h=sim_prior|ridge d=ridge s=ridge
+2026-10-09T06:06:55Z stage 2 rows 2330730 in 4237s
+2026-10-09T06:06:55Z primary M1 0.0; best M_dist Mdist-N 1.0
+2026-10-09T08:45:59Z stages 2-4 done in 13784s; coverage rows 2545050 (1.18 GB in memory); {"peak_rss_sampled_gb": 2.7098007202148438, "peak_working_set_gb": 2.7119369506835938, "min_system_available_gb": 2.0216522216796875, "available_now_gb": 5.109458923339844}
+2026-10-09T08:51:14Z sens: randomised matching done for linear_pca
+2026-10-09T08:56:31Z sens: randomised matching done for linear_go
+2026-10-09T08:57:39Z sens: confounding bootstrap done
+2026-10-09T08:57:48Z sens: distance strata done
+2026-10-09T08:57:48Z done: {"peak_rss_sampled_gb": 2.7098007202148438, "peak_working_set_gb": 2.7119369506835938, "min_system_available_gb": 2.0216522216796875, "available_now_gb": 4.811367034912109} sens 708s

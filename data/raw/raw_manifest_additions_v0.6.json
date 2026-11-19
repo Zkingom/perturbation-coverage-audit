@@ -1,0 +1,81 @@
+{
+ "K562_gwps_raw_singlecell_01.h5ad": {
+  "source": "Figshare+ article 20029387 v1, file id 35775507, https://ndownloader.figshare.com/files/35775507",
+  "location": "H:\\cs+bio_file\\K562_gwps_raw_singlecell_01.h5ad (exFAT volume, outside sandbox grants; downloaded by user-run launcher)",
+  "size_bytes": 65830941948,
+  "md5": "887e3e6a8c8df6eadf7a3030a53c9546",
+  "md5_publisher": "887e3e6a8c8df6eadf7a3030a53c9546 (supplied_md5; computed_md5 empty)",
+  "md5_match": true,
+  "sha256": "b697ef7fedcec2972ec334608f86f2a29cb25e70c81b6725195f4cda60a9de2c",
+  "download": {
+   "tool": "code/download_resumable.py (16 threads, 32 MiB chunks)",
+   "started_utc": "2026-10-05T16:19:52Z",
+   "verified_utc": "2026-10-06T01:38:59Z",
+   "transfer_seconds": 31883,
+   "bytes_transferred_incl_retries": 69149684988,
+   "failed_chunks": 0
+  },
+  "read_only": "pending (user to run attrib +R; sandbox cannot write H:)",
+  "note": "Kept in a separate addendum so that data/raw/raw_manifest.json, whose SHA256 is recorded in manifests/freeze_v0.5*.json, stays unchanged."
+ },
+ "rpe1_raw_bulk_01.h5ad": {
+  "source": "Figshare+ article 20029387 v1, file id 35775581, https://ndownloader.figshare.com/files/35775581",
+  "location": "G:\\biology\\figshare_20029387_v1\\rpe1_raw_bulk_01.h5ad",
+  "size_bytes": 95350546,
+  "md5": "74765fa87635467a869ea972356ae0e7",
+  "md5_publisher": "74765fa87635467a869ea972356ae0e7 (Figshare computed_md5)",
+  "md5_match": true,
+  "sha256": "603c655f1cfa41d649baf3ae63fca224cc11f297e40d4ed59d390b1e8d2e2db2",
+  "download": {
+   "tool": "code/download_resumable.py (16 threads, 32 MiB chunks)",
+   "started_utc": "2026-10-06T03:15:50Z",
+   "verified_utc": "2026-10-06T03:15:58Z",
+   "transfer_seconds": 8.0,
+   "bytes_transferred_incl_retries": 95350546,
+   "failed_chunks": 0,
+   "chunk_retries_recovered": 0,
+   "note": "bytes_transferred_incl_retries = script's fetched_bytes (successfully written bytes; partial bytes of retried chunks not counted by the script)"
+  },
+  "read_only": true
+ },
+ "K562_gwps_raw_bulk_01.h5ad": {
+  "source": "Figshare+ article 20029387 v1, file id 35774443, https://ndownloader.figshare.com/files/35774443",
+  "location": "G:\\biology\\figshare_20029387_v1\\K562_gwps_raw_bulk_01.h5ad",
+  "size_bytes": 374587922,
+  "md5": "4570b53c9d62ff6df281e622f0350060",
+  "md5_publisher": "4570b53c9d62ff6df281e622f0350060 (Figshare computed_md5)",
+  "md5_match": true,
+  "sha256": "7cec96b3b76169abbf6b6ab9d10bf00d71d942d89e63292351f745e130b154db",
+  "download": {
+   "tool": "code/download_resumable.py (16 threads, 32 MiB chunks)",
+   "started_utc": "2026-10-06T03:16:43Z",
+   "verified_utc": "2026-10-06T03:17:44Z",
+   "transfer_seconds": 60.1,
+   "bytes_transferred_incl_retries": 374587922,
+   "failed_chunks": 0,
+   "chunk_retries_recovered": 0,
+   "note": "bytes_transferred_incl_retries = script's fetched_bytes (successfully written bytes; partial bytes of retried chunks not counted by the script)"
+  },
+  "read_only": true
+ },
+ "rpe1_raw_singlecell_01.h5ad": {
+  "source": "Figshare+ article 20029387 v1, file id 35775606, https://ndownloader.figshare.com/files/35775606",
+  "location": "G:\\biology\\figshare_20029387_v1\\rpe1_raw_singlecell_01.h5ad",
+  "size_bytes": 8700873216,
+  "md5": "6a2a9d0d2bf4ec147f4d1104043b268c",
+  "md5_publisher": "6a2a9d0d2bf4ec147f4d1104043b268c (uploader-supplied supplied_md5 (computed_md5 empty))",
+  "md5_match": true,
+  "sha256": "9b05ef1f81526216fa008d677e9e0d03dce9a2f7a95499a4fb81e505e9d88ef1",
+  "download": {
+   "tool": "code/download_resumable.py (16 threads, 32 MiB chunks)",
+   "started_utc": "2026-10-06T03:17:51Z",
+   "verified_utc": "2026-10-06T03:33:06Z",
+   "transfer_seconds": 891.7,
+   "bytes_transferred_incl_retries": 8700873216,
+   "failed_chunks": 0,
+   "chunk_retries_recovered": 130,
+   "note": "bytes_transferred_incl_retries = script's fetched_bytes (successfully written bytes; partial bytes of retried chunks not counted by the script)"
+  },
+  "read_only": true
+ }
+}

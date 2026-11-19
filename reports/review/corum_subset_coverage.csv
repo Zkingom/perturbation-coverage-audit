@@ -1,0 +1,7 @@
+dataset,subset,prospective,n_rows,n_genes,coverage,ci_lo,ci_hi,mean_E_true,frac_of_T5,expected_from_tier_mix,deficit_beyond_mix
+dev,CORUM complex member (prospective),True,3552,1184,0.886,0.8665,0.9016,4.5803,0.2323,0.8876,-0.0017
+dev,not a CORUM member (prospective),True,1806,602,0.9363,0.9175,0.9545,3.9026,0.1384,0.933,0.0033
+rpe1,CORUM complex member (prospective),True,3462,1154,0.8902,0.8717,0.9085,4.9203,0.2239,0.8835,0.0067
+rpe1,not a CORUM member (prospective),True,1791,597,0.9068,0.8833,0.9292,4.3001,0.1541,0.9198,-0.013
+gwps,CORUM complex member (prospective),True,5718,1906,0.8921,0.8774,0.9049,3.8107,0.2267,0.8908,0.0013
+gwps,not a CORUM member (prospective),True,11331,3777,0.9092,0.8995,0.9183,3.6486,0.1872,0.9098,-0.0006

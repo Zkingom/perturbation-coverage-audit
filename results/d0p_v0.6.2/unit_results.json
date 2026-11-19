@@ -1,0 +1,316 @@
+{
+ "splits: 21 splits": {
+  "pass": true,
+  "detail": null
+ },
+ "splits: each split is a partition": {
+  "pass": true,
+  "detail": null
+ },
+ "splits: TSS groups never span folds": {
+  "pass": true,
+  "detail": null
+ },
+ "splits: every unit is a test unit exactly 3 times": {
+  "pass": true,
+  "detail": {
+   "min": 3,
+   "max": 3
+  }
+ },
+ "splits: test ~ n/7; val, cal within 3% below floor(0.10 n), floor(0.15 n)": {
+  "pass": true,
+  "detail": {
+   "test": [
+    254,
+    257
+   ],
+   "val": [
+    174,
+    178
+   ],
+   "cal": [
+    265,
+    267
+   ]
+  }
+ },
+ "splits: deterministic given seed": {
+  "pass": true,
+  "detail": null
+ },
+ "M3: Phi = {1} at U -> 1 - alpha equals split-conformal qhat": {
+  "pass": true,
+  "detail": {
+   "m3": 2.3350570798784305,
+   "qhat": 2.3350570798784305
+  }
+ },
+ "M3: one-LP threshold equals dual bisection": {
+  "pass": true,
+  "detail": {
+   "max_rel_diff": 8.021837855599481e-08
+  }
+ },
+ "methods: marginal coverage within 0.90 +/- 0.015 (60 replicates)": {
+  "pass": true,
+  "detail": {
+   "M0": [
+    0.897,
+    0.784
+   ],
+   "M1": [
+    0.896,
+    0.892
+   ],
+   "M2": [
+    0.903,
+    0.903
+   ],
+   "M3": [
+    0.894,
+    0.891
+   ]
+  }
+ },
+ "methods: M0 under-covers the top-20% h; M1/M2/M3 near 0.90 there": {
+  "pass": true,
+  "detail": {
+   "M0": [
+    0.897,
+    0.784
+   ],
+   "M1": [
+    0.896,
+    0.892
+   ],
+   "M2": [
+    0.903,
+    0.903
+   ],
+   "M3": [
+    0.894,
+    0.891
+   ]
+  }
+ },
+ "M3: E[(cov - 0.9) * h] = 0 (exact guarantee for f in Phi)": {
+  "pass": true,
+  "detail": {
+   "mean": 6.7429900261607665e-06,
+   "se": 0.003158885044699568
+  }
+ },
+ "M3: extrapolated test points run without error; infeasible branch returns +/-inf": {
+  "pass": true,
+  "detail": {
+   "thr_h=50,-40,1": [
+    -32.73764499616561,
+    Infinity,
+    2.090178245687601
+   ],
+   "thr_h=1e6_linear": Infinity
+  }
+ },
+ "M3: solver-failure fallback gives the bisection/range answer (+inf here)": {
+  "pass": true,
+  "detail": {
+   "thr": Infinity,
+   "U": 0.3614991556485124,
+   "eta_max": 0.33329361440520033
+  }
+ },
+ "M3: small-alpha / extrapolation stress test agrees with dual bisection": {
+  "pass": true,
+  "detail": {
+   "n": 20,
+   "max_rel": 6.876222025136586e-08,
+   "fallbacks": {
+    "ipm": 1,
+    "bisect": 0
+   }
+  }
+ },
+ "qhat: +inf when ceil((n+1)(1-alpha)) > n": {
+  "pass": true,
+  "detail": null
+ },
+ "GEE: tier coverage estimates and CIs cover the truth": {
+  "pass": true,
+  "detail": {
+   "1": [
+    0.971,
+    0.961,
+    0.978
+   ],
+   "2": [
+    0.943,
+    0.933,
+    0.953
+   ],
+   "3": [
+    0.913,
+    0.897,
+    0.926
+   ],
+   "4": [
+    0.868,
+    0.853,
+    0.882
+   ],
+   "5": [
+    0.709,
+    0.681,
+    0.735
+   ]
+  }
+ },
+ "paired T5: difference ~ +0.15 with CI excluding 0": {
+  "pass": true,
+  "detail": {
+   "diff": 0.1511904761904762,
+   "lo": 0.13189457132844795,
+   "hi": 0.17048638105250447,
+   "p": 3.163988354359157e-53,
+   "n_rows": 1680,
+   "how": "logistic GEE + delta"
+  }
+ },
+ "GEE: separation in a tier handled by bootstrap": {
+  "pass": true,
+  "detail": {
+   "cov": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 1680,
+   "method": "bootstrap (separation)"
+  }
+ },
+ "canary: corrupting cal+test expression leaves every h, d, s unchanged": {
+  "pass": true,
+  "detail": null
+ },
+ "canary: train-derived quantities unchanged (E_pool, OOF scores, mu, sigma, chosen K/d)": {
+  "pass": true,
+  "detail": null
+ },
+ "canary: scores of cal+test do change (corruption took effect)": {
+  "pass": true,
+  "detail": null
+ },
+ "canary (v0.6.1): random cal+test cell counts leave every h, d, s unchanged": {
+  "pass": true,
+  "detail": null
+ },
+ "canary B: corrupting val leaves mean-model h (cal+test) and E_pool unchanged": {
+  "pass": true,
+  "detail": null
+ },
+ "canary (v0.6.1): matched alpha' and thresholds invariant to test-unit scores": {
+  "pass": true,
+  "detail": {
+   "alpha_used": {
+    "M1": 0.025,
+    "M2": 0.1,
+    "M3": 0.04,
+    "Mcomb-3": 0.07,
+    "Mdist-N": 0.115
+   }
+  }
+ },
+ "width matching: widths monotone in alpha on the evaluated grid points": {
+  "pass": true,
+  "detail": null
+ },
+ "v0.6.2: compute_split runs with unpredictable AT units in the pool": {
+  "pass": true,
+  "detail": {
+   "n_unpredictable_at": 80,
+   "n_at": 114
+  }
+ },
+ "v0.6.2: learner units are exactly the E training units (no AT unit), all OOF arrays of that length": {
+  "pass": true,
+  "detail": {
+   "oof_lengths": [
+    430
+   ]
+  }
+ },
+ "v0.6.2: E_true of AT and learner units equals the written definition (independent recompute)": {
+  "pass": true,
+  "detail": {
+   "max_abs_diff_at": 0.0,
+   "n_at_target_not_readout": 80
+  }
+ },
+ "v0.6.2: AT responses enter the neighbour features (perturbing them changes query h)": {
+  "pass": true,
+  "detail": null
+ },
+ "v0.6.2: stage 2 runs on this split (matched mode)": {
+  "pass": true,
+  "detail": null
+ },
+ "pseudobulk: 1-pass equals direct computation": {
+  "pass": true,
+  "detail": null
+ },
+ "pseudobulk: 2-pass (low memory) identical to 1-pass": {
+  "pass": true,
+  "detail": null
+ },
+ "pseudobulk: halves recombine to the full mean": {
+  "pass": true,
+  "detail": null
+ },
+ "pseudobulk: halves balanced (|n_A - n_B| <= 1) and deterministic": {
+  "pass": true,
+  "detail": null
+ },
+ "pseudobulk QC: consistent bulk file passes": {
+  "pass": true,
+  "detail": {
+   "rows_single_cell": 40,
+   "rows_bulk": 40,
+   "rows_compared": 40,
+   "genes_identical": true,
+   "max_abs_diff": 4.5610510746030286e-07,
+   "max_rel_diff": 5.8218486897648594e-08,
+   "n_entries_outside_tol": 0,
+   "tolerance": "0.001 + 0.0001 x |bulk|",
+   "cell_counts_match_bulk": true,
+   "pass": true
+  }
+ },
+ "pseudobulk QC: a single perturbed bulk entry is detected": {
+  "pass": true,
+  "detail": {
+   "rows_single_cell": 40,
+   "rows_bulk": 40,
+   "rows_compared": 40,
+   "genes_identical": true,
+   "max_abs_diff": 0.4999999870424685,
+   "max_rel_diff": 0.6216216155261867,
+   "n_entries_outside_tol": 1,
+   "tolerance": "0.001 + 0.0001 x |bulk|",
+   "cell_counts_match_bulk": true,
+   "pass": false
+  }
+ },
+ "pseudobulk: stops before reading when available memory < threshold": {
+  "pass": true,
+  "detail": null
+ },
+ "pseudobulk: no per-row QC means saved": {
+  "pass": true,
+  "detail": [
+   "pseudobulk_build.json",
+   "pseudobulk_genes.csv",
+   "pseudobulk_logmean.npy",
+   "pseudobulk_logmean_A.npy",
+   "pseudobulk_logmean_B.npy",
+   "pseudobulk_rows.csv"
+  ]
+ }
+}

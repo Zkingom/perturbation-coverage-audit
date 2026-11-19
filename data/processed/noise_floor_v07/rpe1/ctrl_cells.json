@@ -1,0 +1,12 @@
+{
+ "dataset": "rpe1",
+ "input": "G:\\biology\\figshare_20029387_v1\\rpe1_raw_singlecell_01.h5ad",
+ "n_cells_file": 247914,
+ "n_ctrl_total": 11485,
+ "n_ctrl_kept": 11485,
+ "seed": 20270501,
+ "genes": 8749,
+ "per_cell_transform": "log1p(1e4*counts/UMI_count), float64 -> stored float32",
+ "control_guides": 113,
+ "seconds": 12
+}

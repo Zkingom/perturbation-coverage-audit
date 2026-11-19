@@ -1,0 +1,3 @@
+20:16:26 PID=7700 alive=True avail_GB=4.52 rss_GB=0.85 last=2026-10-14T12:16:22Z available memory at start 5.22 GB; process memory cap 4.8 GB; 194 min to the power cut
+20:16:36 PID=7700 alive=True avail_GB=5.90 rss_GB=0.30 last=2026-10-14T12:16:35Z time check for finish F2 (summarise + confirmatory analysis): 178 min usable before the power cut, need 90 min -> start
+20:19:06 PID=7700 alive=False avail_GB=6.94 rss_GB=0.00 last=2026-10-14T12:18:57Z STOP: process RSS 5.81 GB > cap 4.8 GB (memory watchdog); partial output discarded

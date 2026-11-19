@@ -1,0 +1,136 @@
+{
+ "protocol_version": "0.6.2",
+ "frozen_utc": "2026-10-08T11:53:59Z",
+ "supersedes": "manifests/freeze_v0.6.1.json (unchanged)",
+ "protocol_file": {
+  "path": "reports/protocol/audit_protocol_v0.6.2.md",
+  "sha256": "870aa419330e24eb3f921fe89261964ab64002461c169593083d87bbfa25f81e"
+ },
+ "v0.6.1_protocol_sha256_now": "c9ae34a3820e2daa1212da77b15c485470484729bd9641552e6b7e864af5e308",
+ "change": "proxy learners (h, d, s) trained on E training units only; AT units = model fitting, reference, neighbours; one E_true definition for all units with independent per-split check",
+ "d1_stage1_error_utc": "2026-10-08T11:35:59Z",
+ "dev_results_before_change": "none (D1a pseudobulk representation only; no split cache written)",
+ "code_sha256": {
+  "splits_v06.py": "a10d073b5ecfa0d5b3fef8d304876660f06314a5dacf60bd24593dd03b248827",
+  "methods_v06.py": "f7d1081a692be3def44c8c02f66633ad59ed18fc627088c580cd943888967fd6",
+  "proxy_v06.py": "123b343ed4c77e30c1e0a1d5e3a2017183f14e36ad3703ee040f4f2753b7d69e",
+  "eval_v06.py": "39e4605c081d92a4efcc995fe7bdfdc88595c9c780014fe0086d3800dc47cddf",
+  "analysis_v06.py": "89b02a4d4499c802711d5a79c715bb8c6b54b745b6c3ed0c1a9df93d82d2f2b5",
+  "pipeline_v06.py": "b33a21a118e8f744befd8fede00350ff6dbf9e3f5e46508c18290819dfdec0f2",
+  "pseudobulk_v06.py": "ef2bc89fe1516f68b6b4e47ab45ad3ba5a8bce85cb4410f093e5e061661d50f2",
+  "synth_v06.py": "7fde1128135098cb74f1a9b7d2f661c3bfc264702e67ec5190fe855ea194208c",
+  "tests_v06.py": "b58fcdf2082f234ebb4b08b55bc54f4727956d7bd77e1b2f367d87a0022283a0",
+  "m3_crosscheck_v061.py": "59c23de22015e63f2e39767d2ae8ff20e65f4a8628c8a8a3eb1e5c4425fc8f36",
+  "d1_run_v061.py": "f1f90ef045408ead252300b95a6829929ddd30536b62157557bb2f3b97750ac3"
+ },
+ "reused_code_sha256": {
+  "models_v04.py": "5fa95b4d94864d2bdd899d4f70c79d2e4863abb8a5a42b3246d54b7439141dc1",
+  "pipeline_v05.py": "e5b6f290b0ea01ae1f80d7e7c2356864035d44f7b07aa9c213f32f2eb78b5af6",
+  "audit_lib.py": "dad2208c051fb5a50af3ff9166b0c1e2cada7b12e315ae9fdb0f52a87b9491ab",
+  "splits_v04.py": "22c8bbf8f9e703095dfafb32e0049056c464653a810d385a1b46ac050da26e6e",
+  "paths.py": "5f153e53d8a500fb6d53977e9e1980fa264487c3a0e883172480b373908b1128",
+  "pseudobulk_v04.py": "82ddfbadae3a93d091a254944bea8e202e2eee723f98147383c23c285c960d40",
+  "download_resumable.py": "315dbe2ee6aa6b8f5c84e1039f0669fa47b399e3ff91410fd29d074f586e8cf9"
+ },
+ "reused_code_unchanged": {
+  "models_v04.py": true,
+  "pipeline_v05.py": true,
+  "audit_lib.py": true,
+  "splits_v04.py": true,
+  "paths.py": true,
+  "pseudobulk_v04.py": true,
+  "download_resumable.py": true
+ },
+ "dev_inputs_sha256": {
+  "data/processed/v0.3_figshare_k562ess/p0v3_units_all_targets.csv": "a1fe5b88bb8753bdda7886675f94ed978e67316111f987e883c8cc021cc897ea",
+  "data/processed/v0.4/pseudobulk_logmean.npy": "d381611783a97142fa864c62d421e6158128ee2db648d8a37d42b0cbc02cab91",
+  "data/processed/v0.4/pseudobulk_rows.csv": "421e3be30447c705774dde75916bc5522afdb7ea72031344cb2851ea09836b33",
+  "data/processed/v0.4/pseudobulk_genes.csv": "2d95b3c995cb13c682123da0295421c354e70e14f0a463fdcc95eb75fc39559e",
+  "data/processed/priors/go_ase100.npz": "1bd09731639327cc4ac0c5e8103e875684e59b2feae2d5cc329a3d9ea7eaacbd",
+  "data/processed/priors/string_expdb_v0.4_universe.parquet": "4b3fdd7f239b65f5aed0f6dee673ce00d25c9cb3e0d3ba74b55b908acea3d9c1",
+  "data/raw/raw_manifest.json": "db27e9c45dc892264dcffcfadd51f0243a5eef544b9f6ed61cdc443f67415a3d"
+ },
+ "dev_inputs_unchanged": {
+  "data/processed/v0.3_figshare_k562ess/p0v3_units_all_targets.csv": true,
+  "data/processed/v0.4/pseudobulk_logmean.npy": true,
+  "data/processed/v0.4/pseudobulk_rows.csv": true,
+  "data/processed/v0.4/pseudobulk_genes.csv": true,
+  "data/processed/priors/go_ase100.npz": true,
+  "data/processed/priors/string_expdb_v0.4_universe.parquet": true,
+  "data/raw/raw_manifest.json": true
+ },
+ "dev_pseudobulk_v06_sha256": {
+  "pseudobulk_build.json": "e7cfd7d60a9bfbb65d236fc03dd86170a170bccb4656e1b5a4fe7b5d9436436d",
+  "pseudobulk_genes.csv": "2d95b3c995cb13c682123da0295421c354e70e14f0a463fdcc95eb75fc39559e",
+  "pseudobulk_logmean.npy": "d381611783a97142fa864c62d421e6158128ee2db648d8a37d42b0cbc02cab91",
+  "pseudobulk_logmean_A.npy": "b921ead8fdcdc3c3676cc8949df9aea551198e3be88e603aee18fd24936c0812",
+  "pseudobulk_logmean_B.npy": "1ad0653fcae0449bb53c08c3cda78467c966cfafb76da692739b9acc6b2ca33c",
+  "pseudobulk_rows.csv": "a3c26a98dc28b67c913e7295853e1c21e5397206a4068cc272be11c1b2ab1b76"
+ },
+ "confirmation_files": {
+  "K562_gwps_raw_singlecell_01.h5ad": {
+   "size_bytes": 65830941948,
+   "md5": "887e3e6a8c8df6eadf7a3030a53c9546",
+   "sha256": "b697ef7fedcec2972ec334608f86f2a29cb25e70c81b6725195f4cda60a9de2c"
+  },
+  "rpe1_raw_bulk_01.h5ad": {
+   "size_bytes": 95350546,
+   "md5": "74765fa87635467a869ea972356ae0e7",
+   "sha256": "603c655f1cfa41d649baf3ae63fca224cc11f297e40d4ed59d390b1e8d2e2db2"
+  },
+  "K562_gwps_raw_bulk_01.h5ad": {
+   "size_bytes": 374587922,
+   "md5": "4570b53c9d62ff6df281e622f0350060",
+   "sha256": "7cec96b3b76169abbf6b6ab9d10bf00d71d942d89e63292351f745e130b154db"
+  },
+  "rpe1_raw_singlecell_01.h5ad": {
+   "size_bytes": 8700873216,
+   "md5": "6a2a9d0d2bf4ec147f4d1104043b268c",
+   "sha256": "9b05ef1f81526216fa008d677e9e0d03dce9a2f7a95499a4fb81e505e9d88ef1"
+  }
+ },
+ "environments": {
+  "python": "pert-audit (Python 3.11.16; manifests/env_pert-audit.yml)",
+  "r": "pert-audit-r (R 4.5, lme4, arrow, jsonlite; conda-forge)"
+ },
+ "post_freeze_additions": {
+  "utc": "2026-10-09T04:36:24Z",
+  "what": "d1_run_v061.py gains mode 'stages234' (runner entry for pipeline_v06.run_dataset on cached splits); new sens_v07.py with v0.7-style sensitivity analyses (randomised width matching, W(c) at nominal alpha, confounding cluster bootstrap + Firth) and the user-required M_dist D_GO/D_STRING strata. No v0.6.2 algorithm, parameter or data rule changed; v0.6.2 results come from pipeline_v06 unchanged.",
+  "code_sha256": {
+   "d1_run_v061.py": "520fd99eb59fc21f31d085884903125282f4208c48d17fd18d3fab25021857f2",
+   "sens_v07.py": "0c7d65d1aa2c463fc991f5e28286e7233073d2cda4fd1b4b1c3162ecbc49772a"
+  },
+  "d1_run_v061.py_sha256_at_freeze": "f1f90ef045408ead252300b95a6829929ddd30536b62157557bb2f3b97750ac3",
+  "stage1_cache_manifest": "manifests/d1_stage1_cache_v0.6.2.json",
+  "sens_parameters": {
+   "MIX_SEED": "master_seed+8000",
+   "BOOT_SEED": "master_seed+9000",
+   "N_BOOT_CONF": 500,
+   "N_BOOT_FIRTH": 200,
+   "SEP_ABS_COEF": 15.0,
+   "firth_bootstrap_trigger": "plain bootstrap failures or separation > 5%"
+  }
+ },
+ "post_freeze_code_fix_speedup": {
+  "utc": "2026-10-10T04:01:30Z",
+  "approved_by_user": "2026-10-10",
+  "what": "analysis_v06.cluster_boot builds each resample by one positional take instead of one pd.concat per TSS group (same RNG calls, same rows in same order); pipeline_v06 stage 4 moved into summarise() unchanged so it can be rerun from saved coverage rows.",
+  "verification": {
+   "split00_timing_run": "summary.json byte-identical to the pre-change run",
+   "all_21_splits": "summary.json identical in every value except m3_solver_fallbacks (a process-global counter incremented in stage 2, which the standalone stage-4 rerun does not execute: 5 vs 0)",
+   "stage4_seconds": {
+    "before": "about 9,400 (D1 run)",
+    "after": 110.6
+   },
+   "check_file": "results/_speedup_check/speedup_check.json"
+  },
+  "pre_change_copies": [
+   "code/archive/pipeline_v06_pre_speedup.py",
+   "code/archive/analysis_v06_pre_speedup.py"
+  ],
+  "code_sha256": {
+   "analysis_v06.py": "0200812b0ab643991303f7028e270e3bb09c97d220c33a554cb2db5a252b3dd7",
+   "pipeline_v06.py": "5d35a883a69e66557fc4e5bea2c6f4b52f39921056b6beeaf86ac2a9a7b94f4b"
+  }
+ }
+}

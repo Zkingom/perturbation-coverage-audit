@@ -1,0 +1,29 @@
+2026-10-15 17:14:06 | step1 | PID 4244 | alive=True | avail=4.94GB | rss=0.00GB | last=
+2026-10-15 17:14:11 | step1 | PID 4244 | alive=True | avail=4.56GB | rss=0.38GB | last=
+2026-10-15 17:16:11 | step1 | PID 4244 | alive=True | avail=4.68GB | rss=0.50GB | last=
+2026-10-15 17:18:11 | step1 | PID 4244 | alive=True | avail=4.71GB | rss=0.50GB | last=
+2026-10-15 17:19:07 | step1 | PID 4244 | alive=False | exit=0
+2026-10-15 17:19:14 | step2 | PID 26744 | alive=True | avail=5.08GB | rss=0.00GB | last=
+2026-10-15 17:19:14 | step2 | PID 26744 | alive=True | avail=5.07GB | rss=0.01GB | last=
+2026-10-15 17:21:14 | step2 | PID 26744 | alive=True | avail=3.30GB | rss=1.96GB | last=2026-10-15T09:20:30Z primary M1 0.0; best M_dist Mdist-M 3
+2026-10-15 17:23:14 | step2 | PID 26744 | alive=True | avail=3.33GB | rss=1.94GB | last=2026-10-15T09:20:30Z primary M1 0.0; best M_dist Mdist-M 3
+2026-10-15 17:25:14 | step2 | PID 26744 | alive=True | avail=3.87GB | rss=0.51GB | last=2026-10-15T09:23:16Z F2c: summary.json written
+2026-10-15 17:27:14 | step2 | PID 26744 | alive=True | avail=3.67GB | rss=0.51GB | last=2026-10-15T09:23:16Z F2c: summary.json written
+2026-10-15 17:28:49 | step2 | PID 26744 | alive=True | avail=4.26GB | rss=0.52GB | last=2026-10-15T09:23:16Z F2c: summary.json written
+2026-10-15 17:30:49 | step2 | PID 26744 | alive=True | avail=4.30GB | rss=0.52GB | last=2026-10-15T09:23:16Z F2c: summary.json written
+2026-10-15 17:32:49 | step2 | PID 26744 | alive=True | avail=4.43GB | rss=0.52GB | last=2026-10-15T09:23:16Z F2c: summary.json written
+2026-10-15 17:34:49 | step2 | PID 26744 | alive=True | avail=4.46GB | rss=0.52GB | last=2026-10-15T09:23:16Z F2c: summary.json written
+2026-10-15 17:36:49 | step2 | PID 26744 | alive=True | avail=4.56GB | rss=0.53GB | last=2026-10-15T09:23:16Z F2c: summary.json written
+2026-10-15 17:38:24 | step2 | PID 26744 | alive=True | avail=4.02GB | rss=0.53GB | last=2026-10-15T09:23:16Z F2c: summary.json written
+2026-10-15 17:40:24 | step2 | PID 26744 | alive=True | avail=4.06GB | rss=0.53GB | last=2026-10-15T09:23:16Z F2c: summary.json written
+2026-10-15 17:42:24 | step2 | PID 26744 | alive=True | avail=4.12GB | rss=0.53GB | last=2026-10-15T09:23:16Z F2c: summary.json written
+2026-10-15 17:44:24 | step2 | PID 26744 | alive=True | avail=4.13GB | rss=0.53GB | last=2026-10-15T09:23:16Z F2c: summary.json written
+2026-10-15 17:46:24 | step2 | PID 26744 | alive=True | avail=4.11GB | rss=0.54GB | last=2026-10-15T09:23:16Z F2c: summary.json written
+2026-10-15 17:48:05 | step2 | PID 26744 | alive=True | avail=4.53GB | rss=0.54GB | last=2026-10-15T09:23:16Z F2c: summary.json written
+2026-10-15 17:50:05 | step2 | PID 26744 | alive=True | avail=4.55GB | rss=0.54GB | last=2026-10-15T09:23:16Z F2c: summary.json written
+2026-10-15 17:52:05 | step2 | PID 26744 | alive=True | avail=4.64GB | rss=0.54GB | last=2026-10-15T09:23:16Z F2c: summary.json written
+2026-10-15 17:54:05 | step2 | PID 26744 | alive=True | avail=3.67GB | rss=0.55GB | last=2026-10-15T09:23:16Z F2c: summary.json written
+2026-10-15 17:56:05 | step2 | PID 26744 | alive=True | avail=3.77GB | rss=0.55GB | last=2026-10-15T09:23:16Z F2c: summary.json written
+2026-10-15 17:57:38 | step2 | PID 26744 | alive=True | avail=4.17GB | rss=0.55GB | last=2026-10-15T09:23:16Z F2c: summary.json written
+2026-10-15 17:59:39 | step2 | PID 26744 | alive=True | avail=4.57GB | rss=0.69GB | last=  return pd.concat(out, ignore_index=True)
+2026-10-15 18:00:03 | step2 | PID 26744 | alive=False | exit=0

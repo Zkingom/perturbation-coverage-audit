@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the accompanying manuscript."
+title: "Effect-stratified coverage audit of single-cell perturbation predictions"
+authors:
+  - family-names: Zhou
+    given-names: Xu
+    affiliation: Independent Researcher
+version: "1.4"
+date-released: 2026-11-08
+license: MIT

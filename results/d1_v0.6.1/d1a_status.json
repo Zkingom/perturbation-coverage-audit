@@ -1,0 +1,1 @@
+{"input": "G:\\biology\\figshare_20029387_v1\\K562_essential_raw_singlecell_01.h5ad", "outdir": "F:\\codex_in_this\\claude_science\\data\\processed\\v0.6\\k562ess", "passes": 1, "started_utc": "2026-10-08T11:33:41Z", "pid": 25516, "cells": 310385, "genes": 8563, "rows": 2273, "phase": "done", "qc_pass": true, "updated_utc": "2026-10-08T11:35:26Z"}

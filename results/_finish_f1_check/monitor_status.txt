@@ -1,0 +1,17 @@
+2026-10-14 18:59:33 PID=2184 alive=True avail_GB=3.27 rss_GB=0.00 last=
+2026-10-14 18:59:33 PID=2184 alive=True avail_GB=3.26 rss_GB=0.01 last=
+2026-10-14 19:04:33 PID=2184 alive=True avail_GB=3.49 rss_GB=0.21 last=  return pd.concat(out, ignore_index=True)
+2026-10-14 19:09:33 PID=2184 alive=True avail_GB=3.75 rss_GB=0.22 last=  return pd.concat(out, ignore_index=True)
+2026-10-14 19:14:33 PID=2184 alive=True avail_GB=3.07 rss_GB=0.22 last=  return pd.concat(out, ignore_index=True)
+2026-10-14 19:19:33 PID=2184 alive=True avail_GB=3.31 rss_GB=0.22 last=  return pd.concat(out, ignore_index=True)
+2026-10-14 19:24:33 PID=2184 alive=True avail_GB=3.49 rss_GB=0.22 last=  return pd.concat(out, ignore_index=True)
+2026-10-14 19:24:40 PID=2184 alive=True avail_GB=3.36 rss_GB=0.20 last=  return pd.concat(out, ignore_index=True)
+2026-10-14 19:29:40 PID=2184 alive=True avail_GB=3.59 rss_GB=0.21 last=  return pd.concat(out, ignore_index=True)
+2026-10-14 19:34:40 PID=2184 alive=True avail_GB=3.69 rss_GB=0.21 last=  return pd.concat(out, ignore_index=True)
+2026-10-14 19:39:40 PID=2184 alive=True avail_GB=3.85 rss_GB=0.21 last=  return pd.concat(out, ignore_index=True)
+2026-10-14 19:44:40 PID=2184 alive=True avail_GB=3.95 rss_GB=0.22 last=  return pd.concat(out, ignore_index=True)
+2026-10-14 19:48:00 PID=2184 alive=False avail_GB=3.87 rss_GB=0.00 last=stage2 split 20: 137955 rows 138s
+2026-10-14 19:48:41 PID=27568 alive=True avail_GB=3.23 rss_GB=0.00 last=
+2026-10-14 19:48:41 PID=27568 alive=True avail_GB=3.23 rss_GB=0.01 last=
+2026-10-14 19:53:41 PID=27568 alive=True avail_GB=2.01 rss_GB=1.87 last=
+2026-10-14 19:58:11 PID=27568 alive=False avail_GB=4.45 rss_GB=0.00 last={"summary.json byte-identical": true, "confirm_v07_result.json byte-identical": true, "coverage_rows.parquet equal": true, "proxy_rows.parquet equal": true, "covariates_analysis_only.parquet equal": true, "confirm_rand_rows.parquet equal": true, "memory": {"A": {"rc": 0, "seconds": 279.9663817882538

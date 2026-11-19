@@ -1,0 +1,139 @@
+{
+ "per_split": {
+  "0": {
+   "main_equal": true,
+   "perm_equal": true,
+   "proxy_equal": true,
+   "covariates_equal": true,
+   "rand_rows_equal": true
+  },
+  "1": {
+   "main_equal": true,
+   "perm_equal": true,
+   "proxy_equal": true,
+   "covariates_equal": true
+  },
+  "2": {
+   "main_equal": true,
+   "perm_equal": true,
+   "proxy_equal": true,
+   "covariates_equal": true
+  },
+  "3": {
+   "main_equal": true,
+   "perm_equal": true,
+   "proxy_equal": true,
+   "covariates_equal": true
+  },
+  "4": {
+   "main_equal": true,
+   "perm_equal": true,
+   "proxy_equal": true,
+   "covariates_equal": true
+  },
+  "5": {
+   "main_equal": true,
+   "perm_equal": true,
+   "proxy_equal": true,
+   "covariates_equal": true
+  },
+  "6": {
+   "main_equal": true,
+   "perm_equal": true,
+   "proxy_equal": true,
+   "covariates_equal": true
+  },
+  "7": {
+   "main_equal": true,
+   "perm_equal": true,
+   "proxy_equal": true,
+   "covariates_equal": true
+  },
+  "8": {
+   "main_equal": true,
+   "perm_equal": true,
+   "proxy_equal": true,
+   "covariates_equal": true
+  },
+  "9": {
+   "main_equal": true,
+   "perm_equal": true,
+   "proxy_equal": true,
+   "covariates_equal": true
+  },
+  "10": {
+   "main_equal": true,
+   "perm_equal": true,
+   "proxy_equal": true,
+   "covariates_equal": true,
+   "rand_rows_equal": true
+  },
+  "11": {
+   "main_equal": true,
+   "perm_equal": true,
+   "proxy_equal": true,
+   "covariates_equal": true
+  },
+  "12": {
+   "main_equal": true,
+   "perm_equal": true,
+   "proxy_equal": true,
+   "covariates_equal": true
+  },
+  "13": {
+   "main_equal": true,
+   "perm_equal": true,
+   "proxy_equal": true,
+   "covariates_equal": true
+  },
+  "14": {
+   "main_equal": true,
+   "perm_equal": true,
+   "proxy_equal": true,
+   "covariates_equal": true
+  },
+  "15": {
+   "main_equal": true,
+   "perm_equal": true,
+   "proxy_equal": true,
+   "covariates_equal": true
+  },
+  "16": {
+   "main_equal": true,
+   "perm_equal": true,
+   "proxy_equal": true,
+   "covariates_equal": true
+  },
+  "17": {
+   "main_equal": true,
+   "perm_equal": true,
+   "proxy_equal": true,
+   "covariates_equal": true
+  },
+  "18": {
+   "main_equal": true,
+   "perm_equal": true,
+   "proxy_equal": true,
+   "covariates_equal": true
+  },
+  "19": {
+   "main_equal": true,
+   "perm_equal": true,
+   "proxy_equal": true,
+   "covariates_equal": true
+  },
+  "20": {
+   "main_equal": true,
+   "perm_equal": true,
+   "proxy_equal": true,
+   "covariates_equal": true,
+   "rand_rows_equal": true
+  }
+ },
+ "counts": {
+  "n_test_rows_result": 17049,
+  "sum_test_sizes": 17049,
+  "grid_matched_M0_rows": 17049
+ },
+ "pass": true
+}

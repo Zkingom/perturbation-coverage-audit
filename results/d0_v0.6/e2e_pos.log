@@ -1,0 +1,26 @@
+F:\codex_in_this\claude_science\code\eval_v06.py:149: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+stage1 split 00 round 0 fold 0 K=50 d=100 n_test=101 19.3s
+stage1 split 01 round 0 fold 1 K=20 d=100 n_test=101 17.1s
+stage1 split 02 round 0 fold 2 K=5 d=100 n_test=101 16.9s
+stage1 split 03 round 0 fold 3 K=5 d=100 n_test=101 17.2s
+stage1 split 04 round 0 fold 4 K=5 d=100 n_test=101 17.4s
+stage1 split 05 round 0 fold 5 K=5 d=100 n_test=101 17.6s
+stage1 split 06 round 0 fold 6 K=5 d=100 n_test=100 16.9s
+stage1 split 07 round 1 fold 0 K=10 d=100 n_test=101 17.0s
+stage1 split 08 round 1 fold 1 K=5 d=100 n_test=101 16.6s
+stage1 split 09 round 1 fold 2 K=5 d=100 n_test=101 16.6s
+stage1 split 10 round 1 fold 3 K=10 d=100 n_test=101 16.5s
+stage1 split 11 round 1 fold 4 K=5 d=100 n_test=101 17.1s
+stage1 split 12 round 1 fold 5 K=10 d=100 n_test=101 17.0s
+stage1 split 13 round 1 fold 6 K=30 d=100 n_test=100 17.1s
+stage1 split 14 round 2 fold 0 K=5 d=100 n_test=101 18.6s
+stage1 split 15 round 2 fold 1 K=10 d=100 n_test=101 19.1s
+stage1 split 16 round 2 fold 2 K=5 d=100 n_test=101 18.3s
+stage1 split 17 round 2 fold 3 K=5 d=100 n_test=101 18.1s
+stage1 split 18 round 2 fold 4 K=20 d=100 n_test=101 17.4s
+stage1 split 19 round 2 fold 5 K=5 d=100 n_test=101 17.7s
+stage1 split 20 round 2 fold 6 K=50 d=100 n_test=100 17.4s
+proxy config: prior_base|ridge
+primary method: M2 hyper 3
+{"kind": "pos", "seconds": 926, "proxy_config": "prior_base|ridge", "primary": ["M2", "3"], "criteria_overall": "partial: B0 holds, P+, partial", "B0": true, "P": "P+", "W": "partial", "W_perm_mean": "partial", "perm_summary": {"n": 20, "n_meeting_W+": 0, "T5_diff_median": 0.06, "max_dev_median": 0.3482352941176471, "width_ratio_median": 1.1001643282600508, "T5_diff_range": [0.02823529411764697, 0.09882352941176481], "max_dev_range": [0.3094117647058824, 0.38], "width_ratio_range": [1.0659020503698324, 1.1394839245006347]}, "rho": 0.7929103362646897, "rho_ci": [0.7586927641211212, 0.8210923641108439], "auroc_ci": [0.9327002671785795, 0.9659054147079988], "paired_T5": {"diff": 0.3152941176470589, "lo": 0.24035346051428608, "hi": 0.3902347747798317, "p": 1.634958868186336e-16, "n_rows": 425, "how": "logistic GEE + delta"}, "W_detail": {"a": false, "b": true, "c": true, "d": true, "T5_cov": 0.8070588235294117, "max_dev": 0.09999999999999998, "max_dev_M0": 0.4082352941176471, "marginal": 0.9135977337110481, "width_ratio": 0.895075975131801}, "tier_stability": 0.056657223796033995, "genes_tested_3x": true}

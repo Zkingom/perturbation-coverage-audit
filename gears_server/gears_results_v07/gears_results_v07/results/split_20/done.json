@@ -1,0 +1,32 @@
+{
+ "split": 20,
+ "seed_mode": "benchmark",
+ "seed": 1,
+ "hp": {
+  "hidden_size": 64,
+  "epochs": 20,
+  "uncertainty": false,
+  "batch_size": 32,
+  "test_batch_size": 128
+ },
+ "timing_s": {
+  "load_s": 50,
+  "train_s": 4656,
+  "predict_s": 178
+ },
+ "total_s": 4892,
+ "peak_rss_gb": 11.76,
+ "peak_gpu_alloc_gb": 5.5,
+ "peak_gpu_reserved_gb": 10.74,
+ "gpu": "NVIDIA GeForce RTX 3060",
+ "n_pred": 687,
+ "n_genes": 8749,
+ "finite": true,
+ "sha256": {
+  "pred.npy": "747632aa2ec2fdee966a35233c951d0b017166c3155f7417947f1c1076028a13",
+  "pred_targets.json": "9f191d55bcb58fcf593f0a5a84978cce59c333970e6a16b842357091d55b2f0b",
+  "genes.json": "0ec87f2a404ef9241b56a4f3e5326c4f71ad6c7a180cf0c227e3961273363b09",
+  "model/config.pkl": "dd989dd3e59d33708169783f10b9ebe75e151ed8a13df3c37fd7e0c1c1ffd15f",
+  "model/model.pt": "b89ad89323434aca51d4033bbee166166cb95eb8d9a828046d07fc5767bfec05"
+ }
+}

@@ -1,0 +1,8 @@
+2026-10-13T00:12:31Z available memory at start 6.27 GB; process memory cap 4.8 GB; 917 min to the power cut
+2026-10-13T00:12:42Z time check for ext split 00: 902 min usable before the power cut, need 8 min -> start
+2026-10-13T00:25:46Z ext split 00: K=50 unc_calt median 0.1706 oof median 0.1685 n_oob min 6 (<3: 0)
+2026-10-13T00:25:46Z time check for stage2 split 00: 889 min usable before the power cut, need 30 min -> start
+F:\codex_in_this\claude_science\code\eval_v06.py:251: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+2026-10-13T00:42:26Z stage2 split 00: 439292 rows 1000s
+2026-10-13T00:42:26Z run done rc=0 seconds={"stage1": 1, "ext": 783, "stage2": 1000} peak RSS 4.27 GB

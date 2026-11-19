@@ -1,0 +1,23 @@
+08:21:57 rpe1: 11485 control cells, grid [30, 39, 50, 64, 82, 106, 136, 175, 225, 289, 372, 478, 615, 791, 1017, 1308, 1683, 2164, 2783, 3580], reps 200
+08:24:07 split 00: null mean at n=30: 4.626, at n=3580: 1.113
+08:24:12 split 01: null mean at n=30: 4.639, at n=3580: 1.118
+08:24:16 split 02: null mean at n=30: 4.657, at n=3580: 1.129
+08:24:21 split 03: null mean at n=30: 4.658, at n=3580: 1.127
+08:24:25 split 04: null mean at n=30: 4.676, at n=3580: 1.130
+08:24:30 split 05: null mean at n=30: 4.638, at n=3580: 1.115
+08:24:35 split 06: null mean at n=30: 4.679, at n=3580: 1.112
+08:24:39 split 07: null mean at n=30: 4.641, at n=3580: 1.106
+08:24:44 split 08: null mean at n=30: 4.610, at n=3580: 1.114
+08:24:48 split 09: null mean at n=30: 4.641, at n=3580: 1.110
+08:24:53 split 10: null mean at n=30: 4.640, at n=3580: 1.128
+08:24:57 split 11: null mean at n=30: 4.675, at n=3580: 1.142
+08:25:02 split 12: null mean at n=30: 4.645, at n=3580: 1.124
+08:25:06 split 13: null mean at n=30: 4.656, at n=3580: 1.123
+08:25:11 split 14: null mean at n=30: 4.648, at n=3580: 1.120
+08:25:15 split 15: null mean at n=30: 4.648, at n=3580: 1.141
+08:25:20 split 16: null mean at n=30: 4.644, at n=3580: 1.139
+08:25:24 split 17: null mean at n=30: 4.643, at n=3580: 1.126
+08:25:29 split 18: null mean at n=30: 4.629, at n=3580: 1.119
+08:25:33 split 19: null mean at n=30: 4.639, at n=3580: 1.122
+08:25:38 split 20: null mean at n=30: 4.638, at n=3580: 1.119
+08:25:53 done T5 orig 0.480 corr 0.492 z 0.551

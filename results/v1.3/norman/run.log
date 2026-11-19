@@ -1,0 +1,15 @@
+2026-11-04 17:05:01 ablation split 00 round 0 fold 0 pool=181 test=40 (5 two-unseen) 0.5s
+2026-11-04 17:05:02 ablation split 01 round 0 fold 1 pool=167 test=55 (7 two-unseen) 0.4s
+2026-11-04 17:05:02 ablation split 02 round 0 fold 2 pool=184 test=38 (5 two-unseen) 0.3s
+2026-11-04 17:05:02 ablation split 03 round 0 fold 3 pool=171 test=49 (8 two-unseen) 0.3s
+2026-11-04 17:05:03 ablation split 04 round 0 fold 4 pool=175 test=47 (4 two-unseen) 0.3s
+2026-11-04 17:05:03 ablation split 05 round 1 fold 0 pool=175 test=46 (5 two-unseen) 0.3s
+2026-11-04 17:05:03 ablation split 06 round 1 fold 1 pool=176 test=46 (7 two-unseen) 0.3s
+2026-11-04 17:05:04 ablation split 07 round 1 fold 2 pool=177 test=44 (5 two-unseen) 0.3s
+2026-11-04 17:05:04 ablation split 08 round 1 fold 3 pool=182 test=39 (6 two-unseen) 0.3s
+2026-11-04 17:05:04 ablation split 09 round 1 fold 4 pool=168 test=54 (6 two-unseen) 0.3s
+2026-11-04 17:05:05 ablation split 10 round 2 fold 0 pool=176 test=45 (3 two-unseen) 0.3s
+2026-11-04 17:05:05 ablation split 11 round 2 fold 1 pool=162 test=60 (10 two-unseen) 0.4s
+2026-11-04 17:05:05 ablation split 12 round 2 fold 2 pool=166 test=54 (4 two-unseen) 0.3s
+2026-11-04 17:05:06 ablation split 13 round 2 fold 3 pool=180 test=42 (1 two-unseen) 0.3s
+2026-11-04 17:05:06 ablation split 14 round 2 fold 4 pool=185 test=37 (2 two-unseen) 0.3s

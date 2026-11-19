@@ -1,0 +1,7 @@
+2026-10-14T12:16:22Z available memory at start 5.22 GB; process memory cap 4.8 GB; 194 min to the power cut
+2026-10-14T12:16:35Z time check for finish F2 (summarise + confirmatory analysis): 178 min usable before the power cut, need 90 min -> start
+2026-10-14T12:16:36Z selected proxies: h=sim_prior|ridge d=ridge s=ridge
+2026-10-14T12:16:51Z F2: 315 main + 840 perm frames, 8541549 main rows, 23 columns
+2026-10-14T12:17:18Z F2: column store built, 9223509 rows
+2026-10-14T12:17:18Z primary M1 0.0; best M_dist Mdist-M 3
+2026-10-14T12:18:57Z STOP: process RSS 5.81 GB > cap 4.8 GB (memory watchdog); partial output discarded

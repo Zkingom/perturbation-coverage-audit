@@ -1,0 +1,474 @@
+{
+ "protocol_version": "0.7",
+ "frozen_utc": "2026-10-10T09:05:55Z",
+ "protocol_file": {
+  "path": "reports/protocol/audit_protocol_v0.7.md",
+  "sha256": "ca1778dc82e3ab46f42e67db7fdf7d04c12ea795aceca9bc725c5e4992044833"
+ },
+ "draft_file": {
+  "path": "reports/protocol/audit_protocol_v0.7_draft.md",
+  "sha256": "31a6b87d62c074ed13a524587f73b4463bba63c3b460e86fd2392d5530f20ea4"
+ },
+ "supersedes": "manifests/freeze_v0.6.2.json (unchanged)",
+ "code_sha256": {
+  "methods_v06.py": "e1d434aed5db24ff10d83959132b7aea09a9318dcb7e1a9e4b6647ee1d16a31f",
+  "eval_v06.py": "4bddaa54bf158200b05903b5ee48db82a8ba39aa2443af2bbc5a5568d044c1ee",
+  "analysis_v06.py": "4fd6a04ae93cd6c84f8d2a31d4d92ec9a8da02e4a3a740bbedd0256dd50940c3",
+  "pipeline_v06.py": "f6961cb931491a86baccd1c226b6818878c665f7a9be37044fe169d6f7afcd1f",
+  "proxy_v06.py": "123b343ed4c77e30c1e0a1d5e3a2017183f14e36ad3703ee040f4f2753b7d69e",
+  "splits_v06.py": "a10d073b5ecfa0d5b3fef8d304876660f06314a5dacf60bd24593dd03b248827",
+  "ext_v07dev.py": "49c7ab6233e11cc60333ea413a29cd4d1e874e2ecc5075daec37f1e847fd8f1a",
+  "sens_v07.py": "c238ab935eae79715793e99965398317c516d575710848dbe5cf66ee0e82f30c",
+  "pseudobulk_v06.py": "ef2bc89fe1516f68b6b4e47ab45ad3ba5a8bce85cb4410f093e5e061661d50f2",
+  "pseudobulk_v04.py": "82ddfbadae3a93d091a254944bea8e202e2eee723f98147383c23c285c960d40",
+  "models_v04.py": "5fa95b4d94864d2bdd899d4f70c79d2e4863abb8a5a42b3246d54b7439141dc1",
+  "pipeline_v05.py": "e5b6f290b0ea01ae1f80d7e7c2356864035d44f7b07aa9c213f32f2eb78b5af6",
+  "paths.py": "5f153e53d8a500fb6d53977e9e1980fa264487c3a0e883172480b373908b1128",
+  "audit_lib.py": "dad2208c051fb5a50af3ff9166b0c1e2cada7b12e315ae9fdb0f52a87b9491ab",
+  "splits_v04.py": "22c8bbf8f9e703095dfafb32e0049056c464653a810d385a1b46ac050da26e6e",
+  "synth_v06.py": "7fde1128135098cb74f1a9b7d2f661c3bfc264702e67ec5190fe855ea194208c",
+  "tests_v06.py": "f234800b505d764efca49d286c3c5ab83e0b3896eb39825dd1235824bac6be60",
+  "confirm_v07.py": "9e53075a485ead049d190a4970319efb282573688b44844f992a6367c8ce6a90",
+  "confirm_run_v07.py": "4ac53f6c89062d4c1a5dba5c4cda4e717288fb57464b240b9bf2ee586deb9e05",
+  "data_v07.py": "ccd4ab130c617e86c4ff4732e7ef464bbb276d88c7af5c7360f40aebe8bce969",
+  "enrich_v07dev.py": "74008db7ffc148f05fc24a6ed28c9a0892191e3fac956e7694f853c80c296b95",
+  "d1_run_v061.py": "18d1a3a9cbd91fc3f774a88c74aeeef697944ef0e409b73744c2cf95c27414d0"
+ },
+ "frozen_selection": {
+  "h": "sim_prior|ridge",
+  "d": "ridge",
+  "s": "ridge",
+  "hypers": {
+   "M1": "0.0",
+   "M2": "3",
+   "M3": "quad",
+   "Mdist-N": "1.0",
+   "Mdist-M": "3",
+   "Mscore-N": "0.0",
+   "Mcomb-N": "0.0",
+   "Mcomb-3": "lin2",
+   "oracle": "0.0",
+   "MD-GO": "5",
+   "MD-STR": "5",
+   "Munc-N": "1.0",
+   "Munc-M": "3"
+  },
+  "primary": "M1",
+  "best_dist": "Mdist-M"
+ },
+ "seeds": {
+  "master_seed": 20261001,
+  "confirmation_split_seed": "master_seed + 2000 + r (r = 0,1,2)",
+  "CONF_SEED_BASE": 20263001,
+  "perm_seed_base": 20265001,
+  "rand_matching_mix_seed": 20269001,
+  "half_split_seed": "master_seed + 3000"
+ },
+ "munc": {
+  "B_boot": 50,
+  "MIN_OOB": 3
+ },
+ "criteria": {
+  "margin_step1": 0.05,
+  "margin_step2": 0.03,
+  "ci_lower_gt_0": true,
+  "decision_frac": 0.1,
+  "perm_mean_max": 0.02,
+  "perm_max_passing": 1,
+  "nominal_band": [
+   0.88,
+   0.92
+  ],
+  "c0_low_power_stop": 0.5
+ },
+ "data_files": {
+  "K562_gwps_raw_singlecell_01.h5ad": {
+   "size_bytes": 65830941948,
+   "md5": "887e3e6a8c8df6eadf7a3030a53c9546",
+   "sha256": "b697ef7fedcec2972ec334608f86f2a29cb25e70c81b6725195f4cda60a9de2c"
+  },
+  "rpe1_raw_bulk_01.h5ad": {
+   "size_bytes": 95350546,
+   "md5": "74765fa87635467a869ea972356ae0e7",
+   "sha256": "603c655f1cfa41d649baf3ae63fca224cc11f297e40d4ed59d390b1e8d2e2db2"
+  },
+  "K562_gwps_raw_bulk_01.h5ad": {
+   "size_bytes": 374587922,
+   "md5": "4570b53c9d62ff6df281e622f0350060",
+   "sha256": "7cec96b3b76169abbf6b6ab9d10bf00d71d942d89e63292351f745e130b154db"
+  },
+  "rpe1_raw_singlecell_01.h5ad": {
+   "size_bytes": 8700873216,
+   "md5": "6a2a9d0d2bf4ec147f4d1104043b268c",
+   "sha256": "9b05ef1f81526216fa008d677e9e0d03dce9a2f7a95499a4fb81e505e9d88ef1"
+  }
+ },
+ "dev_inputs_sha256": {
+  "data/processed/v0.3_figshare_k562ess/p0v3_units_all_targets.csv": "a1fe5b88bb8753bdda7886675f94ed978e67316111f987e883c8cc021cc897ea",
+  "data/processed/v0.4/pseudobulk_logmean.npy": "d381611783a97142fa864c62d421e6158128ee2db648d8a37d42b0cbc02cab91",
+  "data/processed/v0.4/pseudobulk_rows.csv": "421e3be30447c705774dde75916bc5522afdb7ea72031344cb2851ea09836b33",
+  "data/processed/v0.4/pseudobulk_genes.csv": "2d95b3c995cb13c682123da0295421c354e70e14f0a463fdcc95eb75fc39559e",
+  "data/processed/priors/go_ase100.npz": "1bd09731639327cc4ac0c5e8103e875684e59b2feae2d5cc329a3d9ea7eaacbd",
+  "data/processed/priors/string_expdb_v0.4_universe.parquet": "4b3fdd7f239b65f5aed0f6dee673ce00d25c9cb3e0d3ba74b55b908acea3d9c1",
+  "data/raw/raw_manifest.json": "db27e9c45dc892264dcffcfadd51f0243a5eef544b9f6ed61cdc443f67415a3d"
+ },
+ "dev_pseudobulk_v06_sha256": {
+  "pseudobulk_build.json": "e7cfd7d60a9bfbb65d236fc03dd86170a170bccb4656e1b5a4fe7b5d9436436d",
+  "pseudobulk_genes.csv": "2d95b3c995cb13c682123da0295421c354e70e14f0a463fdcc95eb75fc39559e",
+  "pseudobulk_logmean.npy": "d381611783a97142fa864c62d421e6158128ee2db648d8a37d42b0cbc02cab91",
+  "pseudobulk_logmean_A.npy": "b921ead8fdcdc3c3676cc8949df9aea551198e3be88e603aee18fd24936c0812",
+  "pseudobulk_logmean_B.npy": "1ad0653fcae0449bb53c08c3cda78467c966cfafb76da692739b9acc6b2ca33c",
+  "pseudobulk_rows.csv": "a3c26a98dc28b67c913e7295853e1c21e5397206a4068cc272be11c1b2ab1b76"
+ },
+ "go_annotations": {
+  "go-basic.obo": {
+   "url": "https://release.geneontology.org/2026-05-19/ontology/go-basic.obo",
+   "bytes": 32212518,
+   "sha256": "923645000afcb1df0e72e252b64950b1c2bcc98c9393fec8c1dd1a0f7c9d4d77",
+   "last_modified": "Thu, 28 May 2026 21:45:18 GMT"
+  },
+  "goa_human.gaf.gz": {
+   "url": "https://release.geneontology.org/2026-05-19/annotations/goa_human.gaf.gz",
+   "bytes": 15041996,
+   "sha256": "db472faff1785878521693af62646546cea6af4a386609dd01c72c0554a46a30",
+   "last_modified": "Thu, 28 May 2026 21:40:38 GMT"
+  },
+  "go_release-date.json": {
+   "url": "https://release.geneontology.org/2026-05-19/metadata/release-date.json",
+   "bytes": 29,
+   "sha256": "534b0a10cd54de77708c7604a33f45675391ea1b66838401157702113470f254",
+   "last_modified": "Thu, 28 May 2026 21:40:56 GMT"
+  },
+  "ReactomePathways.gmt.zip": {
+   "url": "https://reactome.org/download/current/ReactomePathways.gmt.zip",
+   "bytes": 298479,
+   "sha256": "8c1dbc8578431da5d2d5118262718c60b553a9be3398e93658daa069e4a9afd4",
+   "last_modified": "existing",
+   "copied_from": "G:\\biology\\annotations_2026-10-10\\ReactomePathways.gmt.zip"
+  },
+  "corum_human_current.txt": {
+   "url": "https://mips.helmholtz-muenchen.de/fastapi-corum/public/file/download_current_file?file_id=human&file_format=txt",
+   "bytes": 6268940,
+   "sha256": "5e40556eb59bb767f3396ba8c080f64c777903ffca9102345fdc35662a2e0282",
+   "last_modified": "existing",
+   "copied_from": "G:\\biology\\annotations_2026-10-10\\corum_human_current.txt"
+  }
+ },
+ "prefreeze_tests": {
+  "unit": "47/47 passed",
+  "e2e_v07_pos": "all expected pass",
+  "e2e_v07_neg": "all expected pass",
+  "dir": "results/prefreeze_v0.7",
+  "run_by": "Sonnet 5.5 sub-agent"
+ },
+ "dev_confirm_v07": "results/d1_v0.7dev/confirm_v07_on_dev/confirm_v07_dev.json",
+ "post_freeze_code_fix": {
+  "utc": "2026-10-10T09:07:37Z",
+  "file": "confirm_run_v07.py",
+  "what": "C0 first launch stopped with KeyError before reading any data: RPE1/GWPS files are registered in raw_manifest_additions_v0.6.json, not raw_manifest.json. Added resolve() (pure path resolution; size + SHA256 check against this manifest unchanged).",
+  "sha256_after": "c7ef9a5702d1d1b4e022aad748448f4efc968b524f7a348e31f23f3629c4591b"
+ },
+ "post_freeze_code_fix_2": {
+  "utc": "2026-10-10T09:11:54Z",
+  "file": "data_v07.py",
+  "what": "Ensembl REST returned HTTP 500 for one 200-id batch during C0 (after pseudobulk, before any unit table was written). lookup now retries, splits failing batches, and treats an id that still fails as not found (then symbol lookup, then NA_ rule as before). Pure network-robustness change; coordinate rules unchanged.",
+  "sha256_after": "67bbf4ba9c69304efb4fd10b6d63de3ef35f98aac44b1e2ce83e1ff126ecd91b"
+ },
+ "post_freeze_execution_helper": {
+  "utc": "2026-10-10T11:56:20Z",
+  "file": "code/stage1_worker_v07.py",
+  "sha256": "1261e66cbc109ffc89a6e72b83c9c5dbf1819b461ac867e3f1f8b0cfff9159f5",
+  "approved_by_user": "2026-10-10",
+  "what": "parallel stage-1 worker calling the frozen eval_v06.compute_split on disjoint split ids (atomic write; skips existing). No frozen file changed.",
+  "verification": "dev split 0 recomputed by the worker: pickle byte-identical to results/d1_v0.6.1/cache/split_00.pkl (results/_stage1_worker_check)",
+  "used": "RPE1 C1 stage1: 1 worker on splits 20..13 (descending) alongside the main sequential run; a second worker was not started because available memory fell to 2.6 GB"
+ },
+ "post_freeze_execution_helper_2": {
+  "utc": "2026-10-10T12:59:19Z",
+  "file": "code/confirm_primary_v07.py",
+  "sha256": "34b9ebc8845f71537fa8af1c673df1ff656768cf6922b657df92de5af70b6e8b",
+  "what": "runs only the frozen confirm_v07.analyze (cov_grid=None) on the C1 caches before the full descriptive run_dataset (user request before a power cut). No frozen file changed. The full 'analyze' mode (started by the sub-agent at 12:42Z) was stopped before producing output and is deferred; when rerun it must reproduce the primary blocks exactly.",
+  "result_file": "results/conf_v0.7/rpe1/confirm_v07_result_primary.json",
+  "run_by": "Opus (lead agent) directly, deviation from model allocation (time pressure)"
+ },
+ "post_freeze_execution_resume": {
+  "utc": "2026-10-12T05:34:52Z",
+  "approved_by_user": "2026-10-12 (GWPS constraints: 4 GB, single process, daily power cut 23:30-06:30)",
+  "what": "Engineering-only: per-split atomic writes (tmp + fsync + rename) with sha256 completion markers; restart verifies and skips completed splits, recomputes anything else; stage 2 of run_dataset executed per split (same calls, same order per split; M_perm block per split; per-split M3 fallback increments summed); start-time guard against the 23:30 power cut; 4 GB RSS watchdog; keep-awake. C0: pseudobulk skipped only if every output matches pseudobulk_build.json, else rebuilt from scratch; pseudobulk not started with < 180 min to the cut; units / split files / report written atomically. No algorithm, parameter or random-number change; original modes stage1/ext/analyze unchanged.",
+  "files_sha256": {
+   "resume_v07.py": "ccaa31f28efde5a4db47fbfb1384584a619baa91fb1b15ed883253543bc048b7",
+   "confirm_run_v07.py": "af123df203c268aee843d67ff100ac92694804ff730d209725787430c7d53d5e",
+   "test_resume_v07.py": "ba1e9ff55c569b5a8892996bd779520f3af2fab2f98f53f5c5a891b383b5dd7a",
+   "run_gwps_c0.ps1": "eec9f1d2c0c0a9ce1d5e2253fa43caa219928dc935184aefdb2c9c656cdc45af"
+  },
+  "confirm_run_v07_pre_change_copy": "code/archive/confirm_run_v07_pre_resume.py",
+  "verification": {
+   "script": "code/test_resume_v07.py (K562 dev; run by Sonnet 5.5 sub-agent)",
+   "result": "10/10 passed",
+   "results_file": "results/_resume_check/work/test_resume_results.json",
+   "checks": [
+    "stage1 split 00 killed mid-split then resumed: pickle byte-identical to one-shot pipeline_v06.stage1; truncated file with stale marker detected and recomputed byte-identically",
+    "ext split 00 killed then resumed: all arrays bitwise identical (npz container bytes differ only by zip timestamps)",
+    "stage 2 splits 00-01 killed during split 01 then resumed: 276,451 coverage rows, proxy rows and covariate rows identical (values and dtypes) to the one-shot run_dataset rows"
+   ],
+   "not_simulated": "OS-level loss of unflushed data on power failure (mitigated by fsync before rename and sha256 verification on restart)"
+  }
+ },
+ "post_freeze_execution_lowmem": {
+  "utc": "2026-10-12T10:54:05Z",
+  "approved_by_user": "2026-10-12 (pure engineering, no precision change)",
+  "what": "code/lowmem_v07.py: Y/YA/YB kept as the on-disk float32 rows and returned as float64 on access (exact conversion, = frozen np.load(...).astype(float64)[rows]); J/Jf computed block-wise from the sparse GO incidence with the jaccard_all arithmetic (integer counts), in row chunks; S stored sparse with the same max-over-duplicates rule, densified on access, sum(1) on dense row chunks. Used by confirm_run_v07.py 'run' mode (load_lowmem). resume_v07.SAFETY 1.25 -> 1.5 (user rule).",
+  "files_sha256": {
+   "lowmem_v07.py": "dc0cd15a11c57ce8317440decda6ba06dafe84fdcebba105fa9080343a88db73",
+   "confirm_run_v07.py": "2b0a520ebe44b365d99815f22f732e8fc946bd4b15e3647025e54be29e421b51",
+   "resume_v07.py": "569dde8c95a984f0bf3dd06efec9ba2509e0d0b0b22f31f2952c993107ce8cbb",
+   "test_lowmem_v07.py": "9042b70bab76d3bee7ea01c463ae4ebaf8bdc106cfb825ce733346900ce35473"
+  },
+  "verification": {
+   "script": "code/test_lowmem_v07.py (K562 dev split 00; Sonnet 5.5 sub-agent)",
+   "result": "pass",
+   "stage1_cache": "low-memory and frozen loader both byte-identical to results/d1_v0.6.1/cache/split_00.pkl",
+   "ext": "all arrays bitwise identical to results/d1_v0.7dev/ext_cache/ext_split_00.npz",
+   "loader_objects": "Y, YA, YB, y_ctrl, U, all J/Jf/S blocks incl. the full n x n, S.sum(1), n_go bitwise identical (in-kernel check by the lead agent)",
+   "peak_working_set_gb": {
+    "frozen": 2.125,
+    "lowmem": 1.847
+   },
+   "rss_after_load_gb": {
+    "frozen": 0.73,
+    "lowmem": 0.45
+   }
+  }
+ },
+ "post_freeze_execution_lowmem_2": {
+  "utc": "2026-10-12T11:41:47Z",
+  "approved_by_user": "2026-10-12 (plan A; chunk only along independent directions; BLAS and thread settings unchanged)",
+  "what": "lowmem_v07.install(): score_S1, e_true (tile per chunk), predicted_size and split_half_stats evaluated in row chunks of 256 (every operation per perturbation row: elementwise, per-row argsort, per-row mean); train_reference per-gene statistics (mean, median, MAD, var over perturbations) on 512-gene column blocks, across-gene quantile floor and panel ranking on the full vectors; pipeline_v05.predict run one model at a time and stored as float64 .npy memmaps on F: (two alternating file sets, overwritten). No cross-row reduction chunked, no matrix product touched. confirm_run_v07 'run' gained --mem-cap (<= 4.8 GB, user fallback rule); resume_v07.start_guards reads MEM_CAP_GB at call time.",
+  "files_sha256": {
+   "lowmem_v07.py": "bdb98fce0a0b11f324382d6b0c078a5bab690fd7e837b78c84c546bee2aaaff5",
+   "confirm_run_v07.py": "438eb2b6938d434f8d5c58dc9098534ca287cada61899531f38b9abe0fc0462e",
+   "resume_v07.py": "a2772a661f4bb3c7d97847392e8bcbd6569672a712dab29c4f01b0a264d0719d",
+   "test_lowmem_v07.py": "c132f5fa1a054214d00964b92d738b7fb7c0af6594d06b0adcbcb0b614480883"
+  },
+  "verification": {
+   "script": "code/test_lowmem_v07.py, MODES=(frozen, lowmem2) (K562 dev split 00; Sonnet 5.5 sub-agent)",
+   "result": "pass",
+   "stage1_cache": "byte-identical to results/d1_v0.6.1/cache/split_00.pkl (both implementations)",
+   "ext": "all arrays bitwise identical to results/d1_v0.7dev/ext_cache/ext_split_00.npz (both implementations)",
+   "function_level": "chunked score_S1, e_true, predicted_size, split_half_stats, train_reference bitwise equal to the frozen functions on all 2,043 dev units (in-kernel check by the lead agent)",
+   "peak_working_set_gb": {
+    "frozen": 2.126,
+    "lowmem_round2": 1.291
+   },
+   "stage1_seconds": {
+    "frozen": 105.2,
+    "lowmem_round2": 107.0
+   }
+  }
+ },
+ "post_freeze_execution_f1": {
+  "utc": "2026-10-14T00:07:51Z",
+  "status": "validated 2026-10-14 (K562 dev, all 21 splits; Sonnet 5.5 sub-agent)",
+  "what": "resume_v07.intern_strings + finish(f1_intern=...) and confirm_run_v07 --finish-f1 flag: all-str object columns of the stage-2 parts share one Python str object per value (pd.factorize + take); values, dtypes, column order, index unchanged. Deviation from the literal user wording 'categorical dtype' (categorical groupby observed=False semantics would change outputs); explained to the user 2026-10-13.",
+  "files_sha256": {
+   "confirm_run_v07.py": "2195945adfd892bb87a9e161104cf5b129208c4bc70d99c3c59f25979430051a",
+   "resume_v07.py": "bdeb590081511ab39826a79399f3a1e1ed390b83f65e126be4b37cd0ca7aa609",
+   "lowmem_v07.py": "bdb98fce0a0b11f324382d6b0c078a5bab690fd7e837b78c84c546bee2aaaff5",
+   "test_finish_f1_v07.py": "0bcef25963122e86cc6d949845c077dec398b1b7585bdc240cfe5766dec58268",
+   "check_finish_consistency_v07.py": "32c76b35b57b17638fe3635ee0831e866ef0a16826071ede38a59e851ee3ff50"
+  },
+  "validation_planned": "code/test_finish_f1_v07.py on K562 dev after all GWPS splits finish: summary.json and confirm_v07_result.json byte-identical between frozen finish and F1 finish",
+  "validation": {
+   "summary.json byte-identical": true,
+   "confirm_v07_result.json byte-identical": true,
+   "coverage_rows.parquet equal": true,
+   "proxy_rows.parquet equal": true,
+   "covariates_analysis_only.parquet equal": true,
+   "confirm_rand_rows.parquet equal": true,
+   "memory": {
+    "A": {
+     "rc": 0,
+     "seconds": 279.9663817882538,
+     "peak_wset_gb": 2.515422821044922,
+     "peak_pagefile_gb": 2.5229110717773438
+    },
+    "B": {
+     "rc": 0,
+     "seconds": 278.8791534900665,
+     "peak_wset_gb": 2.336181640625,
+     "peak_pagefile_gb": 2.311107635498047
+    }
+   },
+   "pass": true
+  }
+ },
+ "post_freeze_execution_f2": {
+  "utc": "2026-10-14T12:15:51Z",
+  "approved_by_user": "2026-10-13 (F1 -> if > 4.8 GB on GWPS, F2 directly; acceptance byte-identical JSON on dev)",
+  "trigger": "GWPS finish with F1 stopped by the 4.8 GB watchdog (RSS 4.90 GB, 2026-10-14 20:03 local), no output",
+  "what": "code/finish_f2_v07.py: stage-2 coverage table held column-wise (each column concatenated through the same DataFrame-concat path, main then [main]+perm; numeric/bool columns as .npy memmaps on F:, string columns interned in RAM); every full-table subset of pipeline_v06.summarise / confirm_v07.analyze rebuilt from the store with the same mask on the same key columns, same index labels, column order and dtypes; frozen analysis functions called in the same order; coverage_rows.parquet written in row batches with explicit schema. confirm_run_v07 --finish-f2 flag.",
+  "files_sha256": {
+   "finish_f2_v07.py": "1788a025018f76c5ea69c8f781546fa156fd63fa9db0403f77c8996299943483",
+   "confirm_run_v07.py": "58139f164a9a62f0d79dc566195d0740e1f2b17e8affe8d5ae21333ea4f48aa9",
+   "resume_v07.py": "bdeb590081511ab39826a79399f3a1e1ed390b83f65e126be4b37cd0ca7aa609",
+   "test_finish_f2_v07.py": "504c3ea20dbe8071d88a3c89a493eea2f979df0ac4a09049414e78f4029cf343"
+  },
+  "validation": {
+   "summary.json byte-identical": true,
+   "confirm_v07_result.json byte-identical": true,
+   "coverage_rows.parquet equal": true,
+   "proxy_rows.parquet equal": true,
+   "covariates_analysis_only.parquet equal": true,
+   "confirm_rand_rows.parquet equal": true,
+   "memory": {
+    "A_frozen": {
+     "rc": 0,
+     "seconds": 279.9663817882538,
+     "peak_wset_gb": 2.515422821044922,
+     "peak_pagefile_gb": 2.5229110717773438
+    },
+    "C_F2": {
+     "rc": 0,
+     "seconds": 276.24308037757874,
+     "peak_wset_gb": 2.1526412963867188
+    }
+   },
+   "pass": true
+  },
+  "gwps_attempt": {
+   "utc_start": "2026-10-14T12:16:22Z",
+   "result": "stopped by the 4.8 GB watchdog at 12:18:57Z (RSS 5.81 GB), after the column store was built (9,223,509 rows) and before summary.json; no output. Per user rule: stop and report."
+  }
+ },
+ "post_freeze_execution_helper_gwps_primary": {
+  "utc": "2026-10-15T08:11:25Z",
+  "approved_by_user": "2026-10-15: run the confirmatory analysis first (no effect on numbers); descriptive finish later on a rented server, where the primary blocks are recomputed and must agree exactly",
+  "what": "confirm_primary_v07.py: split check now uses the validated low-memory loader (identical values), progress log lines, 4.8 GB watchdog + keep-awake (resume_v07.start_guards). Analysis call unchanged (frozen confirm_v07.analyze, cov_grid=None).",
+  "first_attempt": "2026-10-15 13:24 local: process ended without any output or log (cause unknown; the monitor stopped writing at 13:35 and resumed ~16:08, consistent with the machine sleeping; the old helper had no keep-awake)",
+  "files_sha256": {
+   "confirm_primary_v07.py": "f651f229611a617b5449a011dd869e48304b5f554b6f62d27ce7adf42efd433f"
+  }
+ },
+ "post_freeze_execution_f2c": {
+  "utc": "2026-10-15T09:13:27Z",
+  "status": "validated on dev 2026-10-15 (Sonnet 5.5): summary.json and confirm_v07_result.json byte-identical, four parquets equal; peak working set 2.52 (frozen) -> 1.23 GB",
+  "approved_by_user": "2026-10-15: implement F2 (each block reads only its rows), validate byte-identical on dev, then GWPS; stop if > 4.8 GB",
+  "dev_profile": "F2 on dev: plateau from the object key frame during summarise; peak during criteria() on all full/<mode> rows (58% of the table); private memory dominates, memmap file pages minor",
+  "what": "finish_f2_v07.CodeStore / summarise_f2c / finish_f2c: string columns as int32 codes + distinct str objects; masks and the tier-table groupby reproduced on codes (pandas groupby sort order); criteria() given only the rows of its own first filter; working-set trimming after large blocks. confirm_run_v07 --finish-f2c.",
+  "files_sha256": {
+   "finish_f2_v07.py": "e9b5a1ef610b3b34d8c2d516487ca421426f7dd28e3cac4eb1a4c679475e9e55",
+   "confirm_run_v07.py": "5fee92e82ea350e6dcfc42ffbbf3d824384ca377ee4fa4e07da8cd2bc317788d",
+   "resume_v07.py": "bdeb590081511ab39826a79399f3a1e1ed390b83f65e126be4b37cd0ca7aa609",
+   "test_finish_f2_v07.py": "dd544a7b777eee2c77b97813a97f3a76ec72e07e1ad83f6135638b78a8f31a49"
+  },
+  "validation": {
+   "summary.json byte-identical": true,
+   "confirm_v07_result.json byte-identical": true,
+   "coverage_rows.parquet equal": true,
+   "proxy_rows.parquet equal": true,
+   "covariates_analysis_only.parquet equal": true,
+   "confirm_rand_rows.parquet equal": true,
+   "memory": {
+    "A_frozen": {
+     "rc": 0,
+     "seconds": 279.9663817882538,
+     "peak_wset_gb": 2.515422821044922,
+     "peak_pagefile_gb": 2.5229110717773438
+    },
+    "f2c": {
+     "rc": 0,
+     "seconds": 275.6003987789154,
+     "peak_wset_gb": 1.2345314025878906
+    }
+   },
+   "pass": true
+  },
+  "gwps_run": {
+   "local": "2026-10-15 17:19-18:00",
+   "rc": 0,
+   "peak_rss_gb": 2.75,
+   "seconds_finish": 2424
+  }
+ },
+ "post_confirmation_exploratory_modularity": {
+  "utc": "2026-10-15T12:23:55Z",
+  "label": "POST-CONFIRMATION EXPLORATORY (user-approved 2026-10-15); no confirmatory result affected",
+  "protocol": {
+   "path": "reports/protocol/explore_modularity_v1.0.md",
+   "sha256": "3b04322e893ae89b1aa580665ae3a9e5c6fbcad3268718ca3903990b21bcce21"
+  },
+  "files_sha256": {
+   "explore_modularity_v07.py": "eb28088d8fbf5cf6b1bc46da017a80430a14afed8b807b7797903f95c6f70c81"
+  },
+  "smoke_test": "lead agent ran --boot 3 on dev+RPE1 into results/_explore_smoke to check run health (structure/counts only inspected, no statistics read)"
+ },
+ "post_freeze_execution_helper_confounding_lowmem": {
+  "utc": "2026-10-15T12:23:55Z",
+  "what": "code/confounding_v07_run2.py: reads only the rows used by sens_v07.confounding_v07 via a pyarrow row filter (order preserved); confounding code unchanged. Acceptance: byte-identical to RPE1 confounding_v07.json before use on GWPS.",
+  "files_sha256": {
+   "confounding_v07_run2.py": "60782d611f62023ed585f5165e423deac12162d419d7bac61adec7b8825d3534"
+  }
+ },
+ "post_confirmation_exploratory_gridK_rpe1": {
+  "utc": "2026-10-15T13:15:46Z",
+  "label": "POST-CONFIRMATION EXPLORATORY (user-approved 2026-10-15)",
+  "protocol": {
+   "path": "reports/protocol/explore_gridK_rpe1_v1.0.md",
+   "sha256": "e5d8fdf498f7cd30d4862cc251de77dc5450da441c1c9586b4e1cd4a82fafceb"
+  },
+  "files_sha256": {
+   "explore_gridK_v07.py": "c3a7a9042969d1618e08dafaa18aa348c96fbb5c31e0577bff144e2289e0cf08"
+  },
+  "go_ase200_check": {
+   "max_abs_diff_first100_cols": 9.62840918106167e-14,
+   "n_cols_diff_gt_1e-6": 0,
+   "max_abs_eigenvalue_diff_first100": 5.258016244624741e-13,
+   "shape": [
+    9853,
+    200
+   ]
+  }
+ },
+ "illustrative_reliability_analysis": {
+  "utc": "2026-10-15T13:15:46Z",
+  "label": "ILLUSTRATIVE, outside every protocol (user request 2026-10-15)",
+  "reading_rule": "GWPS rho(h, cross-split E) close to 0.110 -> conclusion stands; clearly higher (e.g. > 0.25) -> stop and report",
+  "files_sha256": {
+   "reliability_illustrative_v07.py": "2a193e8dbbb120df4045b88cd07d9fdba00fb3fefecbc25e3f0e75cf51d8ad8d",
+   "explore_modularity_v07.py": "eb28088d8fbf5cf6b1bc46da017a80430a14afed8b807b7797903f95c6f70c81"
+  }
+ },
+ "illustrative_noise_floor_analysis": {
+  "utc": "2026-10-16T00:16:55Z",
+  "label": "ILLUSTRATIVE, outside every protocol (user request 2026-10-16)",
+  "reading_rule": "GWPS M0 T5 coverage under noise-corrected tiers > 0.75 -> failure mainly attributable to measurement precision on GWPS -> stop and report; otherwise keep effect-strength framing, cell-number association as limitation",
+  "files_sha256": {
+   "extract_controls_v07.py": "81d19ed2091e7fc8e754a3f153316c9356e1f704640637f84a1236454fae1147",
+   "noise_floor_illustrative_v07.py": "cf4b0b59479af0698abb90341dd9c931ae5f627462c5d98226433a7b18d8d129",
+   "explore_modularity_v07.py": "eb28088d8fbf5cf6b1bc46da017a80430a14afed8b807b7797903f95c6f70c81"
+  }
+ },
+ "gears_robustness_preparation": {
+  "utc": "2026-10-16T05:25:31Z",
+  "protocol": "v0.6 section 10 (inherited by v0.7); not run yet",
+  "bundle": {
+   "path": "gears_upload/gears_bundle_v07.tar.gz",
+   "sha256": "9db14ae8e900e0fb187ff75d6cb7c6f94baab2256cd8a3bc6618fcf2f99dad9b",
+   "bytes": 449429792,
+   "inner_manifest": "gears_bundle_v07/SHA256SUMS"
+  },
+  "files_sha256": {
+   "gears_bundle_v07.py": "4b750b31a6ec3ca0ec979ebba8d146c2d271199f563d2d11a4c33bcd407c9d6c",
+   "gears_server/gears_server_run.py": "7e885301e026a2877f3120af042f35e165efedd909bfe48850ffe8c0bcaaa52e",
+   "gears_server/setup_gears_env.sh": "f7a8cbdf85d6f08903ddadcba5024c934099e92e3dd1a6d2eed841a8b69a50da",
+   "gears_server/requirements_gears.txt": "5841a101b90836dca2508a39d13b97e8a3bb1fa5fcb60342bd72a31de87c0689",
+   "gears_server/README_server.md": "1d06051b9138a579ca854720260d894c5083f5438df6e15a67d8d8b55833d83a"
+  },
+  "env_source": "Ahlmann-Eltze et al. 2025 benchmark/conda_environments/gears_env2.yml (code commit 8ea205c)",
+  "open_decisions": [
+   "training seed mode (benchmark: np 1 / torch 0 for all splits, default; or per-split seed)",
+   "15 always-train units outside the GEARS GO graph excluded from GEARS training",
+   "evaluation scope: M0, M1, oracle only (Mdist/Mscore would need 5 inner-fold GEARS refits per split)"
+  ]
+ }
+}

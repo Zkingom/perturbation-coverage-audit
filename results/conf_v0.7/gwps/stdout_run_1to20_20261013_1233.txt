@@ -1,0 +1,60 @@
+2026-10-13T04:33:29Z available memory at start 5.53 GB; process memory cap 4.8 GB; 657 min to the power cut
+2026-10-13T04:33:41Z time check for stage1 split 01: 641 min usable before the power cut, need 15 min -> start
+2026-10-13T04:38:51Z stage1 split 01 round 0 fold 1 K=50 d=100 n_test=812 310.1s
+2026-10-13T04:38:51Z time check for stage1 split 02: 636 min usable before the power cut, need 8 min -> start
+2026-10-13T04:43:57Z stage1 split 02 round 0 fold 2 K=20 d=10 n_test=812 306.6s
+2026-10-13T04:43:57Z time check for stage1 split 03: 631 min usable before the power cut, need 8 min -> start
+2026-10-13T04:49:02Z stage1 split 03 round 0 fold 3 K=30 d=100 n_test=812 304.9s
+2026-10-13T04:49:02Z time check for stage1 split 04: 626 min usable before the power cut, need 8 min -> start
+2026-10-13T04:54:13Z stage1 split 04 round 0 fold 4 K=30 d=50 n_test=812 310.5s
+2026-10-13T04:54:13Z time check for stage1 split 05: 621 min usable before the power cut, need 8 min -> start
+2026-10-13T04:59:17Z stage1 split 05 round 0 fold 5 K=20 d=50 n_test=811 304.8s
+2026-10-13T04:59:17Z time check for stage1 split 06: 616 min usable before the power cut, need 8 min -> start
+2026-10-13T05:04:20Z stage1 split 06 round 0 fold 6 K=50 d=30 n_test=812 302.8s
+2026-10-13T05:04:20Z time check for stage1 split 07: 611 min usable before the power cut, need 8 min -> start
+2026-10-13T05:09:26Z stage1 split 07 round 1 fold 0 K=50 d=50 n_test=812 305.9s
+2026-10-13T05:09:26Z time check for stage1 split 08: 606 min usable before the power cut, need 8 min -> start
+2026-10-13T05:14:29Z stage1 split 08 round 1 fold 1 K=50 d=100 n_test=812 302.6s
+2026-10-13T05:14:29Z time check for stage1 split 09: 601 min usable before the power cut, need 8 min -> start
+2026-10-13T05:19:31Z stage1 split 09 round 1 fold 2 K=30 d=50 n_test=812 302.1s
+2026-10-13T05:19:31Z time check for stage1 split 10: 595 min usable before the power cut, need 8 min -> start
+2026-10-13T05:24:30Z stage1 split 10 round 1 fold 3 K=10 d=50 n_test=812 299.6s
+2026-10-13T05:24:30Z time check for stage1 split 11: 590 min usable before the power cut, need 8 min -> start
+2026-10-13T05:29:29Z stage1 split 11 round 1 fold 4 K=20 d=100 n_test=813 298.1s
+2026-10-13T05:29:29Z time check for stage1 split 12: 586 min usable before the power cut, need 8 min -> start
+2026-10-13T05:34:27Z stage1 split 12 round 1 fold 5 K=50 d=50 n_test=811 298.7s
+2026-10-13T05:34:27Z time check for stage1 split 13: 581 min usable before the power cut, need 8 min -> start
+2026-10-13T05:39:27Z stage1 split 13 round 1 fold 6 K=50 d=50 n_test=811 300.1s
+2026-10-13T05:39:27Z time check for stage1 split 14: 576 min usable before the power cut, need 8 min -> start
+2026-10-13T05:44:27Z stage1 split 14 round 2 fold 0 K=50 d=100 n_test=812 299.5s
+2026-10-13T05:44:27Z time check for stage1 split 15: 571 min usable before the power cut, need 8 min -> start
+2026-10-13T05:49:26Z stage1 split 15 round 2 fold 1 K=50 d=100 n_test=812 299.4s
+2026-10-13T05:49:26Z time check for stage1 split 16: 566 min usable before the power cut, need 8 min -> start
+2026-10-13T05:54:25Z stage1 split 16 round 2 fold 2 K=30 d=100 n_test=812 298.6s
+2026-10-13T05:54:25Z time check for stage1 split 17: 561 min usable before the power cut, need 8 min -> start
+2026-10-13T05:59:24Z stage1 split 17 round 2 fold 3 K=30 d=100 n_test=812 299.4s
+2026-10-13T05:59:24Z time check for stage1 split 18: 556 min usable before the power cut, need 8 min -> start
+2026-10-13T06:04:24Z stage1 split 18 round 2 fold 4 K=50 d=50 n_test=812 299.5s
+2026-10-13T06:04:24Z time check for stage1 split 19: 551 min usable before the power cut, need 8 min -> start
+2026-10-13T06:09:22Z stage1 split 19 round 2 fold 5 K=50 d=100 n_test=812 298.6s
+2026-10-13T06:09:22Z time check for stage1 split 20: 546 min usable before the power cut, need 8 min -> start
+2026-10-13T06:14:27Z stage1 split 20 round 2 fold 6 K=20 d=100 n_test=811 304.5s
+2026-10-13T06:14:27Z time check for ext split 01: 541 min usable before the power cut, need 8 min -> start
+2026-10-13T06:27:23Z ext split 01: K=50 unc_calt median 0.1695 oof median 0.1697 n_oob min 8 (<3: 0)
+2026-10-13T06:27:23Z time check for ext split 02: 528 min usable before the power cut, need 19 min -> start
+2026-10-13T06:40:11Z ext split 02: K=20 unc_calt median 0.0961 oof median 0.0942 n_oob min 8 (<3: 0)
+2026-10-13T06:40:11Z time check for ext split 03: 515 min usable before the power cut, need 19 min -> start
+2026-10-13T06:52:59Z ext split 03: K=30 unc_calt median 0.1271 oof median 0.1263 n_oob min 8 (<3: 0)
+2026-10-13T06:52:59Z time check for ext split 04: 502 min usable before the power cut, need 19 min -> start
+2026-10-13T07:05:49Z ext split 04: K=30 unc_calt median 0.1263 oof median 0.1225 n_oob min 7 (<3: 0)
+2026-10-13T07:05:49Z time check for ext split 05: 489 min usable before the power cut, need 19 min -> start
+2026-10-13T07:18:35Z ext split 05: K=20 unc_calt median 0.0894 oof median 0.0910 n_oob min 8 (<3: 0)
+2026-10-13T07:18:35Z time check for ext split 06: 476 min usable before the power cut, need 19 min -> start
+2026-10-13T07:31:23Z ext split 06: K=50 unc_calt median 0.1757 oof median 0.1755 n_oob min 7 (<3: 0)
+2026-10-13T07:31:23Z time check for ext split 07: 464 min usable before the power cut, need 19 min -> start
+2026-10-13T07:44:09Z ext split 07: K=50 unc_calt median 0.1761 oof median 0.1759 n_oob min 6 (<3: 0)
+2026-10-13T07:44:09Z time check for ext split 08: 451 min usable before the power cut, need 19 min -> start
+2026-10-13T07:56:58Z ext split 08: K=50 unc_calt median 0.1704 oof median 0.1740 n_oob min 8 (<3: 0)
+2026-10-13T07:56:58Z time check for ext split 09: 438 min usable before the power cut, need 19 min -> start
+2026-10-13T08:09:48Z ext split 09: K=30 unc_calt median 0.1253 oof median 0.1221 n_oob min 8 (<3: 0)
+2026-10-13T08:09:48Z time check for ext split 10: 425 min usable before the power cut, need 19 min -> start

@@ -1,0 +1,13 @@
+2026-10-10T11:47:21Z stage1 split 00 round 0 fold 0 K=50 d=100 n_test=251 127.4s
+2026-10-10T11:49:26Z stage1 split 01 round 0 fold 1 K=50 d=100 n_test=250 125.1s
+2026-10-10T11:51:32Z stage1 split 02 round 0 fold 2 K=50 d=100 n_test=250 125.5s
+2026-10-10T11:53:42Z stage1 split 03 round 0 fold 3 K=50 d=100 n_test=250 130.2s
+2026-10-10T11:55:54Z stage1 split 04 round 0 fold 4 K=50 d=100 n_test=250 132.1s
+2026-10-10T11:58:05Z stage1 split 05 round 0 fold 5 K=50 d=100 n_test=250 131.4s
+2026-10-10T12:00:17Z stage1 split 06 round 0 fold 6 K=50 d=100 n_test=250 131.1s
+2026-10-10T12:02:28Z stage1 split 07 round 1 fold 0 K=50 d=100 n_test=251 131.1s
+2026-10-10T12:04:39Z stage1 split 08 round 1 fold 1 K=50 d=100 n_test=250 131.5s
+2026-10-10T12:06:51Z stage1 split 09 round 1 fold 2 K=50 d=100 n_test=250 131.6s
+2026-10-10T12:09:03Z stage1 split 10 round 1 fold 3 K=50 d=100 n_test=250 131.9s
+2026-10-10T12:11:14Z stage1 split 11 round 1 fold 4 K=50 d=100 n_test=250 131.0s
+2026-10-10T12:13:20Z stage1 split 12 round 1 fold 5 K=50 d=100 n_test=250 125.8s

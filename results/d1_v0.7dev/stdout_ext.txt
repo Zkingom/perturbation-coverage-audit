@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "F:\codex_in_this\claude_science\code\d1_run_v061.py", line 363, in <module>
+    raise SystemExit(do_ext())
+                     ^^^^^^^^
+  File "F:\codex_in_this\claude_science\code\d1_run_v061.py", line 288, in do_ext
+    man = json.loads((ROOT / "manifests" / "d1_stage1_cache_v0.6.2.json").read_text(encoding="utf8"))
+                      ^^^^
+NameError: name 'ROOT' is not defined

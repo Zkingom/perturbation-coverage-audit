@@ -1,0 +1,9 @@
+{
+ "max_abs_diff_first100_cols": 9.62840918106167e-14,
+ "n_cols_diff_gt_1e-6": 0,
+ "max_abs_eigenvalue_diff_first100": 5.258016244624741e-13,
+ "shape": [
+  9853,
+  200
+ ]
+}

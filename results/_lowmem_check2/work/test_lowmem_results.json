@@ -1,0 +1,27 @@
+{
+ "stage1_frozen_bytes_equal_reference": true,
+ "stage1_lowmem2_bytes_equal_reference": true,
+ "ext_frozen_arrays_bitwise_equal_reference": true,
+ "ext_lowmem2_arrays_bitwise_equal_reference": true,
+ "memory": {
+  "frozen": {
+   "mode": "frozen",
+   "rss_after_load_gb": 0.7288589477539062,
+   "peak_wset_gb": 2.125568389892578,
+   "peak_pagefile_gb": 2.3031272888183594,
+   "load_s": 1.3057680130004883,
+   "stage1_s": 105.17791628837585,
+   "ext_s": 47.34255886077881
+  },
+  "lowmem2": {
+   "mode": "lowmem2",
+   "rss_after_load_gb": 0.44824981689453125,
+   "peak_wset_gb": 1.2905311584472656,
+   "peak_pagefile_gb": 1.5912322998046875,
+   "load_s": 1.2438089847564697,
+   "stage1_s": 106.98804306983948,
+   "ext_s": 48.127294063568115
+  }
+ },
+ "pass": true
+}

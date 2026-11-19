@@ -1,0 +1,11 @@
+PASS T1a stage1 killed mid-split leaves no completed split  killed
+PASS T1b resumed stage1 split 00 byte-identical to one-shot pipeline_v06.stage1  0
+PASS T1c truncated file with stale marker is detected as incomplete
+PASS T1d recomputed split 00 byte-identical again  0
+PASS T2a ext killed mid-split leaves no completed file  killed
+PASS T2b resumed ext arrays bitwise identical to one-shot ext  0
+PASS T3a stage2 killed during split 01 after split 00 completed  killed
+PASS T3b resumed stage-2 rows (splits 00, 01) identical to the one-shot run_dataset rows  {'rows': 276451, 'ref_rows': 276451}
+PASS T3c proxy rows identical  42924
+PASS T3d covariate rows identical
+10/10 passed

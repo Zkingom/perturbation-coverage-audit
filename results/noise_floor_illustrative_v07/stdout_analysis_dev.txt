@@ -1,0 +1,23 @@
+08:18:34 dev: 10691 control cells, grid [30, 37, 47, 58, 73, 91, 113, 141, 176, 219, 273, 341, 425, 530, 661, 825, 1029, 1283, 1600, 1996], reps 200
+08:20:00 split 00: null mean at n=30: 5.304, at n=1996: 0.995
+08:20:05 split 01: null mean at n=30: 5.317, at n=1996: 0.984
+08:20:09 split 02: null mean at n=30: 5.310, at n=1996: 0.967
+08:20:13 split 03: null mean at n=30: 5.307, at n=1996: 0.976
+08:20:18 split 04: null mean at n=30: 5.300, at n=1996: 0.991
+08:20:22 split 05: null mean at n=30: 5.324, at n=1996: 0.971
+08:20:26 split 06: null mean at n=30: 5.267, at n=1996: 0.986
+08:20:31 split 07: null mean at n=30: 5.272, at n=1996: 0.981
+08:20:35 split 08: null mean at n=30: 5.324, at n=1996: 0.980
+08:20:40 split 09: null mean at n=30: 5.304, at n=1996: 0.972
+08:20:44 split 10: null mean at n=30: 5.293, at n=1996: 0.987
+08:20:49 split 11: null mean at n=30: 5.315, at n=1996: 0.988
+08:20:53 split 12: null mean at n=30: 5.245, at n=1996: 0.994
+08:20:57 split 13: null mean at n=30: 5.344, at n=1996: 0.996
+08:21:02 split 14: null mean at n=30: 5.333, at n=1996: 1.003
+08:21:06 split 15: null mean at n=30: 5.297, at n=1996: 0.993
+08:21:11 split 16: null mean at n=30: 5.304, at n=1996: 0.979
+08:21:15 split 17: null mean at n=30: 5.261, at n=1996: 0.968
+08:21:20 split 18: null mean at n=30: 5.295, at n=1996: 0.993
+08:21:24 split 19: null mean at n=30: 5.287, at n=1996: 0.997
+08:21:28 split 20: null mean at n=30: 5.330, at n=1996: 0.986
+08:21:43 done T5 orig 0.516 corr 0.552 z 0.621

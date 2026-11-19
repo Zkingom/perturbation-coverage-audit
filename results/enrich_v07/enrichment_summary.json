@@ -1,0 +1,207 @@
+{
+ "gene_set_sizes": {
+  "G1_core": 93,
+  "G1_extended": 156,
+  "D1_T5": 359,
+  "D1_always": 151,
+  "G1_core__control_topE": 93,
+  "G1_extended__control_topE": 156,
+  "D1_T5__control_topE": 359,
+  "D1_always__control_topE": 151,
+  "G1_per_model_always": {
+   "mean": 118,
+   "linear_pca": 120,
+   "linear_go": 125
+  },
+  "G1_min_appearances_of_core_genes": 6,
+  "overlap_D1_T5_with_its_control": 357
+ },
+ "symbol_mapping": {
+  "exact": 1738,
+  "synonym": 46,
+  "unmapped": 2
+ },
+ "n_background_mapped": 1784,
+ "n_significant_terms_fdr05": {
+  "G1_core": {
+   "GO:BP": 114,
+   "GO:CC": 26,
+   "GO:MF": 12,
+   "Reactome": 47,
+   "CORUM": 21
+  },
+  "G1_extended": {
+   "GO:BP": 153,
+   "GO:CC": 37,
+   "GO:MF": 19,
+   "Reactome": 65,
+   "CORUM": 54
+  },
+  "D1_T5": {
+   "GO:BP": 128,
+   "GO:CC": 89,
+   "GO:MF": 17,
+   "Reactome": 248,
+   "CORUM": 64
+  },
+  "D1_always": {
+   "GO:BP": 166,
+   "GO:CC": 40,
+   "GO:MF": 28,
+   "Reactome": 56,
+   "CORUM": 46
+  },
+  "G1_core__control_topE": {
+   "GO:BP": 114,
+   "GO:CC": 26,
+   "GO:MF": 18,
+   "Reactome": 60,
+   "CORUM": 31
+  },
+  "G1_extended__control_topE": {
+   "GO:BP": 173,
+   "GO:CC": 42,
+   "GO:MF": 18,
+   "Reactome": 216,
+   "CORUM": 52
+  },
+  "D1_T5__control_topE": {
+   "GO:BP": 121,
+   "GO:CC": 89,
+   "GO:MF": 15,
+   "Reactome": 248,
+   "CORUM": 64
+  },
+  "D1_always__control_topE": {
+   "GO:BP": 178,
+   "GO:CC": 38,
+   "GO:MF": 18,
+   "Reactome": 220,
+   "CORUM": 52
+  }
+ },
+ "hypothesis_T5_vs_other": {
+  "n_E": 1786,
+  "n_T5": 359,
+  "n_unmapped_for_corum": 2,
+  "corum_member": {
+   "frac_T5": 0.7799442896935933,
+   "frac_other": 0.6440084092501752,
+   "table": [
+    [
+     280,
+     79
+    ],
+    [
+     919,
+     508
+    ]
+   ],
+   "odds_ratio": 1.9592016638889271,
+   "p_two_sided": 6.190525257836768e-07
+  },
+  "corum_n_complexes": {
+   "median_T5": 3.0,
+   "median_other": 1.0,
+   "mean_T5": 3.988857938718663,
+   "mean_other": 2.5949544498948844,
+   "p_mannwhitney": 3.380655897079891e-12
+  },
+  "string_degree_screen_ge0.4": {
+   "median_T5": 68.0,
+   "median_other": 28.0,
+   "mean_T5": 81.1142061281337,
+   "mean_other": 44.30273300630694,
+   "p_mannwhitney": 7.995906138053113e-23
+  },
+  "string_degree_genome_ge0.4": {
+   "median_T5": 118.0,
+   "median_other": 64.0,
+   "mean_T5": 156.96378830083566,
+   "mean_other": 93.25508058864752,
+   "p_mannwhitney": 4.128877967534891e-19
+  },
+  "string_degree_screen_ge0.7": {
+   "median_T5": 31.0,
+   "median_other": 8.0,
+   "mean_T5": 50.551532033426184,
+   "mean_other": 22.02803083391731,
+   "p_mannwhitney": 4.5652353829801314e-29
+  },
+  "string_degree_genome_ge0.7": {
+   "median_T5": 51.0,
+   "median_other": 17.0,
+   "mean_T5": 73.55431754874652,
+   "mean_other": 35.33426769446391,
+   "p_mannwhitney": 1.2656655813014427e-23
+  },
+  "logit_T5": {
+   "const": {
+    "coef_per_SD": -1.4987766670223954,
+    "lo": -1.6275583505653073,
+    "hi": -1.3699949834794836,
+    "p": 3.5894327231714084e-115
+   },
+   "corum": {
+    "coef_per_SD": 0.10055337692500396,
+    "lo": -0.04084398107683315,
+    "hi": 0.24195073492684108,
+    "p": 0.16336736737474578
+   },
+   "log_deg": {
+    "coef_per_SD": 0.5851736849465798,
+    "lo": 0.43543991990575975,
+    "hi": 0.7349074499874,
+    "p": 1.8612866714954544e-14
+   },
+   "log_ngo": {
+    "coef_per_SD": 0.0656897335369459,
+    "lo": -0.06180009255419025,
+    "hi": 0.19317955962808206,
+    "p": 0.31254356963516017
+   }
+  }
+ },
+ "annotation_manifest": {
+  "go-basic.obo": {
+   "url": "https://release.geneontology.org/2026-05-19/ontology/go-basic.obo",
+   "bytes": 32212518,
+   "sha256": "923645000afcb1df0e72e252b64950b1c2bcc98c9393fec8c1dd1a0f7c9d4d77",
+   "last_modified": "Thu, 28 May 2026 21:45:18 GMT"
+  },
+  "goa_human.gaf.gz": {
+   "url": "https://release.geneontology.org/2026-05-19/annotations/goa_human.gaf.gz",
+   "bytes": 15041996,
+   "sha256": "db472faff1785878521693af62646546cea6af4a386609dd01c72c0554a46a30",
+   "last_modified": "Thu, 28 May 2026 21:40:38 GMT"
+  },
+  "go_release-date.json": {
+   "url": "https://release.geneontology.org/2026-05-19/metadata/release-date.json",
+   "bytes": 29,
+   "sha256": "534b0a10cd54de77708c7604a33f45675391ea1b66838401157702113470f254",
+   "last_modified": "Thu, 28 May 2026 21:40:56 GMT"
+  },
+  "ReactomePathways.gmt.zip": {
+   "url": "https://reactome.org/download/current/ReactomePathways.gmt.zip",
+   "bytes": 298479,
+   "sha256": "8c1dbc8578431da5d2d5118262718c60b553a9be3398e93658daa069e4a9afd4",
+   "last_modified": "existing",
+   "copied_from": "G:\\biology\\annotations_2026-10-10\\ReactomePathways.gmt.zip"
+  },
+  "corum_human_current.txt": {
+   "url": "https://mips.helmholtz-muenchen.de/fastapi-corum/public/file/download_current_file?file_id=human&file_format=txt",
+   "bytes": 6268940,
+   "sha256": "5e40556eb59bb767f3396ba8c080f64c777903ffca9102345fdc35662a2e0282",
+   "last_modified": "existing",
+   "copied_from": "G:\\biology\\annotations_2026-10-10\\corum_human_current.txt"
+  }
+ },
+ "parameters": {
+  "min_size": 5,
+  "max_size": 500,
+  "fdr": 0.05,
+  "jaccard_redundancy": 0.5,
+  "go_propagation": "is_a + part_of; NOT qualifiers and ND evidence excluded",
+  "string_degree": "partners with max(experimental, database) >= threshold"
+ }
+}

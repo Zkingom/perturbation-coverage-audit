@@ -1,0 +1,305 @@
+[
+ {
+  "round": 0,
+  "fold": 0,
+  "held": [
+   "CDKN1C",
+   "CEBPB",
+   "FOXA1",
+   "IRF1",
+   "ISL2",
+   "JUN",
+   "KIF18B",
+   "KIF2C",
+   "MEIS1",
+   "OSR2",
+   "PTPN12",
+   "RHOXF2",
+   "RUNX1T1",
+   "SGK1",
+   "TMSB4X"
+  ]
+ },
+ {
+  "round": 0,
+  "fold": 1,
+  "held": [
+   "BAK1",
+   "BPGM",
+   "CDKN1A",
+   "CEBPA",
+   "DLX2",
+   "DUSP9",
+   "ETS2",
+   "HOXB9",
+   "MAP7D1",
+   "PRTG",
+   "PTPN9",
+   "SAMD1",
+   "SET",
+   "UBASH3B"
+  ]
+ },
+ {
+  "round": 0,
+  "fold": 2,
+  "held": [
+   "AHR",
+   "CBL",
+   "CEBPE",
+   "CLDN6",
+   "ELMSAN1",
+   "FEV",
+   "HOXC13",
+   "IER5L",
+   "LHX1",
+   "MAP2K3",
+   "PLK4",
+   "STIL",
+   "TBX2",
+   "UBASH3A"
+  ]
+ },
+ {
+  "round": 0,
+  "fold": 3,
+  "held": [
+   "BCL2L11",
+   "CBFA2T3",
+   "FOSB",
+   "FOXA3",
+   "FOXF1",
+   "FOXL2",
+   "MAP2K6",
+   "POU3F2",
+   "PRDM1",
+   "SNAI1",
+   "TGFBR2",
+   "ZBTB1",
+   "ZBTB10",
+   "ZBTB25"
+  ]
+ },
+ {
+  "round": 0,
+  "fold": 4,
+  "held": [
+   "CDKN1B",
+   "CNN1",
+   "COL2A1",
+   "IGDCC3",
+   "IKZF3",
+   "KLF1",
+   "LYL1",
+   "MAPK1",
+   "S1PR2",
+   "SLC38A2",
+   "SPI1",
+   "TBX3",
+   "ZC3HAV1",
+   "ZNF318"
+  ]
+ },
+ {
+  "round": 1,
+  "fold": 0,
+  "held": [
+   "BAK1",
+   "CBFA2T3",
+   "CEBPE",
+   "IKZF3",
+   "ISL2",
+   "LHX1",
+   "MAP2K3",
+   "OSR2",
+   "SAMD1",
+   "SPI1",
+   "TBX2",
+   "TMSB4X",
+   "ZBTB1",
+   "ZBTB10",
+   "ZC3HAV1"
+  ]
+ },
+ {
+  "round": 1,
+  "fold": 1,
+  "held": [
+   "AHR",
+   "BCL2L11",
+   "CEBPB",
+   "CLDN6",
+   "ETS2",
+   "FOXA1",
+   "IRF1",
+   "JUN",
+   "KLF1",
+   "LYL1",
+   "MAP2K6",
+   "MAP7D1",
+   "RHOXF2",
+   "SLC38A2"
+  ]
+ },
+ {
+  "round": 1,
+  "fold": 2,
+  "held": [
+   "CDKN1A",
+   "CDKN1B",
+   "CEBPA",
+   "CNN1",
+   "FOXL2",
+   "HOXC13",
+   "PLK4",
+   "POU3F2",
+   "PTPN12",
+   "RUNX1T1",
+   "SGK1",
+   "SNAI1",
+   "STIL",
+   "ZNF318"
+  ]
+ },
+ {
+  "round": 1,
+  "fold": 3,
+  "held": [
+   "BPGM",
+   "CDKN1C",
+   "COL2A1",
+   "DLX2",
+   "FOXA3",
+   "FOXF1",
+   "HOXB9",
+   "IGDCC3",
+   "KIF18B",
+   "MEIS1",
+   "PRTG",
+   "PTPN9",
+   "TBX3",
+   "TGFBR2"
+  ]
+ },
+ {
+  "round": 1,
+  "fold": 4,
+  "held": [
+   "CBL",
+   "DUSP9",
+   "ELMSAN1",
+   "FEV",
+   "FOSB",
+   "IER5L",
+   "KIF2C",
+   "MAPK1",
+   "PRDM1",
+   "S1PR2",
+   "SET",
+   "UBASH3A",
+   "UBASH3B",
+   "ZBTB25"
+  ]
+ },
+ {
+  "round": 2,
+  "fold": 0,
+  "held": [
+   "AHR",
+   "CEBPA",
+   "DUSP9",
+   "FOSB",
+   "HOXB9",
+   "HOXC13",
+   "JUN",
+   "KIF2C",
+   "MAP2K3",
+   "OSR2",
+   "PRTG",
+   "RUNX1T1",
+   "ZBTB1",
+   "ZBTB25",
+   "ZNF318"
+  ]
+ },
+ {
+  "round": 2,
+  "fold": 1,
+  "held": [
+   "BCL2L11",
+   "BPGM",
+   "FEV",
+   "FOXA1",
+   "IGDCC3",
+   "IKZF3",
+   "LHX1",
+   "MAPK1",
+   "PRDM1",
+   "PTPN12",
+   "SAMD1",
+   "SNAI1",
+   "UBASH3B",
+   "ZBTB10"
+  ]
+ },
+ {
+  "round": 2,
+  "fold": 2,
+  "held": [
+   "CDKN1A",
+   "CEBPE",
+   "DLX2",
+   "FOXL2",
+   "IRF1",
+   "KLF1",
+   "LYL1",
+   "MEIS1",
+   "PTPN9",
+   "RHOXF2",
+   "S1PR2",
+   "SGK1",
+   "TGFBR2",
+   "UBASH3A"
+  ]
+ },
+ {
+  "round": 2,
+  "fold": 3,
+  "held": [
+   "CBFA2T3",
+   "CBL",
+   "CLDN6",
+   "ELMSAN1",
+   "ETS2",
+   "FOXF1",
+   "ISL2",
+   "KIF18B",
+   "PLK4",
+   "POU3F2",
+   "SET",
+   "SPI1",
+   "TBX2",
+   "ZC3HAV1"
+  ]
+ },
+ {
+  "round": 2,
+  "fold": 4,
+  "held": [
+   "BAK1",
+   "CDKN1B",
+   "CDKN1C",
+   "CEBPB",
+   "CNN1",
+   "COL2A1",
+   "FOXA3",
+   "IER5L",
+   "MAP2K6",
+   "MAP7D1",
+   "SLC38A2",
+   "STIL",
+   "TBX3",
+   "TMSB4X"
+  ]
+ }
+]

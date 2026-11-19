@@ -1,0 +1,31 @@
+F:\codex_in_this\claude_science\code\eval_v06.py:251: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+F:\codex_in_this\claude_science\code\eval_v06.py:251: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(out, ignore_index=True)
+stage1 split 00 round 0 fold 0 K=10 d=100 n_test=101 54.4s
+stage1 split 01 round 0 fold 1 K=50 d=100 n_test=101 51.6s
+stage1 split 02 round 0 fold 2 K=50 d=100 n_test=101 50.9s
+stage1 split 03 round 0 fold 3 K=20 d=100 n_test=101 54.7s
+stage1 split 04 round 0 fold 4 K=50 d=100 n_test=101 52.4s
+stage1 split 05 round 0 fold 5 K=50 d=100 n_test=101 53.5s
+stage1 split 06 round 0 fold 6 K=30 d=100 n_test=100 57.7s
+stage1 split 07 round 1 fold 0 K=30 d=100 n_test=101 61.1s
+stage1 split 08 round 1 fold 1 K=50 d=100 n_test=101 58.0s
+stage1 split 09 round 1 fold 2 K=50 d=100 n_test=101 59.9s
+stage1 split 10 round 1 fold 3 K=10 d=100 n_test=101 58.8s
+stage1 split 11 round 1 fold 4 K=50 d=100 n_test=101 58.1s
+stage1 split 12 round 1 fold 5 K=10 d=100 n_test=101 59.2s
+stage1 split 13 round 1 fold 6 K=10 d=100 n_test=100 61.5s
+stage1 split 14 round 2 fold 0 K=30 d=100 n_test=101 59.4s
+stage1 split 15 round 2 fold 1 K=50 d=100 n_test=101 59.0s
+stage1 split 16 round 2 fold 2 K=50 d=100 n_test=101 59.4s
+stage1 split 17 round 2 fold 3 K=10 d=100 n_test=101 58.5s
+stage1 split 18 round 2 fold 4 K=20 d=100 n_test=101 60.2s
+stage1 split 19 round 2 fold 5 K=50 d=100 n_test=101 58.2s
+stage1 split 20 round 2 fold 6 K=50 d=100 n_test=100 57.5s
+attached ext arrays from F:\codex_in_this\claude_science\results\prefreeze_v0.7\e2e_v07_neg\ext_cache
+selected proxies: h=sim+nbq|gbm d=ridge s=ridge
+stage 2 rows 1061118 in 916s
+primary M1 1.0; best M_dist Mdist-N 1.0
+confirm_v07: randomised matching rows 29652
+{"kind": "neg", "expected_v07": {"step1_not_pass": true, "guard_M_perm": true, "classification_not_success": true, "E2_reports_width_ratio": true, "no_selection_in_confirmation": true}, "all_expected_pass": true}

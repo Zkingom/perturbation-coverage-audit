@@ -1,0 +1,11 @@
+20:30:10 dev: gene table
+20:30:28 rpe1: gene table
+20:30:45 gwps: gene table
+20:31:44 annotations for 7550 genes
+20:32:01 dev: bootstrap (2000 draws, 9 groups)
+20:33:51 dev: rho_net, split-half oracle, group E1
+20:34:04 rpe1: bootstrap (2000 draws, 9 groups)
+20:35:54 rpe1: rho_net, split-half oracle, group E1
+20:36:05 gwps: bootstrap (2000 draws, 9 groups)
+20:38:28 gwps: rho_net, split-half oracle, group E1
+20:38:54 done
